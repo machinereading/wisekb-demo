@@ -9,6 +9,14 @@ Korean Knowledge Extraction System Demo
 * `Javascript`
 * `Python 3`
 
+## Architecture
+! [Architecture] (./image/archi.png)
+
+## Component Modules
+* [Entity Linking] (https://creativecommons.org/licenses/by-nc-sa/2.0/)
+* [Rule-based RE] (https://creativecommons.org/licenses/by-nc-sa/2.0/)
+* [Sentence-level RE] (https://creativecommons.org/licenses/by-nc-sa/2.0/)
+* [Paragraph-level RE] (https://creativecommons.org/licenses/by-nc-sa/2.0/)
 
 ## Licenses
 * `CC BY-NC-SA` [Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/2.0/)
