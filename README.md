@@ -10,7 +10,7 @@ Korean Knowledge Extraction System Demo
 * `Python 3`
 
 ## Architecture
-! [Architecture] (./image/archi.png)
+![Architecture](./image/archi.png)
 
 ## Component Modules
 * [Entity Linking] (https://creativecommons.org/licenses/by-nc-sa/2.0/)
