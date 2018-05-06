@@ -15,7 +15,8 @@ Korean Knowledge Extraction System Demo
 ## Component Modules
 * [Entity Linking](https://creativecommons.org/licenses/by-nc-sa/2.0/)
 * [Rule-based RE](https://creativecommons.org/licenses/by-nc-sa/2.0/)
-* [Sentence-level RE](https://creativecommons.org/licenses/by-nc-sa/2.0/)
+* [Sentence-level RE: CNN](https://creativecommons.org/licenses/by-nc-sa/2.0/)
+* [Sentence-level RE: LSTM](https://creativecommons.org/licenses/by-nc-sa/2.0/)
 * [Paragraph-level RE](https://creativecommons.org/licenses/by-nc-sa/2.0/)
 
 ## Licenses
