@@ -23,7 +23,7 @@ public class Main {
 
 
 	public void readTypeMap() throws IOException {
-		BufferedReader br = Files.newBufferedReader(Paths.get("type"));
+		BufferedReader br = Files.newBufferedReader(Paths.get("data/type"));
 		String input = null;
 		while((input = br.readLine()) != null){
 			StringTokenizer st = new StringTokenizer(input, "\t");
@@ -47,10 +47,9 @@ public class Main {
 	}
 	public void readKo_EnMap() throws Exception {
 
-		BufferedReader br = Files.newBufferedReader(Paths.get("ko_en_mapping"));
+		BufferedReader br = Files.newBufferedReader(Paths.get("data/ko_en_mapping"));
 		String input = null;
 		while((input = br.readLine()) != null){
-
 			StringTokenizer st = new StringTokenizer(input, "\t");
 			String koe = st.nextToken();
 			String ene = st.nextToken();
@@ -60,10 +59,9 @@ public class Main {
 
 	public void readId_TitleMap() throws Exception {
 
-		BufferedReader br = Files.newBufferedReader(Paths.get("id-title-map.txt"));
+		BufferedReader br = Files.newBufferedReader(Paths.get("data/id-title-map"));
 		String input = null;
 		while((input = br.readLine()) != null){
-
 			StringTokenizer st = new StringTokenizer(input, "\t");
 			String id = st.nextToken();
 			String title = st.nextToken();
