@@ -1,0 +1,2 @@
+심리학자/Entity 인/Noun 게리/Noun 마커스/ProperNoun 는/Josa 다음/Noun 과/Josa 같이/Josa 말_(동물)/Entity 하다/Verb ./Punctuation 	0	8	unknown
+심리학자/Entity 인/Noun 게리/Noun 마커스/ProperNoun 는/Josa 다음/Noun 과/Josa 같이/Josa 말_(동물)/Entity 하다/Verb ./Punctuation 	8	0	unknown
