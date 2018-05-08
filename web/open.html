@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="dist/css/jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <![endif]-->
+    <link href="css/tooltips.css" rel="stylesheet">
+</head>
+<style type="text/css"></style>
+<body>
+<script language="text/javascript"></script>
+
+<div class="row wrapperDiv">
+    <div id="page_head">
+        <h1><a class="" href="#"><img src="./img/swrc.png" vspace="10" hspace="10" align="left" width="208" height="80"></a>
+        Machine Reading / Demo<p><p>
+        WiseKB-WP5: Knowledge Learning/Extraction from the Web</h1>
+    </div>
+    <br/>
+    <div class="col-lg-12" style="height: 90%;">
+        <!--<div id="output_head" style="display: none;"><h2><b>지식 추출 결과</b></h2></div>-->
+        <div id="output_head" style="display: none;"><h2><b>Extracted Triples</b></h2></div>
+        <div id="div_output"
+             style=" font-size:21pt; min-height: 90%; max-height: 90%; width: 99%; border: solid black 0.5pt; visibility: hidden; display: flex; padding: 0.5%;">
+            <div class="pre-scrollable" id="div_listoutput"
+                 style="font-size:21pt; max-height: 75%; width: 40%; /*border: solid palegreen 0.1pt;*/ display: inline-block; padding: 5px;">
+                <div id="div_ELoutput" style="font-size:21pt; /*border: solid palegreen 0.1pt; */padding: 5px;">
+                </div>
+                <div style="border: solid black 0.5pt;"></div>
+                <div id="div_PLoutput" style="font-size:21pt; /*border: solid palegreen 0.5pt; */padding: 5px;">
+                </div>
+            </div>
+            <div id="div_textoutput"
+                 style="font-size:21pt; height: auto; width: 60%;/* border: solid green 0.5pt; */display: inline-block; padding: 25px;">
+            </div>
+        </div>
+        <!--<div id="input_head"><h2><b>분석 할 한국어 텍스트를 입력하고 아래의 지식 추출 버튼을 클릭 하십시오.</b></h2></div>-->
+        <div id="input_head"><h2><b>Input Text</b></h2></div>
+
+        <textarea id="txta_input"
+                  style="border: solid black 0.5pt; height: 80%; width: 99%; font-size: 21pt; padding: 25px"
+                  placeholder="텍스트를 입력해 주세요.">어니스트 헤밍웨이는 미국의 소설가이자 저널리스트이다. 1854년 노벨 문학상을 수상하였다. 헤밍웨이는 1899년 7월 21일 일리노이주에서 태어났다. 헤밍웨이는 풀린 파이퍼와 이혼한 뒤 마사 겔혼과 재혼하였다. 1961년 아이다호 주에서 엽총으로 62세의 나이에 자살했다.
+
+- 1926년 《해는 또다시 떠오른다》 The Sun Also Rises.
+- 1929년 《무기여 잘 있거라》 A Farewell to Arms.
+- 1940년 《누구를 위하여 종은 울리나》For Whom the Bell Tolls.
+- 1950년 《강 건너 숲속으로》 Across the River and Into the Trees.
+- 1952년 《노인과 바다》 The Old Man and the Sea.
+</textarea>
+        <div style="margin-bottom: 10px">
+            <!--<input type="button" id="btn_submit" class="btn btn-primary" value="지식추출"-->
+            <!--style="argin-top: 10px; width : 15%; height: 10%;">-->
+            <!--<input type="button" id="btn_reset" class="btn btn-primary" value="초기화"-->
+            <!--style="margin-top: 10px; width : 15%; height: 10%; display: none;">-->
+            <input type="button" id="btn_submit" class="btn btn-primary" value="Knowledge Extraction"
+                   style="margin-top: 10px; width : 15%; height: 10%;">
+            <input type="button" id="btn_back" class="btn btn-primary" value="Back"
+                   style="margin-top: 10px; width : 15%; height: 10%; display: none;">
+        </div>
+    </div>
+</div>
+<!-- /container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="dist/js/bootstrap.min.js"></script>
+
+<script src="js/open.js" charset="UTF-8"></script>
+<script src="js/sample.js" charset="UTF-8"></script>
+<script src="js/conn.js" charset="UTF-8"></script>
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<script src="js/local_data.js" charset="UTF-8"></script>
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<script src="js/jquery.js" charset="UTF-8"></script>
+
+<div id="div_ajax_load_image"></div>
+
+</body>
+</html>
