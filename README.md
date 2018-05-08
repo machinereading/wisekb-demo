@@ -13,11 +13,12 @@ Korean Knowledge Extraction System Demo
 <img src="./image/archi.png" alt="archi" style="width:20px;"/>
 
 ## Component Modules
-* [Entity Linking](https://creativecommons.org/licenses/by-nc-sa/2.0/)
+* [Entity Linking](https://github.com/machinereading/)
 * [Rule-based RE](https://github.com/machinereading/re-rule)
 * [Sentence-level RE: CNN](https://github.com/machinereading/re-cnn)
-* [Sentence-level RE: LSTM](https://creativecommons.org/licenses/by-nc-sa/2.0/)
-* [Paragraph-level RE](https://creativecommons.org/licenses/by-nc-sa/2.0/)
+* [Sentence-level RE: LSTM](https://github.com/machinereading/)
+* [Paragraph-level RE](https://github.com/machinereading/)
+* [KBox](http://kbox.kaist.ac.kr)
 
 ## Licenses
 * `CC BY-NC-SA` [Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/2.0/)
