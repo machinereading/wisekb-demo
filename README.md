@@ -7,7 +7,6 @@ Korean Knowledge Extraction System Demo
 * `Java 1.8`
 * `Maven`
 * `Javascript`
-* `Python 3`
 
 ## Architecture
 <img src="./image/archi.png" alt="archi" style="width:20px;"/>
