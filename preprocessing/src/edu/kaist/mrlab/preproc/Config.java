@@ -15,8 +15,7 @@ public class Config {
 //    public static String filepath = "../PL-Web-Demo/prepro/data/";
     //local
 //    private static String filepath = "";
-    // integral server
-    private static String filepath = "./data/output/";
+    private static String filepath = "./data/";
 
     private static boolean usingFSinL2K = false;
     private static boolean usingFSinB2K = false;
