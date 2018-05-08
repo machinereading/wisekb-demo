@@ -1,0 +1,13 @@
+http://ko.dbpedia.org/resource/노벨_문학상	http://dbpedia.org/ontology/Award
+http://ko.dbpedia.org/resource/노벨_문학상	http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+http://ko.dbpedia.org/resource/마사_겔혼	http://www.w3.org/2002/07/owl#Thing
+http://ko.dbpedia.org/resource/마사_겔혼	http://dbpedia.org/ontology/Agent
+http://ko.dbpedia.org/resource/마사_겔혼	http://dbpedia.org/ontology/Artist
+http://ko.dbpedia.org/resource/마사_겔혼	http://dbpedia.org/ontology/Person
+http://ko.dbpedia.org/resource/마사_겔혼	http://dbpedia.org/ontology/Writer
+http://ko.dbpedia.org/resource/마사_겔혼	http://schema.org/Person
+http://ko.dbpedia.org/resource/마사_겔혼	http://wikidata.dbpedia.org/resource/Q215627
+http://ko.dbpedia.org/resource/마사_겔혼	http://wikidata.dbpedia.org/resource/Q5
+http://ko.dbpedia.org/resource/마사_겔혼	http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+http://ko.dbpedia.org/resource/마사_겔혼	http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson
+http://ko.dbpedia.org/resource/마사_겔혼	http://xmlns.com/foaf/0.1/Person
