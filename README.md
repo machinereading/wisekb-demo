@@ -12,7 +12,7 @@ Korean Knowledge Extraction System Demo
 <img src="./image/archi.png" alt="archi" style="width:20px;"/>
 
 ## Component Modules
-* [Entity Linking](https://github.com/machinereading/)
+* [Entity Linking](https://github.com/machinereading/Entity-Linking)
 * [Rule-based RE](https://github.com/machinereading/re-rule)
 * [Sentence-level RE: CNN](https://github.com/machinereading/re-cnn)
 * [Paragraph-level RE](https://github.com/machinereading/re-b2k)
