@@ -15,8 +15,7 @@ Korean Knowledge Extraction System Demo
 * [Entity Linking](https://github.com/machinereading/)
 * [Rule-based RE](https://github.com/machinereading/re-rule)
 * [Sentence-level RE: CNN](https://github.com/machinereading/re-cnn)
-* [Sentence-level RE: LSTM](https://github.com/machinereading/)
-* [Paragraph-level RE](https://github.com/machinereading/)
+* [Paragraph-level RE](https://github.com/machinereading/re-b2k)
 * [KBox](http://kbox.kaist.ac.kr)
 
 ## Licenses
