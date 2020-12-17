@@ -3,8 +3,6 @@ package edu.kaist.mrlab.el.rest;
 import edu.kaist.mrlab.preproc.ReParser;
 
 import javax.ws.rs.*;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @Path("/revision")
@@ -16,7 +14,7 @@ public class REPOSTService {
 	// @Produces("text/plain; charset=UTF-8")
 	public Response getPostForRevision(String input) throws Exception {
 		long startTime = System.currentTimeMillis();
-//		System.out.println(input);
+		System.out.println(input);
 		ReParser rp = new ReParser();
 		String output = rp.getText(input);
 		String result = "{\"message\":\"revision process "+output+"\"}";

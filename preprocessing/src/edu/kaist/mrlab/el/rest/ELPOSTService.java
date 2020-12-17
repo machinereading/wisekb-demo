@@ -22,9 +22,15 @@ public class ELPOSTService {
 		System.out.println(input);
 		DemoPreprocessor dp = new DemoPreprocessor();
 		String result;
+
+		System.out.println("BEFORE EL!!");		
 		String result_el = dp.getText(input);
-		String result_el_pl = dp.getTriple(result_el);
-		result = result_el_pl;
+		System.out.println("AFTER EL and BEFORE RE!!");
+//		String result_el_pl = dp.getTriple(result_el);
+		System.out.println("AFTER RE!!");
+
+//		result = result_el_pl;
+		result = "";
 //		System.out.println(result);
         long endTime = System.currentTimeMillis();
         SimpleDateFormat dayTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

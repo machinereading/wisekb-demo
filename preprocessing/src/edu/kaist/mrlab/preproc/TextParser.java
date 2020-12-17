@@ -7,8 +7,6 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -23,8 +21,38 @@ public class TextParser {
     public Main m = new Main();
     EntityTagger et = new EntityTagger();
     KoreanAnalyzer ka = new KoreanAnalyzer();
-    RestCaller rc = new RestCaller();
     public JSONParser jParser = new JSONParser();
+    DarkEntityProcessor de = new DarkEntityProcessor();
+
+    public JSONArray ELD_classify(JSONArray ELD_list) {
+        JSONArray result;
+        for (int i = 0; i < ELD_list.size(); i++) {
+            JSONObject item = (JSONObject) ELD_list.get(i);
+//            System.out.println(item);
+            String prefix = "http://kbox.kaist.ac.kr/resource/";
+            String uri = (String) item.get("uri");
+//            String source = (String) item.get("source");
+            String text = (String) item.get("text");
+//            System.out.println(text + source + uri);
+            item.put("source", "ELU");
+            String target = uri.replace(prefix, "");
+//            System.out.println(text);
+//            System.out.println(target);
+            if (target.length() == 0){
+                ELD_list.remove(item);
+                i--;
+                continue;
+            }
+            if (target.charAt(0) == '_') {
+//                System.out.println(text + " " + uri);
+            } else if (target.contains("NOT_IN_CANDIDATE")) {
+//                System.out.println(text + " " + uri);
+//                item.put("uri", prefix + '_' + text.replace(' ', '_'));
+            }
+        }
+        result = ELD_list;
+        return result;
+    }
 
     /**
      * '불교' remove
@@ -191,8 +219,10 @@ public class TextParser {
             JSONArray one_item = new JSONArray();
             JSONObject ELU_obj = (JSONObject) ELU_str.get(i);
             JSONArray entities = (JSONArray) ELU_obj.get("entities");
+//            System.out.println(entities);
             JSONObject sObj = (JSONObject) sArr.get(i);
             JSONArray mod_list = (JSONArray) sObj.get("mod_NE");
+//            System.out.println(mod_list);
             String text = (String) sObj.get("text");
 //            System.out.println(text);
             ArrayList<JSONObject> ELU_index = makeList(entities, "ELU");
@@ -236,7 +266,7 @@ public class TextParser {
      * @throws IOException
      * @throws ParseException
      */
-    public ArrayList<JSONObject> entity_classify(List<JSONObject> list) throws IOException, ParseException {
+    public ArrayList<JSONObject> entity_classify(List<JSONObject> list) throws ParseException {
         ArrayList<JSONObject> result = new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {
             JSONObject line = list.get(i);
@@ -255,23 +285,72 @@ public class TextParser {
                     String text = (String) item.get("text");
                     if (source.equals("mod_NE")) {
                         String type = (String) item.get("type");
+                        Double ner_scr = (Double) item.get("confidence");
+                        Integer ne_id = ((Long) item.get("ne_id")).intValue();
+                        Integer sen_id = ((Long) item.get("sen_id")).intValue();
+                        ArrayList<String> info;
+                        info = m.ner_dbo_Map.get(type);
+                        String de_uri_name = new String();
+                        String uri = exactMatch(text);
                         if (type.contains("PS") || type.contains("LCP") || type.contains("OGG") || type.contains("AFW_DOC") || type.contains("CV_OCCUPATION")/*true*/) {
-                            String uri = exactMatch(text);
-//                            System.out.println(text);
-                            if (!uri.equals("")) {
-//                            System.out.println(uri);
+                            if (uri.contains("ko.dbpedia.org")) {
+//                                System.out.println(uri);
                                 item.put("uri", uri);
                                 item.put("source", "NER");
                             } else {
-//                            System.out.println(text +" no match");
                                 item.put("uri", "");
                                 item.put("source", "DE");
                             }
                         } else {
-//                        System.out.println(text + " no P.L.O");
                             item.put("uri", "");
                             item.put("source", "DE");
                         }
+                        /*if (info != null ){
+                            float map_scr = Float.parseFloat(info.get(1));
+                            if (map_scr> Config.getDbot_confidence() || ner_scr > Config.getNert_confidence() ){
+//                                자동 검증
+                                if (!uri.equals("")) {
+//                                    exact match
+//                                    System.out.println(uri);
+                                    item.put("uri", uri);
+                                    item.put("source", "NER");
+                                }else{
+                                    de_uri_name = de.pool(text,sen_id.toString(),ne_id.toString());
+                                    String de_uri = "http://kbox.kaist.ac.kr/resource" + "/" + de_uri_name.replace(' ','_');
+//                                    not exact mach
+//                                    System.out.println(de_uri);
+//                                    System.out.println(info.get(0));
+                                    String[] types = (info.get(0)).split(",");
+                                    JSONArray temp_type = new JSONArray();
+                                    for (int idx = 0 ; idx<types.length; idx++){
+//                                        System.out.println(types[idx]);
+                                        temp_type.add("http://dbpedia.org/ontology/"+types[idx]);
+                                    }
+                                    item.put("type",temp_type);
+                                    item.put("uri", de_uri);
+                                    item.put("source", "DE+");
+                                }
+                            } else {
+//                                human annotator 수작업 검증
+//                                System.out.println(text);
+//                                System.out.println(sen_id);
+                                String[] types = (info.get(0)).split(",");
+                                JSONArray temp_type = new JSONArray();
+                                for (int idx = 0 ; idx<types.length; idx++){
+//                                        System.out.println(types[idx]);
+                                    temp_type.add("http://dbpedia.org/ontology/"+types[idx]);
+                                }
+                                item.put("type",temp_type);
+                                item.put("uri", "");
+                                item.put("source", "DE");
+
+                            }
+                        }else{
+//                            human annotator 수작업 검증
+//                            non mapping type
+                            item.put("uri", "");
+                            item.put("source", "DE");
+                        }*/
                     }
                 }
                 JSONArray merge = (JSONArray) jParser.parse(candidate.toString());
@@ -303,8 +382,12 @@ public class TextParser {
     public String index_modify(String etri_str) throws ParseException {
         JSONObject etri_result = (JSONObject) jParser.parse(etri_str);
         JSONArray senArr = (JSONArray) etri_result.get("sentence");
+//        JSONArray tempSenArr = new JSONArray();
         for (int i = 0; i < senArr.size(); i++) {
             JSONObject senObj = (JSONObject) senArr.get(i);
+            String sentence = (String) senObj.get("text");
+            int sen_id = de.deSentenceSet(sentence.trim());
+//            tempSenArr.add(sentence);
             JSONArray neArr = (JSONArray) senObj.get("NE");
             String text = (String) senObj.get("text");
             JSONArray mod_NE_set = new JSONArray();
@@ -312,8 +395,20 @@ public class TextParser {
             int e_offset = 0;
             for (int j = 0; j < neArr.size(); j++) {
                 JSONObject neObj = (JSONObject) neArr.get(j);
+//                System.out.println(neObj.toString());
+//                System.out.println(neObj.get("weight"));
                 String NE_type = (String) neObj.get("type");
                 String NE_text = (String) neObj.get("text");
+                Double scr;
+                try {
+                    scr = (Double) neObj.get("weight");
+                } catch (Exception e) {
+                    long temp = ((long) neObj.get("weight"));
+                    scr = (double) temp;
+                }
+
+                Integer id = ((Long) neObj.get("id")).intValue();
+
                 JSONObject item = new JSONObject();
 //                System.out.println(NE_text);
                 if (text.trim().indexOf(NE_text, e_offset) < 0) {
@@ -324,15 +419,17 @@ public class TextParser {
                 e_offset = s_offset + NE_text.length();
                 // dummy data
                 item.put("indirect", 0);
-                item.put("confidence", 0);
                 item.put("link", 0);
                 item.put("score", 0);
                 item.put("relation", 0);
                 // input data
+                item.put("confidence", scr);
                 item.put("text", NE_text);
                 item.put("start_offset", s_offset);
                 item.put("end_offset", e_offset);
                 item.put("type", NE_type);
+                item.put("ne_id", id);
+                item.put("sen_id", sen_id);
                 mod_NE_set.add(item);
             }
             senObj.put("mod_NE", mod_NE_set);
@@ -368,13 +465,25 @@ public class TextParser {
     }
 
     /**
+     * @param input etri_full_string
+     * @return modify etri_string
+     * @throws ParseException
+     */
+    public String etri_sen(String input) throws ParseException {
+        JSONObject etri_result = (JSONObject) jParser.parse(input);
+        JSONArray senArr = (JSONArray) etri_result.get("sentence");
+        String result = senArr.toString();
+        return result;
+    }
+
+    /**
      * // etri format using from wsd (etri >> wsd etri)
      *
      * @param input etri_full_string
      * @return modify etri_string
      * @throws ParseException
      */
-    public String etri_wsd(String input) throws ParseException {
+    public String etri_all(String input) throws ParseException {
         JSONObject etri_result = (JSONObject) jParser.parse(input);
         etri_result.remove("category");
         etri_result.remove("category_weight");
@@ -546,6 +655,69 @@ public class TextParser {
         result.add(bool_NP_S);
         result.add(bool_V);
         return result;
+    }
+
+    /**
+     * @param CR_str
+     * @param ELU_str
+     * @return modify_index_ELU
+     * @throws ParseException
+     */
+    public String ELU_index_modify(String CR_str, String ELU_str) throws ParseException {
+        JSONObject CRObj = (JSONObject) jParser.parse(CR_str);
+        JSONArray ELUArr = (JSONArray) jParser.parse(ELU_str);
+
+        JSONArray ZA_candidate = (JSONArray) CRObj.get("ZA_candidate");
+
+        for (int i = 0; i < ZA_candidate.size(); i++) {
+            JSONObject ZA_item = (JSONObject) ZA_candidate.get(i);
+            int cr_offset = Integer.parseInt(ZA_item.get("st_modified").toString());
+            for (int j = 0; j < ELUArr.size(); j++) {
+                JSONObject ELU_item = (JSONObject) ELUArr.get(j);
+                int start_offset = Integer.parseInt(ELU_item.get("start_offset").toString());
+                int end_offset = Integer.parseInt(ELU_item.get("end_offset").toString());
+                if (cr_offset <= start_offset) {
+                    start_offset += 3;
+                    end_offset += 3;
+                    ELU_item.put("start_offset", start_offset);
+                    ELU_item.put("end_offset", end_offset);
+                    ELUArr.remove(j);
+                    ELUArr.add(j, ELU_item);
+                } else if (cr_offset > start_offset && cr_offset > end_offset) {
+                    continue;
+                }
+            }
+        }
+        return ELUArr.toString();
+    }
+
+    public String ELU_merge(String ELU1, String ELU2) throws ParseException {
+        JSONArray ELUArr1 = (JSONArray) jParser.parse(ELU1);
+        JSONArray ELUArr2 = (JSONArray) jParser.parse(ELU2);
+        JSONArray output = new JSONArray();
+
+        ArrayList<JSONObject> ELU1_index = makeList(ELUArr1, "old_ELU");
+        ArrayList<JSONObject> ELU2_index = makeList(ELUArr2, "ELU");
+
+        output = (JSONArray) jParser.parse(merge_index(ELU2_index, ELU1_index).toString());
+//        System.out.println(output.toString());
+
+        return output.toString();
+    }
+
+    /**
+     * @param ETRI string
+     * @param ELU  string
+     * @return json4CR string
+     * @throws ParseException
+     */
+    public String json4CR(String ETRI, String ELU) throws ParseException {
+        JSONObject ETRI_Obj = (JSONObject) jParser.parse(ETRI);
+        JSONArray ELU_Arr = (JSONArray) jParser.parse(ELU);
+        JSONObject output = new JSONObject();
+        output.put("ETRI", ETRI_Obj);
+        output.put("entities", ELU_Arr);
+        return output.toString();
     }
 
     /**
@@ -824,7 +996,8 @@ public class TextParser {
             String PL4_text = new String();
             JSONObject cobj = (JSONObject) carr.get(i);
             String cnn_str = (String) cnn_arr.get(i);
-            PL4_text = et.callTaggedOutForCNN(cnn_str, cobj.toString());
+//            PL4_text = et.callTaggedOutForCNN(cnn_str, cobj.toString());
+            PL4_text = et.callTaggedOut(cnn_str, cobj.toString(), "CNN");
             // tagged text merge
             adding_text += PL4_text + "\n";
         }
@@ -864,7 +1037,8 @@ public class TextParser {
             String PL5_text = new String();
             JSONObject pobj = (JSONObject) parr.get(i);
             String bkp_str = bkp_arr.get(i);
-            PL5_text = et.callTaggedOutForB2KP(bkp_str, pobj.toString());
+//            PL5_text = et.callTaggedOutForB2KP(bkp_str, pobj.toString());
+            PL5_text = et.callTaggedOut(bkp_str, pobj.toString(), "B2K_Plus");
             result += PL5_text + "\n";
         }
 //        System.out.println(result);
@@ -921,4 +1095,54 @@ public class TextParser {
         }
         return result;
     }
+
+    /**
+     * // format iterative
+     * // replace text using ELU list
+     *
+     * @param eluArr     ELU JSON array
+     * @param outTextArr sentence for mln list
+     * @return string for write iterative
+     * @throws Exception
+     */
+
+    public String outWrite(JSONArray eluArr, ArrayList<String> outTextArr) throws Exception {
+        String result = new String();
+        for (int i = 0; i < outTextArr.size(); i++) {
+            String text = new String();
+            JSONObject obj = (JSONObject) eluArr.get(i);
+            String str = outTextArr.get(i);
+            text = et.callTaggedOutForIterative(str, obj.toString());
+            result += text + "\t" + m.doc_id + "\t" + IterativePreprocessor.par_id + "\t" + IterativePreprocessor.sen_id + "\t" + "\n";
+//            result += text + "\t" + m.doc_id + "\t" + m.par_id + "\t" + m.sen_id + "\t" + "\n";
+            IterativePreprocessor.sen_id++;
+        }
+//        System.out.println(result);
+        return result;
+    }
+
+    /**
+     * // format PL8
+     * // tagging sentence for rl
+     *
+     * @param rarr   ELU JSON array
+     * @param rl_arr sentence for rl
+     * @return string for write PL8
+     * @throws ParseException
+     */
+    public String rlWrite(JSONArray rarr, ArrayList<String> rl_arr) throws ParseException {
+        String result = new String();
+
+        for (int i = 0; i < rl_arr.size(); i++) {
+            String PL8_text = new String();
+            JSONObject robj = (JSONObject) rarr.get(i);
+            String rl_str = rl_arr.get(i);
+//            PL8_text = et.callTaggedOutForRL(rl_str, robj.toString());
+            PL8_text = et.callTaggedOut(rl_str, robj.toString(), "RL");
+            result += PL8_text + "\n";
+        }
+//        System.out.println(result);
+        return result;
+    }
 }
+

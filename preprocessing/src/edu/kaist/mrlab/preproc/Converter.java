@@ -54,6 +54,7 @@ public class Converter {
 			
 			JSONObject jObj = (JSONObject) obj;
 			String text = (String) jObj.get("text");
+//			System.out.println(text);
             sents.add(text);
 			idx_sum += text.length();
 		}
@@ -89,13 +90,13 @@ public class Converter {
 			JSONArray entityList = (JSONArray)currObj.get("entities");
 			entityList.add(entity);
 		}
-//
+
 //		for(Object obj : result) {
 //
 //			System.out.println(((JSONObject)obj).toString());
 //			System.out.println("");
 //		}
-//
+
 		return result;
 	}
 	
