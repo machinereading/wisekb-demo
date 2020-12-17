@@ -1,0 +1,157 @@
+package edu.kaist.mrlab.pl.rest;
+
+import java.io.*;
+import java.io.IOException;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.FormParam;
+import javax.ws.rs.OPTIONS;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.Response;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import edu.kaist.mrlab.pl.script.PL1Caller;
+import edu.kaist.mrlab.pl.script.PL4Caller;
+import edu.kaist.mrlab.pl.script.ReadTriples;
+import edu.kaist.mrlab.pl.script.RestCaller;
+import edu.kaist.mrlab.pl.script.ScriptRunner;
+
+@Path("/pl-all")
+public class PLPOSTService {
+
+	//private int nThreads = 1;
+
+	private void RERun() throws Exception {
+		// this.fileList = new ArrayList<>();
+		// this.filePathList = Files.walk(this.inputPath).filter(p ->
+		// Files.isRegularFile(p))
+		// .collect(Collectors.toCollection(ArrayList::new));
+		// System.out.println("Number of file paths: " + filePathList.size());
+		BufferedWriter out = new BufferedWriter(new FileWriter("PL_timeStamp.txt", true));
+		long startTime = System.currentTimeMillis();
+		//ExecutorService threadPoolLoad = Executors.newFixedThreadPool(this.nThreads);
+		//Set<Callable<Object>> callables = new HashSet<Callable<Object>>();
+		
+		//callables.add(new Callable<Object>() {
+		//	public String call() throws Exception {
+		//		PL1Caller pl1 = new PL1Caller();
+		//		pl1.run();
+		//                long PL1endTime = System.currentTimeMillis();
+		//		String module_time = "time spent in PL1 module : " + (PL1endTime - startTime) / 1000.0f;
+                //		System.out.println(module_time);
+		//		out.newLine();
+		//		out.write(module_time);
+//				out.close();
+		//		return "PL1";
+		//	}
+		//});
+
+		
+		//callables.add(new Callable<Object>() {
+		//	public String call() throws Exception {
+				PL4Caller pl4 = new PL4Caller();
+				pl4.run();
+                                long PL4endTime = System.currentTimeMillis();
+//				module_time = "time spent in PL4 module : " + (PL4endTime - startTime) / 1000.0f;
+				String module_time = "time spent in PL4 module : " + (PL4endTime - PL4endTime) / 1000.0f;
+                                System.out.println(module_time);
+                                out.newLine();
+                                out.write(module_time);
+//                                out.close();
+		//		return "PL4";
+		//	}
+		//});
+		RestCaller rc = new RestCaller();
+		rc.callPL8();	
+		
+		//callables.add(new Callable<Object>() {
+		//	public String call() throws Exception {	
+				ScriptRunner sr = new ScriptRunner();
+				sr.run();
+                                long PL5endTime = System.currentTimeMillis();
+//				module_time = "time spent in PL5 module : " + (PL5endTime - startTime) / 1000.0f;
+				module_time = "time spent in PL5 module : " + (PL5endTime - PL4endTime) / 1000.0f;
+                                System.out.println(module_time);
+                                out.newLine();
+                                out.write(module_time);
+//                                out.close();
+		//		return "Script";
+		//	}
+		//});
+		
+		//List<Future<Object>> futures = threadPoolLoad.invokeAll(callables);
+		
+		//for(Future<Object> future : futures) {
+		//	System.out.println("future set = " + future.get());
+		//}
+                long endTime = System.currentTimeMillis();
+
+
+		// shell script !!!!!!!!
+                ScriptRunner srs = new ScriptRunner();
+                srs.run_sumz();
+
+
+		module_time = "time spent in PL-all modules : " + (endTime - startTime) / 1000.0f;
+	        System.out.println(module_time);
+                out.newLine();
+                out.write(module_time);
+                out.close();
+		//threadPoolLoad.shutdown();
+	}
+
+	@POST
+	@Consumes("application/json; charset=UTF-8")
+	@Produces("application/json; charset=UTF-8")
+	// @Produces("text/plain; charset=UTF-8")
+	public Response getPost(String input) throws Exception {
+		
+		JSONParser parser = new JSONParser();
+		JSONObject inputJSON = (JSONObject) parser.parse(input);
+		String usedTag = String.valueOf(inputJSON.get("usedTag"));
+		
+		System.out.println(usedTag);
+		
+		// @FormParam("text")
+		
+		RERun();
+
+		// GenarateInput gi = new GenarateInput();
+		// gi.run();
+
+		// PatternGenerator pg = new PatternGenerator();
+		// pg.generate();
+
+		ReadTriples rt = new ReadTriples();
+		String result = rt.readAll(usedTag.toUpperCase());
+
+		return Response.ok().entity(result).header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
+				.header("Access-Control-Allow-Origin", "*")
+				.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept").build();
+
+	}
+
+	@OPTIONS
+	@Consumes("application/x-www-form-urlencoded; charset=utf-8")
+	@Produces("text/plain; charset=utf-8")
+	public Response getOptions(@FormParam("text") String input) throws Exception {
+
+		return Response.ok().header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
+				.header("Access-Control-Allow-Origin", "*")
+				.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept").build();
+
+	}
+
+}

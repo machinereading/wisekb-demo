@@ -1,0 +1,430 @@
+package edu.kaist.mrlab.pl.script;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.StringTokenizer;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+import edu.kaist.mrlab.pl.data.Instance;
+import edu.kaist.mrlab.pl.data.InstanceComparator;
+import edu.kaist.mrlab.pl.rest.Main;
+
+public class ReadTriples {
+
+	@SuppressWarnings("unchecked")
+	public String readAll(String usedTag) throws Exception {
+
+		BufferedWriter out = new BufferedWriter(new FileWriter("PL_timeStamp.txt", true));
+		long startTime = System.currentTimeMillis();
+		List<Instance> insList = new ArrayList<Instance>();
+
+		JSONObject resultObj = new JSONObject();
+		JSONArray resultSet = new JSONArray();
+
+		String input = null;
+
+//		BufferedReader br2 = Files.newBufferedReader(Paths.get("DB2XB/data/pl_out/pl1-out"));
+//
+//		if (usedTag.equals("FALSE")) {
+//			System.out.println("Read PL1 Triples");
+//			while ((input = br2.readLine()) != null) {
+//
+//				StringTokenizer st = new StringTokenizer(input, "\t");
+//				String subject = st.nextToken().replaceAll(" ", "_");
+//				subject = subject.replaceAll("http://ko.dbpedia.org/resource/", "dbr:");
+//				subject = subject.replaceAll("http://mrlab.kaist.ac.kr/resource/", "mrr:");
+//				String property = st.nextToken();
+//				String object = st.nextToken().replaceAll(" ", "_");
+//				object = object.replaceAll("http://ko.dbpedia.org/resource/", "dbr:");
+//				object = object.replaceAll("http://mrlab.kaist.ac.kr/resource/", "mrr:");
+//				st.nextToken(); // dot
+//				String score = st.nextToken();
+//				String stc = st.nextToken();
+//
+//				if (property.startsWith("adams-")) {
+//					continue;
+//				}
+//
+//				if (property.startsWith("dbpedia-")) {
+//					property = property.replaceAll("dbpedia-", "");
+//				}
+//
+//				Set<String> postFixSet = new HashSet<String>();
+//				postFixSet.add("OGG");
+//				postFixSet.add("AF");
+//				postFixSet.add("CV");
+//				postFixSet.add("EV");
+//				postFixSet.add("LCG");
+//
+//				for (String postFix : postFixSet) {
+//					if (property.endsWith(postFix)) {
+//						property = property.replace(postFix, "");
+//					}
+//				}
+//
+//				String sbj = null;
+//				String obj = null;
+//
+//				if (subject.startsWith("mrr:")) {
+//					sbj = "http://mrlab.kaist.ac.kr/resource/" + subject.replace("mrr:", "");
+//
+//				} else if (subject.startsWith("dbr:")) {
+//					subject = subject.replace("dbr:", "");
+//					sbj = subject + "/" + Main.entityMap.get(subject);
+//					sbj = sbj.replace("/null", "");
+//
+//				}
+//
+//				if (object.startsWith("mrr:")) {
+//					obj = "http://mrlab.kaist.ac.kr/resource/" + object.replace("mrr:", "");
+//				} else if (object.startsWith("dbr:")) {
+//					object = object.replace("dbr:", "");
+//					obj = object + "/" + Main.entityMap.get(object);
+//					obj = obj.replace("/null", "");
+//				}
+//
+//				insList.add(new Instance(sbj, property, obj, score, "Rule", stc));
+//
+//			}
+//		}
+
+		BufferedReader br5 = Files.newBufferedReader(Paths.get("DB2XB/data/pl_out/pl5-out"));
+
+		input = null;
+		while ((input = br5.readLine()) != null) {
+
+			StringTokenizer st = new StringTokenizer(input, "\t");
+
+			String subject = st.nextToken();
+			String property = st.nextToken();
+			String object = st.nextToken();
+			st.nextToken();
+			String score = st.nextToken();
+			String stc = st.nextToken();
+			// String stc = "";
+
+			String sbj = subject + "/" + Main.entityMap.get(subject);
+			sbj = sbj.replace("/null", "");
+
+			String obj = object + "/" + Main.entityMap.get(object);
+			obj = obj.replace("/null", "");
+
+			insList.add(new Instance(sbj, property, obj, score, "B2K+", stc));
+
+		}
+
+		BufferedReader br4 = Files.newBufferedReader(Paths.get("DB2XB/data/pl_out/pl4-out"));
+
+		while ((input = br4.readLine()) != null) {
+
+			StringTokenizer st = new StringTokenizer(input, "\t");
+
+			String subject = st.nextToken();
+			String property = st.nextToken();
+			String object = st.nextToken();
+			st.nextToken(); // dot
+			String score = st.nextToken();
+			String stc = st.nextToken();
+
+			String sbj = subject + "/" + Main.entityMap.get(subject);
+			sbj = sbj.replace("/null", "");
+
+			String obj = object + "/" + Main.entityMap.get(object);
+			obj = obj.replace("/null", "");
+
+			insList.add(new Instance(sbj, property, obj, score, "CNN", stc));
+
+		}
+
+		BufferedReader br8 = Files.newBufferedReader(Paths.get("DB2XB/data/pl_out/pl8-out"));
+
+		while ((input = br8.readLine()) != null) {
+
+			StringTokenizer st = new StringTokenizer(input, "\t");
+
+			String subject = st.nextToken();
+			String property = st.nextToken();
+			String object = st.nextToken();
+			st.nextToken(); // dot
+			String score = st.nextToken();
+			String stc = st.nextToken();
+
+			String sbj = subject + "/" + Main.entityMap.get(subject);
+			sbj = sbj.replace("/null", "");
+
+			String obj = object + "/" + Main.entityMap.get(object);
+			obj = obj.replace("/null", "");
+
+			insList.add(new Instance(sbj, property, obj, score, "RL", stc));
+
+		}
+
+		insList = Main.drc.filter(insList);
+
+		InstanceComparator comparator = new InstanceComparator();
+		Collections.sort(insList, comparator);
+
+		for (Instance ins : insList) {
+
+			JSONObject triple = new JSONObject();
+			triple.put("s", ins.getSbj());
+			triple.put("p", ins.getPred());
+			triple.put("o", ins.getObj());
+			triple.put("sco", ins.getScore());
+			triple.put("stc", ins.getStc());
+			triple.put("src", ins.getModule());
+
+			resultSet.add(triple);
+
+		}
+
+		JSONObject graphJSON = getGraphJSON(insList);
+		System.out.println(graphJSON);
+
+//		br2.close();
+		br4.close();
+		br5.close();
+		br8.close();
+
+		resultObj.put("triples", resultSet);
+		resultObj.put("graph", graphJSON);
+		return resultObj.toJSONString();
+	}
+
+	public JSONObject getGraphJSON(List<Instance> insList) {
+
+		JSONObject result = new JSONObject();
+		JSONArray nodes = new JSONArray();
+		JSONArray links = new JSONArray();
+
+		Map<String, Integer> nodeMap = new HashMap<>();
+		Set<String> nodeSet = new HashSet<>();
+
+		int id = 1;
+		int linkID = 1;
+
+		for (Instance ins : insList) {
+
+			JSONObject node = new JSONObject();
+			JSONObject link = new JSONObject();
+
+			String sbj = ins.getSbj();
+			String prd = ins.getPred();
+			String obj = ins.getObj();
+			double sco = Double.parseDouble(String.format("%.2f", ins.getScore()));
+
+			int sbjID = -1;
+			int objID = -1;
+
+			String kos = null;
+			String koo = null;
+
+			if (nodeMap.containsKey(sbj)) {
+				sbjID = nodeMap.get(sbj);
+			} else {
+				sbjID = id;
+				id++;
+				nodeMap.put(sbj, sbjID);
+
+				if (sbj.contains("/")) {
+					String[] ar = sbj.split("/");
+					node.put("name", (kos = ar[0]));
+					System.out.println("name1" + kos);
+					node.put("label", ar[1]);
+				} else {
+					node.put("name", (kos = sbj));
+					System.out.println("name2" + kos);
+					node.put("label", "");
+				}
+				node.put("id", sbjID);
+				nodes.add(node);
+			}
+
+			node = new JSONObject();
+
+			if (nodeMap.containsKey(obj)) {
+				objID = nodeMap.get(obj);
+			} else {
+				objID = id;
+				id++;
+				nodeMap.put(obj, objID);
+
+				if (obj.contains("/")) {
+					String[] ar = obj.split("/");
+					node.put("name", (koo = ar[0]));
+					System.out.println("name3" + koo);
+					node.put("label", ar[1]);
+				} else {
+					node.put("name", (koo = obj));
+					System.out.println("name4" + koo);
+					node.put("label", "");
+				}
+				node.put("id", objID);
+				nodes.add(node);
+			}
+
+			if (Main.tripleMap.containsKey(kos)) {
+
+				Set<String> poSet = Main.tripleMap.get(kos);
+				for (String po : poSet) {
+
+					node = new JSONObject();
+					link = new JSONObject();
+
+					String[] ar = po.split("\t");
+					String prd1 = ar[0];
+					String obj1 = ar[1];
+
+					int obj1ID = -1;
+
+					String obj1e = obj1 + "/" + Main.entityMap.get(obj1);
+
+					if (nodeMap.containsKey(obj1e)) {
+						obj1ID = nodeMap.get(obj1e);
+					} else {
+						obj1ID = id;
+						id++;
+						nodeMap.put(obj1e, obj1ID);
+						node.put("name", obj1);
+						System.out.println("name5" + obj1);
+						node.put("label", (Main.entityMap.containsKey(obj1)) ? Main.entityMap.get(obj1) : "");
+						node.put("id", obj1ID);
+						nodes.add(node);
+					}
+
+					link.put("type", prd1 + ":kbox");
+					link.put("rel", linkID + "_" + prd1);
+					link.put("source", sbjID);
+					link.put("target", obj1ID);
+
+					linkID++;
+
+					boolean isWritable = true;
+					Iterator<JSONObject> linkIter = links.iterator();
+					while (linkIter.hasNext()) {
+						JSONObject linkT = linkIter.next();
+						if (linkT.get("rel").equals(prd1) && linkT.get("source").equals(sbjID)
+								&& linkT.get("target").equals(obj1ID)) {
+							isWritable = false;
+							break;
+						}
+					}
+
+					if (isWritable) {
+						links.add(link);
+					}
+				}
+			}
+
+			if (Main.tripleMap.containsKey(koo)) {
+
+				Set<String> poSet = Main.tripleMap.get(koo);
+				for (String po : poSet) {
+
+					node = new JSONObject();
+					link = new JSONObject();
+
+					String[] ar = po.split("\t");
+					String prd1 = ar[0];
+					String obj1 = ar[1];
+
+					int obj1ID = -1;
+
+					String obj1e = obj1 + "/" + Main.entityMap.get(obj1);
+					System.out.println(obj1e);
+					if (nodeMap.containsKey(obj1e)) {
+						obj1ID = nodeMap.get(obj1e);
+					} else {
+						obj1ID = id;
+						id++;
+						nodeMap.put(obj1e, obj1ID);
+						node.put("name", obj1);
+						System.out.println("name6" + obj1);
+						node.put("label", (Main.entityMap.containsKey(obj1)) ? Main.entityMap.get(obj1) : "");
+						node.put("id", obj1ID);
+						nodes.add(node);
+					}
+
+					link.put("type", prd1 + ":kbox");
+					link.put("rel", linkID + "_" + prd1);
+					link.put("source", objID);
+					link.put("target", obj1ID);
+
+					linkID++;
+
+					boolean isWritable = true;
+					Iterator<JSONObject> linkIter = links.iterator();
+					while (linkIter.hasNext()) {
+						JSONObject linkT = linkIter.next();
+						if (linkT.get("rel").equals(prd1) && linkT.get("source").equals(objID)
+								&& linkT.get("target").equals(obj1ID)) {
+							isWritable = false;
+							break;
+						}
+					}
+
+					if (isWritable) {
+						links.add(link);
+					}
+
+				}
+			}
+
+			nodeSet.add(kos);
+			nodeSet.add(koo);
+
+			link = new JSONObject();
+
+			link.put("type", prd + ":" + sco);
+			link.put("rel", linkID + "_" + prd);
+			link.put("source", sbjID);
+			link.put("target", objID);
+
+			linkID++;
+
+			boolean isWritable = true;
+			Iterator<JSONObject> linkIter = links.iterator();
+			while (linkIter.hasNext()) {
+				JSONObject linkT = linkIter.next();
+				String linkTPrd = linkT.get("rel").toString();
+				linkTPrd = linkTPrd.substring(linkTPrd.indexOf("_") + 1, linkTPrd.length());
+//				System.out.println(linkTPrd);
+				if (linkTPrd.equals(prd) && linkT.get("source").equals(sbjID) && linkT.get("target").equals(objID)) {
+					isWritable = false;
+					break;
+				}
+			}
+
+			if (isWritable) {
+				links.add(link);
+			}
+
+		}
+
+		result.put("nodes", nodes);
+		result.put("links", links);
+
+		return result;
+	}
+
+	public static void main(String[] ar) throws Exception {
+
+		ReadTriples rt = new ReadTriples();
+		String result = rt.readAll("FALSE");
+		System.out.println(result);
+
+	}
+}

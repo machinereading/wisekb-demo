@@ -8,6 +8,8 @@ import java.net.UnknownHostException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.StringTokenizer;
 
 import javax.ws.rs.core.UriBuilder;
@@ -24,6 +26,7 @@ public class Main {
 	
 	public static HashMap<String, String> entityMap = new HashMap<>();
 	public static DomainRangeChecker drc;
+	public static HashMap<String, Set<String>> tripleMap = new HashMap<>();
 
 	private static URI getBaseURI() {
 
@@ -36,7 +39,7 @@ public class Main {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return UriBuilder.fromUri(IP).port(12345).build();
+		return UriBuilder.fromUri("http://wisekb.kaist.ac.kr/").port(2452).build();
 	}
 
 	public static final URI BASE_URI = getBaseURI();
@@ -59,7 +62,24 @@ public class Main {
 			entityMap.put(koe, ene);
 			
 		}
-		
+		br = Files.newBufferedReader(Paths.get("data/init.tsv")); // init_cat.tsv
+		while ((input = br.readLine()) != null) {
+			
+			StringTokenizer st = new StringTokenizer(input, "\t");
+			String sbj = st.nextToken();
+			String prd = st.nextToken();
+			String obj = st.nextToken();
+			String value = prd + "\t" + obj;
+			if(tripleMap.containsKey(sbj)) {
+				Set<String> valueSet = tripleMap.get(sbj);
+				valueSet.add(value);
+				tripleMap.put(sbj, valueSet);
+			} else {
+				Set<String> valueSet = new HashSet<>();
+				valueSet.add(value);
+				tripleMap.put(sbj, valueSet);
+			}
+		}
 	}
 
 	public static void main(String[] args) throws Exception {

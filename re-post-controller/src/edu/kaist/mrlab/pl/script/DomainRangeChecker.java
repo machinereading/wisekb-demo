@@ -23,6 +23,18 @@ public class DomainRangeChecker {
 
 	private Map<String, Set<String>> entityType = new HashMap<>();
 	private Map<String, PropertyDR> propertySet = new HashMap<>();
+	private Map<String, String> relationMap = new HashMap<>();
+
+	public void loadRelationTable() throws Exception {
+		BufferedReader br = Files.newBufferedReader(Paths.get("data/relation_table.txt"));
+		String input = null;
+		while ((input = br.readLine()) != null) {
+			StringTokenizer st = new StringTokenizer(input, "\t");
+			String sub = st.nextToken();
+			String sup = st.nextToken();
+			relationMap.put(sub, sup);
+                }
+        }
 
 	public void loadEntityType() throws Exception {
 		BufferedReader br = Files.newBufferedReader(Paths.get("data/entity_type_kbox"));
@@ -71,6 +83,10 @@ public class DomainRangeChecker {
 			String module = instance.getModule();
 			double score = instance.getScore();
 			String stc = instance.getStc();
+
+			if (relationMap.containsKey(pred)) {
+				pred = relationMap.get(pred);
+			}
 			
 			System.out.println("orig : " + sbj + "\t" + pred + "\t" + obj);
 			
@@ -92,9 +108,23 @@ public class DomainRangeChecker {
 			Set<String> sbjType = entityType.get(sbjStr);
 			Set<String> objType = entityType.get(objStr);
 
+			System.out.println(pred);
+			
+			if(!propertySet.containsKey(pred)) {
+				continue;
+			}
+
 			PropertyDR property = propertySet.get(pred);
 			String domain = property.getDomain();
 			String range = property.getRange();
+
+			// if(score > 0.6) {
+			// System.out.println(sbj + "\t" + pred + "\t" + obj + "\t" + dot + "\t" + score
+			// + "\t" + stc);
+			// }
+
+			// sbjType == null || domain == null ||
+			// objType == null || range == null ||
 			
 			System.out.println("d : " + domain);
 			System.out.println("r : " + range);
@@ -103,32 +133,35 @@ public class DomainRangeChecker {
 
 			boolean isPassable = true;
 
-			if (!domain.equals("null") && (sbjType != null && !sbjType.contains(domain))) {
-				isPassable = false;
-			}
+			//if (!domain.equals("null") && (sbjType != null && !sbjType.contains(domain))) {
+			//	isPassable = false;
+			//}
 
-			if (!range.equals("null") && (objType != null && !objType.contains(range))) {
-				isPassable = false;
-			}
+			//if (!range.equals("null") && (objType != null && !objType.contains(range))) {
+			//	isPassable = false;
+			//}
 
 			if (isPassable) {
 
-				if (sbjType == null) {
-					score = score * 0.8;
-				}
+				//if (sbjType == null) {
+				//	score = score * 0.8;
+				//}
 
-				if (objType == null) {
-					score = score * 0.8;
-				}
+				//if (objType == null) {
+				//	score = score * 0.8;
+				//}
 
-				if (domain.equals("null")) {
-					score = score * 0.8;
-				}
+				//if (domain.equals("null")) {
+				//	score = score * 0.8;
+				//}
 
-				if (range.equals("null")) {
-					score = score * 0.8;
+				//if (range.equals("null")) {
+				//	score = score * 0.8;
+				//}
+					
+				if(score < 0.6) {
+					continue;
 				}
-
 				
 				results.add(new Instance(sbj, pred, obj, String.valueOf(score), module, stc));
 				

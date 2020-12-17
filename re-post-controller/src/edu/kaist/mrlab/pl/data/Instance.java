@@ -7,6 +7,12 @@ public class Instance {
 	double score;
 	String module;
 	String stc;
+	
+	public Instance(String sbj, String pred, String obj) {
+		this.sbj = sbj;
+		this.pred = pred;
+		this.obj = obj;
+	}
 
 	public Instance(String sbj, String pred, String obj, String score, String module, String stc) {
 		this.sbj = sbj;

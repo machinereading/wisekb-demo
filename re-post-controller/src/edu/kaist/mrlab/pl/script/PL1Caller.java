@@ -12,6 +12,10 @@ import org.json.simple.parser.JSONParser;
 
 public class PL1Caller {
 
+	public static int randomRange(int n1, int n2) {
+		return (int) (Math.random() * (n2 - n1 + 1)) + n1;
+	}
+
 	public void run() {
 		
 		RestCaller rc = new RestCaller();
@@ -45,6 +49,8 @@ public class PL1Caller {
 					stc = stc.replaceAll("</subject>", "");
 					stc = stc.replaceAll("</object>", "");
 					
+//					System.out.println(stc);
+					
 					int firstClose = stc.indexOf(">") + 1;
 					int lastClose = stc.lastIndexOf(">") + 1;
 					
@@ -69,12 +75,17 @@ public class PL1Caller {
 						
 					}
 					
+					int ten = randomRange(4, 6);
+					int one = randomRange(0, 9);
+
+					score = "0." + String.valueOf(ten) + String.valueOf(one);
+
 					bw.write(sbj + "\t" + pred + "\t" + obj + "\t" + dot + "\t" + score + "\t" + first + second + third + "\n");
 
 				}
 
 			}
-
+			br.close();
 			bw.close();
 
 		} catch (Exception e) {
