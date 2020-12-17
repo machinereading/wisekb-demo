@@ -27,3 +27,6 @@ Korean Knowledge Extraction System Demo
 
 ## Acknowledgement
 This work was supported by Institute for Information & communications Technology Promotion(IITP) grant funded by the Korea government(MSIT) (2013-0-00109, WiseKB: Big data based self-evolving knowledge base and reasoning platform)
+
+## Citation
+Nam, Sangha, et al. "A Korean Knowledge Extraction System for Enriching a KBox." Proceedings of the 27th International Conference on Computational Linguistics: System Demonstrations. 2018.
