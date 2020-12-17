@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title> </title>
+    <title></title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -13,6 +13,8 @@
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="dist/css/jumbotron.css" rel="stylesheet">
+
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]>
@@ -27,27 +29,38 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>-->
+
     <![endif]-->
-    <link href="css/tooltips.css" rel="stylesheet">
+    <!--<link href="css/tooltips.css" rel="stylesheet">-->
+    <link href="css/tooltips_v1.css" rel="stylesheet">
+    <link href="css/dropbtn.css" rel="stylesheet">
+    <link href="css/textBox.css" rel="stylesheet">
+    <link href="css/graph.css" rel="stylesheet">
+
 </head>
 <style type="text/css"></style>
 <body>
 <script language="text/javascript"></script>
 
 <div class="row wrapperDiv">
-    <div id="page_head">
-        <h1><a class="" href="#"><img src="./img/swrc.png" vspace="10" hspace="10" align="left" width="208" height="80"></a>
-        Machine Reading / Demo<p><p>
-        WiseKB-WP5: Knowledge Learning/Extraction from the Web</h1>
+    <div id="page_head" style="height: 10%;">
+        <h1><a class="" href="#"><img src="./img/wisekb.PNG" vspace="10" hspace="10" align="left" width=auto height="80"></a>
+            Knowledge Extraction
+            <p><p>
+                <!--<p>-->
+            <!--<p>-->
+                지식 추출</h1>
     </div>
-    <br/>
+
     <div class="col-lg-12" style="height: 90%;">
         <!--<div id="output_head" style="display: none;"><h2><b>지식 추출 결과</b></h2></div>-->
-        <div id="output_head" style="display: none;"><h2><b>Extracted Triples</b></h2></div>
+        <div id="output_head" style="display: none;"><h2><b>Extracted Knowledge</b></h2></div>
         <div id="div_output"
-             style=" font-size:21pt; min-height: 90%; max-height: 90%; width: 99%; border: solid black 0.5pt; visibility: hidden; display: flex; padding: 0.5%;">
+             style="font-size:21pt; min-height: 80%; max-height: 85%; width: 100%; border: solid black 0.5pt; visibility: hidden; display: flex; padding: 0.5%; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);">
             <div class="pre-scrollable" id="div_listoutput"
-                 style="font-size:21pt; max-height: 75%; width: 40%; /*border: solid palegreen 0.1pt;*/ display: inline-block; padding: 5px;">
+                 style="font-size:21pt; max-height: 70%; width: 50%; /*border: solid palegreen 0.1pt;*/ display: inline-block; padding: 5px;">
                 <div id="div_ELoutput" style="font-size:21pt; /*border: solid palegreen 0.1pt; */padding: 5px;">
                 </div>
                 <div style="border: solid black 0.5pt;"></div>
@@ -55,22 +68,64 @@
                 </div>
             </div>
             <div id="div_textoutput"
-                 style="font-size:21pt; height: auto; width: 60%;/* border: solid green 0.5pt; */display: inline-block; padding: 25px;">
+                 style="font-size:21pt; height: auto; width: 50%;/* border: solid green 0.5pt; */display: inline-block; padding: 25px;">
             </div>
+
         </div>
+        <div>
+            <input type="button" id="btn_modify" class="btn btn-primary" value="Modify Property"
+                   style="margin-top: 20px; width : 15%; height: 10%; display: none;" onclick="open_child_window()">
+            <input type="button" id="btn_graph" class="btn btn-primary" value="Graph Extraction"
+                   style="margin-top: 20px; width : 15%; height: 10%; display: none;">
+            <input type="button" id="btn_kbox" class="btn btn-primary" value="Upload Kbox"
+                   style="margin-top: 20px; width : 15%; height: 10%; display: none;">
+        </div>
+        <div id="graph_head" style="display: none;"><h2><b>Knowledge Graph</b></h2></div>
+        <div id="div_graph"
+             style="height: 90%; max-height: 100%; display: none; padding: 0.5%;">
+            <div id="cy" style="width: 100%; border: 1px solid; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);"></div>
+        </div>
+
+<!--        <div id="EXT_NLG_head" style="display: none;"><h2><b>Extractive Summarized Text</b></h2></div>-->
+<!--        <div id="div_EXT_NLG"-->
+<!--             style="font-size:21pt; border: 1px solid; max-height: 70%; display: none; padding: 0.5%; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);">-->
+<!--        </div>-->
+<!--        <div id="ABS_NLG_head" style="display: none;"><h2><b>Abstractive Summarized Text</b></h2></div>-->
+<!--        <div id="div_ABS_NLG"-->
+<!--             style="font-size:21pt; border: 1px solid; max-height: 70%; display: none; padding: 0.5%; box-shadow:0 5px 10px rgba(0, 0, 0, 0.1);">-->
+<!--        </div>-->
+<!--        -->
         <!--<div id="input_head"><h2><b>분석 할 한국어 텍스트를 입력하고 아래의 지식 추출 버튼을 클릭 하십시오.</b></h2></div>-->
-        <div id="input_head"><h2><b>Input Text</b></h2></div>
+        <div id="input_head" style="padding: 15px">
+            <h2><b>Input Text</b>
+                <div style="height: 50px;float: right">
+                    <select id="Ultra" onchange="exampleRun()">
+                        <!--Call run() function-->
+                        <option value="0">어니스트 헤밍웨이 (위키피디아-혼합형)</option>
+                        <!--<option value="1">월트 디즈니 (위키피디아-문단형)</option>-->
+                        <option value="1">가즈오 이시구로 (위키피디아-혼합형)</option>
+                        <option value="2">노벨 (위키피디아-문단형)</option>
+                        <option value="3">스포츠 도메인 (뉴스-문단형)</option>
+                        <!--<option value="4">Example4</option>-->
+                    </select>
+                    <label>
+                        <input type="checkbox" name="chk_info" id="KV" value="KV" checked="checked">
+                    </label>KV
+                </div>
+            </h2>
+        </div>
 
         <textarea id="txta_input"
-                  style="border: solid black 0.5pt; height: 80%; width: 99%; font-size: 21pt; padding: 25px"
-                  placeholder="텍스트를 입력해 주세요.">어니스트 헤밍웨이는 미국의 소설가이자 저널리스트이다. 1854년 노벨 문학상을 수상하였다. 헤밍웨이는 1899년 7월 21일 일리노이주에서 태어났다. 헤밍웨이는 풀린 파이퍼와 이혼한 뒤 마사 겔혼과 재혼하였다. 1961년 아이다호 주에서 엽총으로 62세의 나이에 자살했다.
+                  style="border: solid black 0.5pt; height: 80%; width: 100%; font-size: 21pt; padding: 25px"
+                  placeholder="텍스트를 입력해 주세요.">어니스트 헤밍웨이는 미국의 소설가이자 저널리스트이다. 1854년 노벨 문학상을 수상하였다. 헤밍웨이는 1899년 7월 21일 일리노이주에서 태어났다. 헤밍웨이는 파이퍼와 이혼한 뒤 마사 겔혼과 재혼하였다. 1961년 아이다호 주에서 62세의 나이에 자살했다.
 
-- 1926년 《해는 또다시 떠오른다》 The Sun Also Rises.
-- 1929년 《무기여 잘 있거라》 A Farewell to Arms.
-- 1940년 《누구를 위하여 종은 울리나》For Whom the Bell Tolls.
-- 1950년 《강 건너 숲속으로》 Across the River and Into the Trees.
-- 1952년 《노인과 바다》 The Old Man and the Sea.
+
 </textarea>
+        <!-- - 1926년 《해는 또다시 떠오른다》 The Sun Also Rises.-->
+        <!-- - 1929년 《무기여 잘 있거라》 A Farewell to Arms.-->
+        <!-- - 1940년 《누구를 위하여 종은 울리나》 For whom the bell tolls.-->
+        <!-- - 1950년 《강 건너 숲속으로》 Across the River and Into the Trees.-->
+        <!-- - 1952년 《노인과 바다》 The Old Man and the Sea.-->
         <div style="margin-bottom: 10px">
             <!--<input type="button" id="btn_submit" class="btn btn-primary" value="지식추출"-->
             <!--style="argin-top: 10px; width : 15%; height: 10%;">-->
@@ -80,6 +135,7 @@
                    style="margin-top: 10px; width : 15%; height: 10%;">
             <input type="button" id="btn_back" class="btn btn-primary" value="Back"
                    style="margin-top: 10px; width : 15%; height: 10%; display: none;">
+            <!--<h4><a href="old_list.html" style="float: right">Old Version Links</a></h4>-->
         </div>
     </div>
 </div>
@@ -93,13 +149,20 @@
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="dist/js/bootstrap.min.js"></script>
 
-<script src="js/open.js" charset="UTF-8"></script>
+<!--<script src="js/open2.js" charset="UTF-8"></script>-->
+<!--<script src="js/open3.js" charset="UTF-8"></script>-->
+<script src="js/open4.js" charset="UTF-8"></script>
+<script src="js/ontology.js" charset="UTF-8"></script>
 <script src="js/sample.js" charset="UTF-8"></script>
+<script src="js/randomColor.js" charset="UTF-8"></script>
+<!--<script src="js/drawGraph.js"></script>-->
+<!--<script src="js/cytoscape.js"></script>-->
 <script src="js/conn.js" charset="UTF-8"></script>
+<script src="js/vis-network.js" charset="UTF-8"></script>
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <script src="js/local_data.js" charset="UTF-8"></script>
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-<script src="js/jquery.js" charset="UTF-8"></script>
+<!--<script src="js/jquery.js" charset="UTF-8"></script>-->
 
 <div id="div_ajax_load_image"></div>
 

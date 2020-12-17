@@ -19947,6991 +19947,2087 @@ var pl_5 = {
 };
 var pl_list = [pl_1, pl_2, pl_3, pl_4, pl_5];
 
+var relation_list = [
+    'NA',
+    'associatedAct',
+    'administrativeDistrict',
+    'isPartOf',
+    'foundedBy',
+    'commandStructure',
+    'battle',
+    'influenced',
+    'location',
+    'residence',
+    'president',
+    'division',
+    'associatedMusicalArtist',
+    'recordedIn',
+    'spouse',
+    'influencedBy',
+    'operatingSystem',
+    'ground',
+    'religion',
+    'notableWork',
+    'managerClub',
+    'publisher',
+    'writer',
+    'starring',
+    'owningOrganisation',
+    'era',
+    'youthClub',
+    'isPartOfMilitaryConflict',
+    'servingRailwayLine',
+    'populationPlace',
+    'developer',
+    'regionServed',
+    'league',
+    'musicalBand',
+    'genre',
+    'sourceMountain',
+    'formerBandMember',
+    'sourcePlace',
+    'producer',
+    'classP',
+    'occupation',
+    'product',
+    'locatedInArea',
+    'leader',
+    'musicalArtist',
+    'department',
+    'routeStart',
+    'subsequentWork',
+    'hometown',
+    'owner',
+    'basedOn',
+    'region',
+    'album',
+    'headquarter',
+    'locationCountry',
+    'artist',
+    'creativeDirector',
+    'currentMember',
+    'routeEnd',
+    'affiliation',
+    'previousWork',
+    'country',
+    'keyPerson',
+    'genus',
+    'position',
+    'parentCompany',
+    'field',
+    'knownFor',
+    'composer',
+    'largestCity',
+    'dynasty',
+    'author',
+    'child',
+    'computingPlatform',
+    'locationCity',
+    'parent',
+    'team',
+    'commander',
+    'language',
+    'director',
+    'ethnicGroup',
+    'tenant',
+    'birthPlace',
+    'garrison',
+    'city',
+    'address',
+    'industry',
+    'languageFamily',
+    'club',
+    'recordLabel',
+    'part',
+    'spokenIn',
+    'family',
+    'primeMinister',
+    'opponent',
+    'pastMember',
+    'award',
+    'operatedBy',
+    'capital',
+    'distributor',
+    'mother',
+    'ideology',
+    'party',
+    'officialLanguage',
+    'successor',
+    'state',
+    'stateOfOrigin',
+    'title',
+    'manufacturer',
+    'leaderName',
+    'mouthPlace',
+    'restingPlace',
+    'associatedBand',
+    'subsidiary',
+    'kingdom',
+    'deathPlace',
+    'currentTeam',
+    'colour',
+    'nationality',
+    'type',
+    'province',
+    'nationalTeam',
+    'relative',
+    'debutTeam',
+    'order',
+    'result',
+    'foundationPlace',
+    'predecessor',
+    'bandMember',
+    'place',
+    'channel',
+    'activeYearsStartYear',
+    'father',
+    'instrument',
+    'homeStadium',
+    'parentOrganisation',
+    'operator',
+    'phylum',
+    'education',
+    'combatant',
+    'related',
+    'hubAirport',
+    'vicePresident'
+];
+
 var output_1 = {
     "EL": {
         "sentence": [
             {
-                "phrase_dependency": [
-                    {
-                        "weight": 0,
-                        "end": 1,
-                        "key_begin": 0,
-                        "id": 0,
-                        "label": "NP_SBJ",
-                        "text": "어니스트 헤밍웨이는",
-                        "head_phrase": 1,
-                        "begin": 0,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 3,
-                        "key_begin": 2,
-                        "id": 1,
-                        "label": "S",
-                        "text": "P#0@SBJ는 미국의 소설가이자",
-                        "head_phrase": 2,
-                        "begin": 0,
-                        "sub_phrase": [
-                            0
-                        ],
-                        "element": [
-                            {
-                                "end": 6,
-                                "ne_type": "",
-                                "text": "미국의 소설가",
-                                "label": "NP",
-                                "begin": 3
-                            },
-                            {
-                                "end": 8,
-                                "ne_type": "",
-                                "text": "이자",
-                                "label": "VP",
-                                "begin": 7
-                            }
-                        ]
-                    },
-                    {
-                        "weight": 0,
-                        "end": 4,
-                        "key_begin": 4,
-                        "id": 2,
-                        "label": "S",
-                        "text": "S#1@S자 저널리스트이다.",
-                        "head_phrase": -1,
-                        "begin": 0,
-                        "sub_phrase": [
-                            1
-                        ],
-                        "element": [
-                            {
-                                "end": 9,
-                                "ne_type": "CV_OCCUPATION",
-                                "text": "저널리스트",
-                                "label": "NP",
-                                "begin": 9
-                            },
-                            {
-                                "end": 12,
-                                "ne_type": "",
-                                "text": "이다.",
-                                "label": "VP",
-                                "begin": 10
-                            }
-                        ]
-                    }
-                ],
-                "dependency": [
-                    {
-                        "head": 1,
-                        "mod": [],
-                        "weight": 0.701795,
-                        "id": 0,
-                        "text": "어니스트",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 3,
-                        "mod": [
-                            0
-                        ],
-                        "weight": 0.698229,
-                        "id": 1,
-                        "text": "헤밍웨이는",
-                        "label": "NP_SBJ"
-                    },
-                    {
-                        "head": 3,
-                        "mod": [],
-                        "weight": 0.820881,
-                        "id": 2,
-                        "text": "미국의",
-                        "label": "NP_MOD"
-                    },
-                    {
-                        "head": 4,
-                        "mod": [
-                            1,
-                            2
-                        ],
-                        "weight": 0.697065,
-                        "id": 3,
-                        "text": "소설가이자",
-                        "label": "VNP"
-                    },
-                    {
-                        "head": -1,
-                        "mod": [
-                            3
-                        ],
-                        "weight": 0.22684,
-                        "id": 4,
-                        "text": "저널리스트이다.",
-                        "label": "VNP"
-                    }
-                ],
-                "ZA": [],
-                "WSD": [
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 0,
-                        "id": 0,
-                        "text": "어니스트",
-                        "position": 0,
-                        "type": "NNP",
-                        "begin": 0
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 1,
-                        "id": 1,
-                        "text": "헤밍웨이",
-                        "position": 13,
-                        "type": "NNP",
-                        "begin": 1
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 2,
-                        "id": 2,
-                        "text": "는",
-                        "position": 25,
-                        "type": "JX",
-                        "begin": 2
-                    },
-                    {
-                        "scode": "03",
-                        "weight": 4.4,
-                        "end": 3,
-                        "id": 3,
-                        "text": "미국",
-                        "position": 29,
-                        "type": "NNP",
-                        "begin": 3
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 4,
-                        "id": 4,
-                        "text": "의",
-                        "position": 35,
-                        "type": "JKG",
-                        "begin": 4
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 6,
-                        "id": 5,
-                        "text": "소설가",
-                        "position": 39,
-                        "type": "NNG",
-                        "begin": 5
-                    },
-                    {
-                        "scode": "01",
-                        "weight": 1,
-                        "end": 7,
-                        "id": 6,
-                        "text": "이",
-                        "position": 48,
-                        "type": "VCP",
-                        "begin": 7
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 8,
-                        "id": 7,
-                        "text": "자",
-                        "position": 51,
-                        "type": "EC",
-                        "begin": 8
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 9,
-                        "id": 8,
-                        "text": "저널리스트",
-                        "position": 55,
-                        "type": "NNG",
-                        "begin": 9
-                    },
-                    {
-                        "scode": "01",
-                        "weight": 1,
-                        "end": 10,
-                        "id": 9,
-                        "text": "이",
-                        "position": 70,
-                        "type": "VCP",
-                        "begin": 10
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 11,
-                        "id": 10,
-                        "text": "다",
-                        "position": 73,
-                        "type": "EF",
-                        "begin": 11
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 12,
-                        "id": 11,
-                        "text": ".",
-                        "position": 76,
-                        "type": "SF",
-                        "begin": 12
-                    }
-                ],
-                "chunk": [],
-                "reserve_str": "",
-                "SRL": [],
-                "morp_eval": [
-                    {
-                        "result": "어니스트/NNG",
-                        "word_id": 0,
-                        "m_end": 0,
-                        "id": 0,
-                        "target": "어니스트",
-                        "m_begin": 0
-                    },
-                    {
-                        "result": "헤밍웨이/NNG+는/JX",
-                        "word_id": 1,
-                        "m_end": 2,
-                        "id": 1,
-                        "target": "헤밍웨이는",
-                        "m_begin": 1
-                    },
-                    {
-                        "result": "미국/NNG+의/JKG",
-                        "word_id": 2,
-                        "m_end": 4,
-                        "id": 2,
-                        "target": "미국의",
-                        "m_begin": 3
-                    },
-                    {
-                        "result": "소설가/NNG+이/VCP+자/EC",
-                        "word_id": 3,
-                        "m_end": 8,
-                        "id": 3,
-                        "target": "소설가이자",
-                        "m_begin": 5
-                    },
-                    {
-                        "result": "저널리스트/NNG+이/VCP+다/EF+./SF",
-                        "word_id": 4,
-                        "m_end": 12,
-                        "id": 4,
-                        "target": "저널리스트이다.",
-                        "m_begin": 9
-                    }
-                ],
-                "SA": [],
-                "relation": [],
+                "text": "어니스트 헤밍웨이는 미국의 소설가이자 저널리스트이다.",
                 "ELU": {
                     "entities": [
                         {
-                            "indirect": 0,
-                            "confidence": 0.9908202478286774,
-                            "link": 31,
-                            "end_offset": 9,
-                            "source": "ELU",
-                            "type": [
-                                "http://dbpedia.org/ontology/Agent",
-                                "http://dbpedia.org/ontology/Person",
-                                "http://wikidata.dbpedia.org/resource/Q215627",
-                                "http://wikidata.dbpedia.org/resource/Q5",
-                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
-                                "http://xmlns.com/foaf/0.1/Person",
-                                "http://www.wikidata.org/entity/Q36180",
-                                "http://dbpedia.org/ontology/Writer",
-                                "http://www.w3.org/2002/07/owl#Thing",
-                                "http://www.wikidata.org/entity/Q215627",
-                                "http://schema.org/Person",
-                                "http://www.wikidata.org/entity/Q5",
-                                "http://dbpedia.org/ontology/Artist",
-                                "http://www.wikidata.org/entity/Q24229398",
-                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"
-                            ],
-                            "uri": "http://ko.dbpedia.org/resource/어니스트_헤밍웨이",
-                            "relation": 27,
-                            "score": 1.8808135922807914,
+                            "score": 0,
+                            "confidence": 1,
                             "en_entity": "Ernest_Hemingway",
-                            "text": "어니스트헤밍웨이",
+                            "predicted_coref_index": 1,
+                            "end_offset": 9,
+                            "ne_type": "PS_NAME",
+                            "text": "어니스트 헤밍웨이",
+                            "source": "ELU",
                             "start_offset": 0,
-                            "id": 2035
+                            "type": [
+                                "http://wikidata.dbpedia.org/resource/Q5",
+                                "http://dbpedia.org/ontology/Writer",
+                                "http://xmlns.com/foaf/0.1/Person",
+                                "http://schema.org/Person",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson",
+                                "http://dbpedia.org/ontology/Artist",
+                                "http://wikidata.dbpedia.org/resource/Q215627",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+                                "http://www.wikidata.org/entity/Q24229398",
+                                "http://www.wikidata.org/entity/Q5",
+                                "http://www.wikidata.org/entity/Q215627",
+                                "http://dbpedia.org/ontology/Person",
+                                "http://www.wikidata.org/entity/Q36180",
+                                "http://www.w3.org/2002/07/owl#Thing",
+                                "http://dbpedia.org/ontology/Agent"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/어니스트_헤밍웨이"
                         },
                         {
-                            "indirect": 0,
-                            "confidence": 1.031011676951652,
-                            "link": 11,
+                            "score": 1.9431076049804688,
+                            "confidence": 0.49754760698794315,
+                            "en_entity": "United_States",
+                            "predicted_coref_index": -1,
                             "end_offset": 13,
+                            "ne_type": "LCP_COUNTRY",
+                            "text": "미국",
                             "source": "ELU",
+                            "start_offset": 11,
                             "type": [
+                                "http://dbpedia.org/ontology/Place",
                                 "http://schema.org/Place",
                                 "http://dbpedia.org/ontology/Wikidata:Q532",
-                                "http://dbpedia.org/ontology/PopulatedPlace",
-                                "http://dbpedia.org/ontology/Place",
+                                "http://schema.org/Country",
                                 "http://dbpedia.org/ontology/Country",
-                                "http://www.ontologydesignpatterns.org/ont/d0.owl#Location",
-                                "http://schema.org/Country"
+                                "http://dbpedia.org/ontology/PopulatedPlace",
+                                "http://www.ontologydesignpatterns.org/ont/d0.owl#Location"
                             ],
-                            "uri": "http://ko.dbpedia.org/resource/미국",
-                            "relation": 3,
-                            "score": 4.473720477419829,
-                            "en_entity": "United_States",
-                            "text": "미국",
-                            "start_offset": 11,
-                            "id": 2037
+                            "uri": "http://kbox.kaist.ac.kr/resource/미국"
                         },
                         {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
+                            "score": 0.3367321193218231,
+                            "confidence": 0.44835558888813665,
                             "en_entity": "Novelist",
-                            "link": 0,
+                            "predicted_coref_index": -1,
                             "end_offset": 18,
+                            "ne_type": "CV_OCCUPATION",
                             "text": "소설가",
+                            "source": "ELU",
                             "start_offset": 15,
-                            "source": "NER",
-                            "type": "CV_OCCUPATION",
-                            "uri": "http://ko.dbpedia.org/resource/소설가",
-                            "relation": 0
+                            "type": [
+                                "http://dbpedia.org/ontology/PersonFunction",
+                                "http://dbpedia.org/ontology/Profession"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/소설가"
                         },
                         {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
+                            "score": 3.8509721755981445,
+                            "confidence": 0.7133165262703055,
                             "en_entity": "Journalist",
-                            "link": 0,
+                            "predicted_coref_index": -1,
                             "end_offset": 26,
+                            "ne_type": "CV_OCCUPATION",
                             "text": "저널리스트",
+                            "source": "ELU",
                             "start_offset": 21,
-                            "source": "NER",
-                            "type": "CV_OCCUPATION",
-                            "uri": "http://ko.dbpedia.org/resource/저널리스트",
-                            "relation": 0
+                            "type": [
+                                "http://dbpedia.org/ontology/PersonFunction",
+                                "http://dbpedia.org/ontology/Profession"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/저널리스트"
                         }
                     ],
                     "d_entities": [],
                     "merge": [
                         {
-                            "indirect": 0,
-                            "confidence": 0.9908202478286774,
-                            "link": 31,
+                            "score": 0,
+                            "confidence": 1,
+                            "en_entity": "Ernest_Hemingway",
+                            "predicted_coref_index": 1,
                             "end_offset": 9,
+                            "ne_type": "PS_NAME",
+                            "text": "어니스트 헤밍웨이",
                             "source": "ELU",
-                            "type": [
-                                "http://dbpedia.org/ontology/Agent",
-                                "http://dbpedia.org/ontology/Person",
-                                "http://wikidata.dbpedia.org/resource/Q215627",
-                                "http://wikidata.dbpedia.org/resource/Q5",
-                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
-                                "http://xmlns.com/foaf/0.1/Person",
-                                "http://www.wikidata.org/entity/Q36180",
-                                "http://dbpedia.org/ontology/Writer",
-                                "http://www.w3.org/2002/07/owl#Thing",
-                                "http://www.wikidata.org/entity/Q215627",
-                                "http://schema.org/Person",
-                                "http://www.wikidata.org/entity/Q5",
-                                "http://dbpedia.org/ontology/Artist",
-                                "http://www.wikidata.org/entity/Q24229398",
-                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"
-                            ],
-                            "uri": "http://ko.dbpedia.org/resource/어니스트_헤밍웨이",
-                            "relation": 27,
-                            "score": 1.8808135922807914,
-                            "en_entity": "Ernest_Hemingway",
-                            "text": "어니스트헤밍웨이",
                             "start_offset": 0,
-                            "id": 2035
+                            "type": [
+                                "http://wikidata.dbpedia.org/resource/Q5",
+                                "http://dbpedia.org/ontology/Writer",
+                                "http://xmlns.com/foaf/0.1/Person",
+                                "http://schema.org/Person",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson",
+                                "http://dbpedia.org/ontology/Artist",
+                                "http://wikidata.dbpedia.org/resource/Q215627",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+                                "http://www.wikidata.org/entity/Q24229398",
+                                "http://www.wikidata.org/entity/Q5",
+                                "http://www.wikidata.org/entity/Q215627",
+                                "http://dbpedia.org/ontology/Person",
+                                "http://www.wikidata.org/entity/Q36180",
+                                "http://www.w3.org/2002/07/owl#Thing",
+                                "http://dbpedia.org/ontology/Agent"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/어니스트_헤밍웨이"
                         },
                         {
-                            "indirect": 0,
-                            "confidence": 1.031011676951652,
-                            "link": 11,
-                            "end_offset": 13,
-                            "source": "ELU",
-                            "type": [
-                                "http://schema.org/Place",
-                                "http://dbpedia.org/ontology/Wikidata:Q532",
-                                "http://dbpedia.org/ontology/PopulatedPlace",
-                                "http://dbpedia.org/ontology/Place",
-                                "http://dbpedia.org/ontology/Country",
-                                "http://www.ontologydesignpatterns.org/ont/d0.owl#Location",
-                                "http://schema.org/Country"
-                            ],
-                            "uri": "http://ko.dbpedia.org/resource/미국",
-                            "relation": 3,
-                            "score": 4.473720477419829,
+                            "score": 1.9431076049804688,
+                            "confidence": 0.49754760698794315,
                             "en_entity": "United_States",
+                            "predicted_coref_index": -1,
+                            "end_offset": 13,
+                            "ne_type": "LCP_COUNTRY",
                             "text": "미국",
+                            "source": "ELU",
                             "start_offset": 11,
-                            "id": 2037
+                            "type": [
+                                "http://dbpedia.org/ontology/Place",
+                                "http://schema.org/Place",
+                                "http://dbpedia.org/ontology/Wikidata:Q532",
+                                "http://schema.org/Country",
+                                "http://dbpedia.org/ontology/Country",
+                                "http://dbpedia.org/ontology/PopulatedPlace",
+                                "http://www.ontologydesignpatterns.org/ont/d0.owl#Location"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/미국"
                         },
                         {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
+                            "score": 0.3367321193218231,
+                            "confidence": 0.44835558888813665,
                             "en_entity": "Novelist",
-                            "link": 0,
+                            "predicted_coref_index": -1,
                             "end_offset": 18,
+                            "ne_type": "CV_OCCUPATION",
                             "text": "소설가",
+                            "source": "ELU",
                             "start_offset": 15,
-                            "source": "NER",
-                            "type": "CV_OCCUPATION",
-                            "uri": "http://ko.dbpedia.org/resource/소설가",
-                            "relation": 0
+                            "type": [
+                                "http://dbpedia.org/ontology/PersonFunction",
+                                "http://dbpedia.org/ontology/Profession"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/소설가"
                         },
                         {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
+                            "score": 3.8509721755981445,
+                            "confidence": 0.7133165262703055,
                             "en_entity": "Journalist",
-                            "link": 0,
+                            "predicted_coref_index": -1,
                             "end_offset": 26,
+                            "ne_type": "CV_OCCUPATION",
                             "text": "저널리스트",
+                            "source": "ELU",
                             "start_offset": 21,
-                            "source": "NER",
-                            "type": "CV_OCCUPATION",
-                            "uri": "http://ko.dbpedia.org/resource/저널리스트",
-                            "relation": 0
+                            "type": [
+                                "http://dbpedia.org/ontology/PersonFunction",
+                                "http://dbpedia.org/ontology/Profession"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/저널리스트"
                         }
                     ]
-                },
-                "morp": [
-                    {
-                        "lemma": "어니스트",
-                        "weight": 0.5,
-                        "id": 0,
-                        "position": 0,
-                        "type": "NNP"
-                    },
-                    {
-                        "lemma": "헤밍웨이",
-                        "weight": 0.9,
-                        "id": 1,
-                        "position": 13,
-                        "type": "NNP"
-                    },
-                    {
-                        "lemma": "는",
-                        "weight": 0.0332677,
-                        "id": 2,
-                        "position": 25,
-                        "type": "JX"
-                    },
-                    {
-                        "lemma": "미국",
-                        "weight": 0.0448659,
-                        "id": 3,
-                        "position": 29,
-                        "type": "NNP"
-                    },
-                    {
-                        "lemma": "의",
-                        "weight": 0.0987295,
-                        "id": 4,
-                        "position": 35,
-                        "type": "JKG"
-                    },
-                    {
-                        "lemma": "소설",
-                        "weight": 0.9,
-                        "id": 5,
-                        "position": 39,
-                        "type": "NNG"
-                    },
-                    {
-                        "lemma": "가",
-                        "weight": 0.000115417,
-                        "id": 6,
-                        "position": 45,
-                        "type": "XSN"
-                    },
-                    {
-                        "lemma": "이",
-                        "weight": 0.0165001,
-                        "id": 7,
-                        "position": 48,
-                        "type": "VCP"
-                    },
-                    {
-                        "lemma": "자",
-                        "weight": 0.109096,
-                        "id": 8,
-                        "position": 51,
-                        "type": "EC"
-                    },
-                    {
-                        "lemma": "저널리스트",
-                        "weight": 0.9,
-                        "id": 9,
-                        "position": 55,
-                        "type": "NNG"
-                    },
-                    {
-                        "lemma": "이",
-                        "weight": 0.0177525,
-                        "id": 10,
-                        "position": 70,
-                        "type": "VCP"
-                    },
-                    {
-                        "lemma": "다",
-                        "weight": 0.353579,
-                        "id": 11,
-                        "position": 73,
-                        "type": "EF"
-                    },
-                    {
-                        "lemma": ".",
-                        "weight": 1,
-                        "id": 12,
-                        "position": 76,
-                        "type": "SF"
-                    }
-                ],
-                "tagged": "[어니스트_헤밍웨이] 는 [미국] 의 [소설가] 이자 [저널리스트] 이다.",
-                "NE": [
-                    {
-                        "weight": 0.298913,
-                        "end": 1,
-                        "id": 0,
-                        "text": "어니스트 헤밍웨이",
-                        "type": "PS_NAME",
-                        "begin": 0,
-                        "common_noun": 0
-                    },
-                    {
-                        "weight": 0.46713,
-                        "end": 3,
-                        "id": 1,
-                        "text": "미국",
-                        "type": "LCP_COUNTRY",
-                        "begin": 3,
-                        "common_noun": 0
-                    },
-                    {
-                        "weight": 0.645945,
-                        "end": 6,
-                        "id": 2,
-                        "text": "소설가",
-                        "type": "CV_OCCUPATION",
-                        "begin": 5,
-                        "common_noun": 0
-                    },
-                    {
-                        "weight": 0.420157,
-                        "end": 9,
-                        "id": 3,
-                        "text": "저널리스트",
-                        "type": "CV_OCCUPATION",
-                        "begin": 9,
-                        "common_noun": 0
-                    }
-                ],
-                "id": 0,
-                "text": "어니스트 헤밍웨이는 미국의 소설가이자 저널리스트이다.",
-                "word": [
-                    {
-                        "end": 0,
-                        "id": 0,
-                        "text": "어니스트",
-                        "type": "",
-                        "begin": 0
-                    },
-                    {
-                        "end": 2,
-                        "id": 1,
-                        "text": "헤밍웨이는",
-                        "type": "",
-                        "begin": 1
-                    },
-                    {
-                        "end": 4,
-                        "id": 2,
-                        "text": "미국의",
-                        "type": "",
-                        "begin": 3
-                    },
-                    {
-                        "end": 8,
-                        "id": 3,
-                        "text": "소설가이자",
-                        "type": "",
-                        "begin": 5
-                    },
-                    {
-                        "end": 12,
-                        "id": 4,
-                        "text": "저널리스트이다.",
-                        "type": "",
-                        "begin": 9
-                    }
-                ],
-                "mod_NE": [
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 9,
-                        "text": "어니스트 헤밍웨이",
-                        "start_offset": 0,
-                        "type": "PS_NAME",
-                        "relation": 0
-                    },
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 13,
-                        "text": "미국",
-                        "start_offset": 11,
-                        "type": "LCP_COUNTRY",
-                        "relation": 0
-                    },
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 18,
-                        "text": "소설가",
-                        "start_offset": 15,
-                        "type": "CV_OCCUPATION",
-                        "relation": 0
-                    },
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 26,
-                        "text": "저널리스트",
-                        "start_offset": 21,
-                        "type": "CV_OCCUPATION",
-                        "relation": 0
-                    }
-                ]
+                }
             },
             {
-                "phrase_dependency": [
-                    {
-                        "weight": 0,
-                        "end": 0,
-                        "key_begin": 0,
-                        "id": 0,
-                        "label": "NP_AJT",
-                        "text": "1854년",
-                        "head_phrase": 2,
-                        "begin": 0,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 2,
-                        "key_begin": 1,
-                        "id": 1,
-                        "label": "NP_OBJ",
-                        "text": "노벨 문학상을",
-                        "head_phrase": 2,
-                        "begin": 1,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 3,
-                        "key_begin": 3,
-                        "id": 2,
-                        "label": "VP",
-                        "text": "P#0@AJT년 P#1@OBJ을 수상하였다.",
-                        "head_phrase": -1,
-                        "begin": 0,
-                        "sub_phrase": [
-                            0,
-                            1
-                        ],
-                        "element": []
-                    }
-                ],
-                "dependency": [
-                    {
-                        "head": 3,
-                        "mod": [],
-                        "weight": 0.630243,
-                        "id": 0,
-                        "text": "1854년",
-                        "label": "NP_AJT"
-                    },
-                    {
-                        "head": 2,
-                        "mod": [],
-                        "weight": 0.785137,
-                        "id": 1,
-                        "text": "노벨",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 3,
-                        "mod": [
-                            1
-                        ],
-                        "weight": 0.837873,
-                        "id": 2,
-                        "text": "문학상을",
-                        "label": "NP_OBJ"
-                    },
-                    {
-                        "head": -1,
-                        "mod": [
-                            0,
-                            2
-                        ],
-                        "weight": 0.359775,
-                        "id": 3,
-                        "text": "수상하였다.",
-                        "label": "VP"
-                    }
-                ],
-                "ZA": [],
-                "WSD": [
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 0,
-                        "id": 0,
-                        "text": "1854",
-                        "position": 78,
-                        "type": "SN",
-                        "begin": 0
-                    },
-                    {
-                        "scode": "02",
-                        "weight": 7.7,
-                        "end": 1,
-                        "id": 1,
-                        "text": "년",
-                        "position": 82,
-                        "type": "NNB",
-                        "begin": 1
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 2,
-                        "id": 2,
-                        "text": "노벨",
-                        "position": 86,
-                        "type": "NNP",
-                        "begin": 2
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 4,
-                        "id": 3,
-                        "text": "문학상",
-                        "position": 93,
-                        "type": "NNG",
-                        "begin": 3
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 5,
-                        "id": 4,
-                        "text": "을",
-                        "position": 102,
-                        "type": "JKO",
-                        "begin": 5
-                    },
-                    {
-                        "scode": "03",
-                        "weight": 6.5,
-                        "end": 7,
-                        "id": 5,
-                        "text": "수상하",
-                        "position": 106,
-                        "type": "VV",
-                        "begin": 6
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 8,
-                        "id": 6,
-                        "text": "었",
-                        "position": 115,
-                        "type": "EP",
-                        "begin": 8
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 9,
-                        "id": 7,
-                        "text": "다",
-                        "position": 118,
-                        "type": "EF",
-                        "begin": 9
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 10,
-                        "id": 8,
-                        "text": ".",
-                        "position": 121,
-                        "type": "SF",
-                        "begin": 10
-                    }
-                ],
-                "chunk": [],
-                "reserve_str": "",
-                "SRL": [],
-                "morp_eval": [
-                    {
-                        "result": "1854/SN+년/NNB",
-                        "word_id": 0,
-                        "m_end": 1,
-                        "id": 0,
-                        "target": "1854년",
-                        "m_begin": 0
-                    },
-                    {
-                        "result": "노벨/NNG",
-                        "word_id": 1,
-                        "m_end": 2,
-                        "id": 1,
-                        "target": "노벨",
-                        "m_begin": 2
-                    },
-                    {
-                        "result": "문학상/NNG+을/JKO",
-                        "word_id": 2,
-                        "m_end": 5,
-                        "id": 2,
-                        "target": "문학상을",
-                        "m_begin": 3
-                    },
-                    {
-                        "result": "수상하/VV+었/EP+다/EF+./SF",
-                        "word_id": 3,
-                        "m_end": 10,
-                        "id": 3,
-                        "target": "수상하였다.",
-                        "m_begin": 6
-                    }
-                ],
-                "SA": [],
-                "relation": [],
+                "text": " 그는 1854년 노벨 문학상을 수상하였다.",
                 "ELU": {
                     "entities": [
                         {
-                            "indirect": 0,
-                            "confidence": 0.989471699688869,
-                            "link": 6,
-                            "end_offset": 12,
+                            "score": 0,
+                            "confidence": 1,
+                            "en_entity": "Ernest_Hemingway",
+                            "predicted_coref_index": 1,
+                            "end_offset": 1,
+                            "ne_type": "PS_NAME",
+                            "text": "그",
+                            "start_offset": 0,
                             "source": "ELU",
                             "type": [
-                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
-                                "http://dbpedia.org/ontology/Award"
+                                "http://wikidata.dbpedia.org/resource/Q5",
+                                "http://dbpedia.org/ontology/Writer",
+                                "http://xmlns.com/foaf/0.1/Person",
+                                "http://schema.org/Person",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson",
+                                "http://dbpedia.org/ontology/Artist",
+                                "http://wikidata.dbpedia.org/resource/Q215627",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+                                "http://www.wikidata.org/entity/Q24229398",
+                                "http://www.wikidata.org/entity/Q5",
+                                "http://www.wikidata.org/entity/Q215627",
+                                "http://dbpedia.org/ontology/Person",
+                                "http://www.wikidata.org/entity/Q36180",
+                                "http://www.w3.org/2002/07/owl#Thing",
+                                "http://dbpedia.org/ontology/Agent"
                             ],
-                            "uri": "http://ko.dbpedia.org/resource/노벨_문학상",
-                            "relation": 4,
-                            "score": 2.423245873936808,
+                            "uri": "http://kbox.kaist.ac.kr/resource/어니스트_헤밍웨이"
+                        },
+                        {
+                            "score": 0.162200927734375,
+                            "confidence": 0.5803965692964191,
                             "en_entity": "Nobel_Prize_in_Literature",
-                            "text": "노벨문학상",
-                            "start_offset": 6,
-                            "id": 2038
+                            "predicted_coref_index": -1,
+                            "end_offset": 15,
+                            "ne_type": "CV_PRIZE",
+                            "text": "노벨 문학상",
+                            "source": "ELU",
+                            "start_offset": 9,
+                            "type": [
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
+                                "http://dbpedia.org/ontology/Award",
+                                "http://dbpedia.org/ontology/NobelPrize"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/노벨_문학상"
                         }
                     ],
                     "d_entities": [
                         {
-                            "score": 0,
                             "indirect": 0,
-                            "confidence": 0,
+                            "confidence": 0.860512,
                             "link": 0,
-                            "end_offset": 5,
-                            "text": "1854년",
-                            "start_offset": 0,
+                            "end_offset": 8,
                             "source": "DE",
                             "type": "DT_YEAR",
                             "uri": "",
-                            "relation": 0
+                            "relation": 0,
+                            "score": 0,
+                            "text": "1854년",
+                            "start_offset": 3,
+                            "ne_id": 0,
+                            "sen_id": 0
                         }
                     ],
                     "merge": [
                         {
                             "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "en_entity": null,
-                            "link": 0,
-                            "end_offset": 5,
-                            "text": "1854년",
+                            "confidence": 1,
+                            "en_entity": "Ernest_Hemingway",
+                            "predicted_coref_index": 1,
+                            "end_offset": 1,
+                            "ne_type": "PS_NAME",
+                            "text": "그",
                             "start_offset": 0,
+                            "source": "ELU",
+                            "type": [
+                                "http://wikidata.dbpedia.org/resource/Q5",
+                                "http://dbpedia.org/ontology/Writer",
+                                "http://xmlns.com/foaf/0.1/Person",
+                                "http://schema.org/Person",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson",
+                                "http://dbpedia.org/ontology/Artist",
+                                "http://wikidata.dbpedia.org/resource/Q215627",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+                                "http://www.wikidata.org/entity/Q24229398",
+                                "http://www.wikidata.org/entity/Q5",
+                                "http://www.wikidata.org/entity/Q215627",
+                                "http://dbpedia.org/ontology/Person",
+                                "http://www.wikidata.org/entity/Q36180",
+                                "http://www.w3.org/2002/07/owl#Thing",
+                                "http://dbpedia.org/ontology/Agent"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/어니스트_헤밍웨이"
+                        },
+                        {
+                            "indirect": 0,
+                            "confidence": 0.860512,
+                            "link": 0,
+                            "end_offset": 8,
                             "source": "DE",
                             "type": "DT_YEAR",
                             "uri": "",
-                            "relation": 0
+                            "relation": 0,
+                            "score": 0,
+                            "en_entity": null,
+                            "text": "1854년",
+                            "start_offset": 3,
+                            "ne_id": 0,
+                            "sen_id": 0
                         },
                         {
-                            "indirect": 0,
-                            "confidence": 0.989471699688869,
-                            "link": 6,
-                            "end_offset": 12,
+                            "score": 0.162200927734375,
+                            "confidence": 0.5803965692964191,
+                            "en_entity": "Nobel_Prize_in_Literature",
+                            "predicted_coref_index": -1,
+                            "end_offset": 15,
+                            "ne_type": "CV_PRIZE",
+                            "text": "노벨 문학상",
                             "source": "ELU",
+                            "start_offset": 9,
                             "type": [
                                 "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description",
-                                "http://dbpedia.org/ontology/Award"
+                                "http://dbpedia.org/ontology/Award",
+                                "http://dbpedia.org/ontology/NobelPrize"
                             ],
-                            "uri": "http://ko.dbpedia.org/resource/노벨_문학상",
-                            "relation": 4,
-                            "score": 2.423245873936808,
-                            "en_entity": "Nobel_Prize_in_Literature",
-                            "text": "노벨문학상",
-                            "start_offset": 6,
-                            "id": 2038
+                            "uri": "http://kbox.kaist.ac.kr/resource/노벨_문학상"
                         }
                     ]
-                },
-                "morp": [
-                    {
-                        "lemma": "1854",
-                        "weight": 1,
-                        "id": 0,
-                        "position": 78,
-                        "type": "SN"
-                    },
-                    {
-                        "lemma": "년",
-                        "weight": 0.414343,
-                        "id": 1,
-                        "position": 82,
-                        "type": "NNB"
-                    },
-                    {
-                        "lemma": "노벨",
-                        "weight": 0.9,
-                        "id": 2,
-                        "position": 86,
-                        "type": "NNP"
-                    },
-                    {
-                        "lemma": "문학",
-                        "weight": 0.27891,
-                        "id": 3,
-                        "position": 93,
-                        "type": "NNG"
-                    },
-                    {
-                        "lemma": "상",
-                        "weight": 0.0834075,
-                        "id": 4,
-                        "position": 99,
-                        "type": "NNG"
-                    },
-                    {
-                        "lemma": "을",
-                        "weight": 0.129611,
-                        "id": 5,
-                        "position": 102,
-                        "type": "JKO"
-                    },
-                    {
-                        "lemma": "수상",
-                        "weight": 0.9,
-                        "id": 6,
-                        "position": 106,
-                        "type": "NNG"
-                    },
-                    {
-                        "lemma": "하",
-                        "weight": 0.0001,
-                        "id": 7,
-                        "position": 112,
-                        "type": "XSV"
-                    },
-                    {
-                        "lemma": "었",
-                        "weight": 0.9,
-                        "id": 8,
-                        "position": 115,
-                        "type": "EP"
-                    },
-                    {
-                        "lemma": "다",
-                        "weight": 0.640954,
-                        "id": 9,
-                        "position": 118,
-                        "type": "EF"
-                    },
-                    {
-                        "lemma": ".",
-                        "weight": 1,
-                        "id": 10,
-                        "position": 121,
-                        "type": "SF"
-                    }
-                ],
-                "tagged": "1854년 [노벨_문학상] 을 수상하였다.",
-                "NE": [
-                    {
-                        "weight": 0.818245,
-                        "end": 1,
-                        "id": 0,
-                        "text": "1854년",
-                        "type": "DT_YEAR",
-                        "begin": 0,
-                        "common_noun": 0
-                    },
-                    {
-                        "weight": 0.966091,
-                        "end": 4,
-                        "id": 1,
-                        "text": "노벨 문학상",
-                        "type": "CV_PRIZE",
-                        "begin": 2,
-                        "common_noun": 0
-                    }
-                ],
-                "id": 1,
-                "text": " 1854년 노벨 문학상을 수상하였다.",
-                "word": [
-                    {
-                        "end": 1,
-                        "id": 0,
-                        "text": "1854년",
-                        "type": "",
-                        "begin": 0
-                    },
-                    {
-                        "end": 2,
-                        "id": 1,
-                        "text": "노벨",
-                        "type": "",
-                        "begin": 2
-                    },
-                    {
-                        "end": 5,
-                        "id": 2,
-                        "text": "문학상을",
-                        "type": "",
-                        "begin": 3
-                    },
-                    {
-                        "end": 10,
-                        "id": 3,
-                        "text": "수상하였다.",
-                        "type": "",
-                        "begin": 6
-                    }
-                ],
-                "mod_NE": [
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 5,
-                        "text": "1854년",
-                        "start_offset": 0,
-                        "type": "DT_YEAR",
-                        "relation": 0
-                    },
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 12,
-                        "text": "노벨 문학상",
-                        "start_offset": 6,
-                        "type": "CV_PRIZE",
-                        "relation": 0
-                    }
-                ]
+                }
             },
             {
-                "phrase_dependency": [
-                    {
-                        "weight": 0,
-                        "end": 0,
-                        "key_begin": 0,
-                        "id": 0,
-                        "label": "NP_SBJ",
-                        "text": "헤밍웨이는",
-                        "head_phrase": 3,
-                        "begin": 0,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 3,
-                        "key_begin": 1,
-                        "id": 1,
-                        "label": "NP_AJT",
-                        "text": "1899년 7월 21일",
-                        "head_phrase": 3,
-                        "begin": 1,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 4,
-                        "key_begin": 4,
-                        "id": 2,
-                        "label": "NP_AJT",
-                        "text": "일리노이주에서",
-                        "head_phrase": 3,
-                        "begin": 4,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 5,
-                        "key_begin": 5,
-                        "id": 3,
-                        "label": "S",
-                        "text": "P#0@SBJ는 P#1@AJT일 P#2@AJT에서 태어났다.",
-                        "head_phrase": -1,
-                        "begin": 0,
-                        "sub_phrase": [
-                            0,
-                            1,
-                            2
-                        ],
-                        "element": []
-                    }
-                ],
-                "dependency": [
-                    {
-                        "head": 5,
-                        "mod": [],
-                        "weight": 0.871891,
-                        "id": 0,
-                        "text": "헤밍웨이는",
-                        "label": "NP_SBJ"
-                    },
-                    {
-                        "head": 2,
-                        "mod": [],
-                        "weight": 0.639108,
-                        "id": 1,
-                        "text": "1899년",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 3,
-                        "mod": [
-                            1
-                        ],
-                        "weight": 0.691294,
-                        "id": 2,
-                        "text": "7월",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 5,
-                        "mod": [
-                            2
-                        ],
-                        "weight": 0.818033,
-                        "id": 3,
-                        "text": "21일",
-                        "label": "NP_AJT"
-                    },
-                    {
-                        "head": 5,
-                        "mod": [],
-                        "weight": 0.859442,
-                        "id": 4,
-                        "text": "일리노이주에서",
-                        "label": "NP_AJT"
-                    },
-                    {
-                        "head": -1,
-                        "mod": [
-                            0,
-                            3,
-                            4
-                        ],
-                        "weight": 0.233618,
-                        "id": 5,
-                        "text": "태어났다.",
-                        "label": "VP"
-                    }
-                ],
-                "ZA": [],
-                "WSD": [
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 0,
-                        "id": 0,
-                        "text": "헤밍웨이",
-                        "position": 123,
-                        "type": "NNP",
-                        "begin": 0
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 1,
-                        "id": 1,
-                        "text": "는",
-                        "position": 135,
-                        "type": "JX",
-                        "begin": 1
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 2,
-                        "id": 2,
-                        "text": "1899",
-                        "position": 139,
-                        "type": "SN",
-                        "begin": 2
-                    },
-                    {
-                        "scode": "02",
-                        "weight": 1.5,
-                        "end": 3,
-                        "id": 3,
-                        "text": "년",
-                        "position": 143,
-                        "type": "NNB",
-                        "begin": 3
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 4,
-                        "id": 4,
-                        "text": "7",
-                        "position": 147,
-                        "type": "SN",
-                        "begin": 4
-                    },
-                    {
-                        "scode": "02",
-                        "weight": 1.5,
-                        "end": 5,
-                        "id": 5,
-                        "text": "월",
-                        "position": 148,
-                        "type": "NNB",
-                        "begin": 5
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 6,
-                        "id": 6,
-                        "text": "21",
-                        "position": 152,
-                        "type": "SN",
-                        "begin": 6
-                    },
-                    {
-                        "scode": "07",
-                        "weight": 2.2,
-                        "end": 7,
-                        "id": 7,
-                        "text": "일",
-                        "position": 154,
-                        "type": "NNB",
-                        "begin": 7
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 8,
-                        "id": 8,
-                        "text": "일리노이주",
-                        "position": 158,
-                        "type": "NNP",
-                        "begin": 8
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 9,
-                        "id": 9,
-                        "text": "에서",
-                        "position": 173,
-                        "type": "JKB",
-                        "begin": 9
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 10,
-                        "id": 10,
-                        "text": "태어나",
-                        "position": 180,
-                        "type": "VV",
-                        "begin": 10
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 11,
-                        "id": 11,
-                        "text": "았",
-                        "position": 186,
-                        "type": "EP",
-                        "begin": 11
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 12,
-                        "id": 12,
-                        "text": "다",
-                        "position": 189,
-                        "type": "EF",
-                        "begin": 12
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 13,
-                        "id": 13,
-                        "text": ".",
-                        "position": 192,
-                        "type": "SF",
-                        "begin": 13
-                    }
-                ],
-                "chunk": [],
-                "reserve_str": "",
-                "SRL": [],
-                "morp_eval": [
-                    {
-                        "result": "헤밍웨이/NNG+는/JX",
-                        "word_id": 0,
-                        "m_end": 1,
-                        "id": 0,
-                        "target": "헤밍웨이는",
-                        "m_begin": 0
-                    },
-                    {
-                        "result": "1899/SN+년/NNB",
-                        "word_id": 1,
-                        "m_end": 3,
-                        "id": 1,
-                        "target": "1899년",
-                        "m_begin": 2
-                    },
-                    {
-                        "result": "7/SN+월/NNB",
-                        "word_id": 2,
-                        "m_end": 5,
-                        "id": 2,
-                        "target": "7월",
-                        "m_begin": 4
-                    },
-                    {
-                        "result": "21/SN+일/NNB",
-                        "word_id": 3,
-                        "m_end": 7,
-                        "id": 3,
-                        "target": "21일",
-                        "m_begin": 6
-                    },
-                    {
-                        "result": "일리노이주/NNG+에서/JKB",
-                        "word_id": 4,
-                        "m_end": 9,
-                        "id": 4,
-                        "target": "일리노이주에서",
-                        "m_begin": 8
-                    },
-                    {
-                        "result": "태어나/VV+었/EP+다/EF+./SF",
-                        "word_id": 5,
-                        "m_end": 13,
-                        "id": 5,
-                        "target": "태어났다.",
-                        "m_begin": 10
-                    }
-                ],
-                "SA": [],
-                "relation": [],
-                "ELU": {
-                    "entities": [
-                        {
-                            "indirect": 0,
-                            "confidence": 0.9908202478286774,
-                            "link": 31,
-                            "end_offset": 4,
-                            "source": "ELU",
-                            "type": [
-                                "http://dbpedia.org/ontology/Agent",
-                                "http://dbpedia.org/ontology/Person",
-                                "http://wikidata.dbpedia.org/resource/Q215627",
-                                "http://wikidata.dbpedia.org/resource/Q5",
-                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
-                                "http://xmlns.com/foaf/0.1/Person",
-                                "http://www.wikidata.org/entity/Q36180",
-                                "http://dbpedia.org/ontology/Writer",
-                                "http://www.w3.org/2002/07/owl#Thing",
-                                "http://www.wikidata.org/entity/Q215627",
-                                "http://schema.org/Person",
-                                "http://www.wikidata.org/entity/Q5",
-                                "http://dbpedia.org/ontology/Artist",
-                                "http://www.wikidata.org/entity/Q24229398",
-                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"
-                            ],
-                            "uri": "http://ko.dbpedia.org/resource/어니스트_헤밍웨이",
-                            "relation": 27,
-                            "score": 1.8808135922807914,
-                            "en_entity": "Ernest_Hemingway",
-                            "text": "헤밍웨이",
-                            "start_offset": 0,
-                            "id": 2040
-                        },
-                        {
-                            "indirect": 0,
-                            "confidence": 1.0032778110028526,
-                            "link": 3,
-                            "end_offset": 24,
-                            "source": "ELU",
-                            "type": [
-                                "http://dbpedia.org/ontology/Region",
-                                "http://schema.org/Place",
-                                "http://schema.org/AdministrativeArea",
-                                "http://www.wikidata.org/entity/Q486972",
-                                "http://www.w3.org/2002/07/owl#Thing",
-                                "http://dbpedia.org/ontology/Wikidata:Q532",
-                                "http://dbpedia.org/ontology/AdministrativeRegion",
-                                "http://dbpedia.org/ontology/PopulatedPlace",
-                                "http://dbpedia.org/ontology/Place",
-                                "http://www.ontologydesignpatterns.org/ont/d0.owl#Location",
-                                "http://www.wikidata.org/entity/Q3455524",
-                                "http://dbpedia.org/ontology/Settlement"
-                            ],
-                            "uri": "http://ko.dbpedia.org/resource/일리노이_주",
-                            "relation": 3,
-                            "score": 3.1562461903973444,
-                            "en_entity": "Illinois",
-                            "text": "일리노이주",
-                            "start_offset": 19,
-                            "id": 2041
-                        }
-                    ],
-                    "d_entities": [
-                        {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "link": 0,
-                            "end_offset": 18,
-                            "text": "1899년 7월 21일",
-                            "start_offset": 6,
-                            "source": "DE",
-                            "type": "DT_OTHERS",
-                            "uri": "",
-                            "relation": 0
-                        }
-                    ],
-                    "merge": [
-                        {
-                            "indirect": 0,
-                            "confidence": 0.9908202478286774,
-                            "link": 31,
-                            "end_offset": 4,
-                            "source": "ELU",
-                            "type": [
-                                "http://dbpedia.org/ontology/Agent",
-                                "http://dbpedia.org/ontology/Person",
-                                "http://wikidata.dbpedia.org/resource/Q215627",
-                                "http://wikidata.dbpedia.org/resource/Q5",
-                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
-                                "http://xmlns.com/foaf/0.1/Person",
-                                "http://www.wikidata.org/entity/Q36180",
-                                "http://dbpedia.org/ontology/Writer",
-                                "http://www.w3.org/2002/07/owl#Thing",
-                                "http://www.wikidata.org/entity/Q215627",
-                                "http://schema.org/Person",
-                                "http://www.wikidata.org/entity/Q5",
-                                "http://dbpedia.org/ontology/Artist",
-                                "http://www.wikidata.org/entity/Q24229398",
-                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"
-                            ],
-                            "uri": "http://ko.dbpedia.org/resource/어니스트_헤밍웨이",
-                            "relation": 27,
-                            "score": 1.8808135922807914,
-                            "en_entity": "Ernest_Hemingway",
-                            "text": "헤밍웨이",
-                            "start_offset": 0,
-                            "id": 2040
-                        },
-                        {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "en_entity": null,
-                            "link": 0,
-                            "end_offset": 18,
-                            "text": "1899년 7월 21일",
-                            "start_offset": 6,
-                            "source": "DE",
-                            "type": "DT_OTHERS",
-                            "uri": "",
-                            "relation": 0
-                        },
-                        {
-                            "indirect": 0,
-                            "confidence": 1.0032778110028526,
-                            "link": 3,
-                            "end_offset": 24,
-                            "source": "ELU",
-                            "type": [
-                                "http://dbpedia.org/ontology/Region",
-                                "http://schema.org/Place",
-                                "http://schema.org/AdministrativeArea",
-                                "http://www.wikidata.org/entity/Q486972",
-                                "http://www.w3.org/2002/07/owl#Thing",
-                                "http://dbpedia.org/ontology/Wikidata:Q532",
-                                "http://dbpedia.org/ontology/AdministrativeRegion",
-                                "http://dbpedia.org/ontology/PopulatedPlace",
-                                "http://dbpedia.org/ontology/Place",
-                                "http://www.ontologydesignpatterns.org/ont/d0.owl#Location",
-                                "http://www.wikidata.org/entity/Q3455524",
-                                "http://dbpedia.org/ontology/Settlement"
-                            ],
-                            "uri": "http://ko.dbpedia.org/resource/일리노이_주",
-                            "relation": 3,
-                            "score": 3.1562461903973444,
-                            "en_entity": "Illinois",
-                            "text": "일리노이주",
-                            "start_offset": 19,
-                            "id": 2041
-                        }
-                    ]
-                },
-                "morp": [
-                    {
-                        "lemma": "헤밍웨이",
-                        "weight": 0.9,
-                        "id": 0,
-                        "position": 123,
-                        "type": "NNP"
-                    },
-                    {
-                        "lemma": "는",
-                        "weight": 0.0332677,
-                        "id": 1,
-                        "position": 135,
-                        "type": "JX"
-                    },
-                    {
-                        "lemma": "1899",
-                        "weight": 1,
-                        "id": 2,
-                        "position": 139,
-                        "type": "SN"
-                    },
-                    {
-                        "lemma": "년",
-                        "weight": 0.414343,
-                        "id": 3,
-                        "position": 143,
-                        "type": "NNB"
-                    },
-                    {
-                        "lemma": "7",
-                        "weight": 1,
-                        "id": 4,
-                        "position": 147,
-                        "type": "SN"
-                    },
-                    {
-                        "lemma": "월",
-                        "weight": 0.408539,
-                        "id": 5,
-                        "position": 148,
-                        "type": "NNB"
-                    },
-                    {
-                        "lemma": "21",
-                        "weight": 1,
-                        "id": 6,
-                        "position": 152,
-                        "type": "SN"
-                    },
-                    {
-                        "lemma": "일",
-                        "weight": 0.126777,
-                        "id": 7,
-                        "position": 154,
-                        "type": "NNB"
-                    },
-                    {
-                        "lemma": "일리노이주",
-                        "weight": 0.6,
-                        "id": 8,
-                        "position": 158,
-                        "type": "NNP"
-                    },
-                    {
-                        "lemma": "에서",
-                        "weight": 0.0823859,
-                        "id": 9,
-                        "position": 173,
-                        "type": "JKB"
-                    },
-                    {
-                        "lemma": "태어나",
-                        "weight": 0.9,
-                        "id": 10,
-                        "position": 180,
-                        "type": "VV"
-                    },
-                    {
-                        "lemma": "았",
-                        "weight": 0.9,
-                        "id": 11,
-                        "position": 186,
-                        "type": "EP"
-                    },
-                    {
-                        "lemma": "다",
-                        "weight": 0.640954,
-                        "id": 12,
-                        "position": 189,
-                        "type": "EF"
-                    },
-                    {
-                        "lemma": ".",
-                        "weight": 1,
-                        "id": 13,
-                        "position": 192,
-                        "type": "SF"
-                    }
-                ],
-                "tagged": "[어니스트_헤밍웨이] 는 1899년 7월 21일 [일리노이_주] 에서 태어났다.",
-                "NE": [
-                    {
-                        "weight": 0.380334,
-                        "end": 0,
-                        "id": 0,
-                        "text": "헤밍웨이",
-                        "type": "PS_NAME",
-                        "begin": 0,
-                        "common_noun": 0
-                    },
-                    {
-                        "weight": 0.841237,
-                        "end": 7,
-                        "id": 1,
-                        "text": "1899년 7월 21일",
-                        "type": "DT_OTHERS",
-                        "begin": 2,
-                        "common_noun": 0
-                    },
-                    {
-                        "weight": 0.406903,
-                        "end": 8,
-                        "id": 2,
-                        "text": "일리노이주",
-                        "type": "LCP_PROVINCE",
-                        "begin": 8,
-                        "common_noun": 0
-                    }
-                ],
-                "id": 2,
                 "text": " 헤밍웨이는 1899년 7월 21일 일리노이주에서 태어났다.",
-                "word": [
-                    {
-                        "end": 1,
-                        "id": 0,
-                        "text": "헤밍웨이는",
-                        "type": "",
-                        "begin": 0
-                    },
-                    {
-                        "end": 3,
-                        "id": 1,
-                        "text": "1899년",
-                        "type": "",
-                        "begin": 2
-                    },
-                    {
-                        "end": 5,
-                        "id": 2,
-                        "text": "7월",
-                        "type": "",
-                        "begin": 4
-                    },
-                    {
-                        "end": 7,
-                        "id": 3,
-                        "text": "21일",
-                        "type": "",
-                        "begin": 6
-                    },
-                    {
-                        "end": 9,
-                        "id": 4,
-                        "text": "일리노이주에서",
-                        "type": "",
-                        "begin": 8
-                    },
-                    {
-                        "end": 13,
-                        "id": 5,
-                        "text": "태어났다.",
-                        "type": "",
-                        "begin": 10
-                    }
-                ],
-                "mod_NE": [
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 4,
-                        "text": "헤밍웨이",
-                        "start_offset": 0,
-                        "type": "PS_NAME",
-                        "relation": 0
-                    },
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 18,
-                        "text": "1899년 7월 21일",
-                        "start_offset": 6,
-                        "type": "DT_OTHERS",
-                        "relation": 0
-                    },
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 24,
-                        "text": "일리노이주",
-                        "start_offset": 19,
-                        "type": "LCP_PROVINCE",
-                        "relation": 0
-                    }
-                ]
-            },
-            {
-                "phrase_dependency": [
-                    {
-                        "weight": 0,
-                        "end": 0,
-                        "key_begin": 0,
-                        "id": 0,
-                        "label": "NP_SBJ",
-                        "text": "헤밍웨이는",
-                        "head_phrase": 5,
-                        "begin": 0,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 2,
-                        "key_begin": 1,
-                        "id": 1,
-                        "label": "NP_AJT",
-                        "text": "풀린 파이퍼와",
-                        "head_phrase": 2,
-                        "begin": 1,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 3,
-                        "key_begin": 3,
-                        "id": 2,
-                        "label": "VP_MOD",
-                        "text": "P#1@AJT와 이혼한",
-                        "head_phrase": 3,
-                        "begin": 1,
-                        "sub_phrase": [
-                            1
-                        ],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 4,
-                        "key_begin": 4,
-                        "id": 3,
-                        "label": "NP_AJT",
-                        "text": "P#2@MODㄴ 뒤",
-                        "head_phrase": 5,
-                        "begin": 1,
-                        "sub_phrase": [
-                            2
-                        ],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 6,
-                        "key_begin": 5,
-                        "id": 4,
-                        "label": "NP_AJT",
-                        "text": "마사 겔혼과",
-                        "head_phrase": 5,
-                        "begin": 5,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 7,
-                        "key_begin": 7,
-                        "id": 5,
-                        "label": "S",
-                        "text": "P#0@SBJ는 P#3@AJT뒤 P#4@AJT과 재혼하였다.",
-                        "head_phrase": -1,
-                        "begin": 0,
-                        "sub_phrase": [
-                            0,
-                            3,
-                            4
-                        ],
-                        "element": []
-                    }
-                ],
-                "dependency": [
-                    {
-                        "head": 7,
-                        "mod": [],
-                        "weight": 0.828218,
-                        "id": 0,
-                        "text": "헤밍웨이는",
-                        "label": "NP_SBJ"
-                    },
-                    {
-                        "head": 2,
-                        "mod": [],
-                        "weight": 0.49788,
-                        "id": 1,
-                        "text": "풀린",
-                        "label": "VP_MOD"
-                    },
-                    {
-                        "head": 3,
-                        "mod": [
-                            1
-                        ],
-                        "weight": 0.788353,
-                        "id": 2,
-                        "text": "파이퍼와",
-                        "label": "NP_AJT"
-                    },
-                    {
-                        "head": 4,
-                        "mod": [
-                            2
-                        ],
-                        "weight": 0.72223,
-                        "id": 3,
-                        "text": "이혼한",
-                        "label": "VP_MOD"
-                    },
-                    {
-                        "head": 7,
-                        "mod": [
-                            3
-                        ],
-                        "weight": 0.800356,
-                        "id": 4,
-                        "text": "뒤",
-                        "label": "NP_AJT"
-                    },
-                    {
-                        "head": 6,
-                        "mod": [],
-                        "weight": 0.430128,
-                        "id": 5,
-                        "text": "마사",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 7,
-                        "mod": [
-                            5
-                        ],
-                        "weight": 0.0687702,
-                        "id": 6,
-                        "text": "겔혼과",
-                        "label": "NP_AJT"
-                    },
-                    {
-                        "head": -1,
-                        "mod": [
-                            0,
-                            4,
-                            6
-                        ],
-                        "weight": 0.00318445,
-                        "id": 7,
-                        "text": "재혼하였다.",
-                        "label": "VP"
-                    }
-                ],
-                "ZA": [],
-                "WSD": [
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 0,
-                        "id": 0,
-                        "text": "헤밍웨이",
-                        "position": 194,
-                        "type": "NNP",
-                        "begin": 0
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 1,
-                        "id": 1,
-                        "text": "는",
-                        "position": 206,
-                        "type": "JX",
-                        "begin": 1
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 2,
-                        "id": 2,
-                        "text": "풀리",
-                        "position": 210,
-                        "type": "VV",
-                        "begin": 2
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 3,
-                        "id": 3,
-                        "text": "ㄴ",
-                        "position": 213,
-                        "type": "ETM",
-                        "begin": 3
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 4,
-                        "id": 4,
-                        "text": "파이퍼",
-                        "position": 217,
-                        "type": "NNP",
-                        "begin": 4
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 5,
-                        "id": 5,
-                        "text": "와",
-                        "position": 226,
-                        "type": "JKB",
-                        "begin": 5
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 7,
-                        "id": 6,
-                        "text": "이혼하",
-                        "position": 230,
-                        "type": "VV",
-                        "begin": 6
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 8,
-                        "id": 7,
-                        "text": "ㄴ",
-                        "position": 236,
-                        "type": "ETM",
-                        "begin": 8
-                    },
-                    {
-                        "scode": "01",
-                        "weight": 2.2,
-                        "end": 9,
-                        "id": 8,
-                        "text": "뒤",
-                        "position": 240,
-                        "type": "NNG",
-                        "begin": 9
-                    },
-                    {
-                        "scode": "03",
-                        "weight": 1,
-                        "end": 10,
-                        "id": 9,
-                        "text": "마사",
-                        "position": 244,
-                        "type": "NNG",
-                        "begin": 10
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 11,
-                        "id": 10,
-                        "text": "겔혼",
-                        "position": 251,
-                        "type": "NNG",
-                        "begin": 11
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 12,
-                        "id": 11,
-                        "text": "과",
-                        "position": 257,
-                        "type": "JC",
-                        "begin": 12
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 14,
-                        "id": 12,
-                        "text": "재혼하",
-                        "position": 261,
-                        "type": "VV",
-                        "begin": 13
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 15,
-                        "id": 13,
-                        "text": "었",
-                        "position": 270,
-                        "type": "EP",
-                        "begin": 15
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 16,
-                        "id": 14,
-                        "text": "다",
-                        "position": 273,
-                        "type": "EF",
-                        "begin": 16
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 17,
-                        "id": 15,
-                        "text": ".",
-                        "position": 276,
-                        "type": "SF",
-                        "begin": 17
-                    }
-                ],
-                "chunk": [],
-                "reserve_str": "",
-                "SRL": [],
-                "morp_eval": [
-                    {
-                        "result": "헤밍웨이/NNG+는/JX",
-                        "word_id": 0,
-                        "m_end": 1,
-                        "id": 0,
-                        "target": "헤밍웨이는",
-                        "m_begin": 0
-                    },
-                    {
-                        "result": "풀리/VV+ㄴ/ETM",
-                        "word_id": 1,
-                        "m_end": 3,
-                        "id": 1,
-                        "target": "풀린",
-                        "m_begin": 2
-                    },
-                    {
-                        "result": "파이퍼/NNG+와/JKB",
-                        "word_id": 2,
-                        "m_end": 5,
-                        "id": 2,
-                        "target": "파이퍼와",
-                        "m_begin": 4
-                    },
-                    {
-                        "result": "이혼하/VV+ㄴ/ETM",
-                        "word_id": 3,
-                        "m_end": 8,
-                        "id": 3,
-                        "target": "이혼한",
-                        "m_begin": 6
-                    },
-                    {
-                        "result": "뒤/NNG",
-                        "word_id": 4,
-                        "m_end": 9,
-                        "id": 4,
-                        "target": "뒤",
-                        "m_begin": 9
-                    },
-                    {
-                        "result": "마사/NNG",
-                        "word_id": 5,
-                        "m_end": 10,
-                        "id": 5,
-                        "target": "마사",
-                        "m_begin": 10
-                    },
-                    {
-                        "result": "겔혼/NNG+과/JC",
-                        "word_id": 6,
-                        "m_end": 12,
-                        "id": 6,
-                        "target": "겔혼과",
-                        "m_begin": 11
-                    },
-                    {
-                        "result": "재혼하/VV+었/EP+다/EF+./SF",
-                        "word_id": 7,
-                        "m_end": 17,
-                        "id": 7,
-                        "target": "재혼하였다.",
-                        "m_begin": 13
-                    }
-                ],
-                "SA": [],
-                "relation": [],
                 "ELU": {
                     "entities": [
                         {
-                            "indirect": 0,
-                            "confidence": 0.9908202478286774,
-                            "link": 31,
-                            "end_offset": 4,
-                            "source": "ELU",
-                            "type": [
-                                "http://dbpedia.org/ontology/Agent",
-                                "http://dbpedia.org/ontology/Person",
-                                "http://wikidata.dbpedia.org/resource/Q215627",
-                                "http://wikidata.dbpedia.org/resource/Q5",
-                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
-                                "http://xmlns.com/foaf/0.1/Person",
-                                "http://www.wikidata.org/entity/Q36180",
-                                "http://dbpedia.org/ontology/Writer",
-                                "http://www.w3.org/2002/07/owl#Thing",
-                                "http://www.wikidata.org/entity/Q215627",
-                                "http://schema.org/Person",
-                                "http://www.wikidata.org/entity/Q5",
-                                "http://dbpedia.org/ontology/Artist",
-                                "http://www.wikidata.org/entity/Q24229398",
-                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"
-                            ],
-                            "uri": "http://ko.dbpedia.org/resource/어니스트_헤밍웨이",
-                            "relation": 27,
-                            "score": 1.8808135922807914,
+                            "score": 0,
+                            "confidence": 1,
                             "en_entity": "Ernest_Hemingway",
+                            "predicted_coref_index": 1,
+                            "end_offset": 4,
+                            "ne_type": "PS_NAME",
                             "text": "헤밍웨이",
+                            "source": "ELU",
                             "start_offset": 0,
-                            "id": 2042
+                            "type": [
+                                "http://wikidata.dbpedia.org/resource/Q5",
+                                "http://dbpedia.org/ontology/Writer",
+                                "http://xmlns.com/foaf/0.1/Person",
+                                "http://schema.org/Person",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson",
+                                "http://dbpedia.org/ontology/Artist",
+                                "http://wikidata.dbpedia.org/resource/Q215627",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+                                "http://www.wikidata.org/entity/Q24229398",
+                                "http://www.wikidata.org/entity/Q5",
+                                "http://www.wikidata.org/entity/Q215627",
+                                "http://dbpedia.org/ontology/Person",
+                                "http://www.wikidata.org/entity/Q36180",
+                                "http://www.w3.org/2002/07/owl#Thing",
+                                "http://dbpedia.org/ontology/Agent"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/어니스트_헤밍웨이"
                         },
                         {
-                            "indirect": 0,
-                            "confidence": 0.9446060575583326,
-                            "link": 0,
-                            "end_offset": 25,
+                            "score": 5.712714672088623,
+                            "confidence": 0.9872244179355932,
+                            "en_entity": "Illinois",
+                            "predicted_coref_index": -1,
+                            "end_offset": 24,
+                            "ne_type": "LCP_PROVINCE",
+                            "text": "일리노이주",
                             "source": "ELU",
+                            "start_offset": 19,
                             "type": [
-                                "http://dbpedia.org/ontology/Agent",
-                                "http://dbpedia.org/ontology/Person",
-                                "http://wikidata.dbpedia.org/resource/Q215627",
-                                "http://wikidata.dbpedia.org/resource/Q5",
-                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
-                                "http://xmlns.com/foaf/0.1/Person",
-                                "http://dbpedia.org/ontology/Writer",
+                                "http://www.wikidata.org/entity/Q486972",
+                                "http://dbpedia.org/ontology/Location",
+                                "http://dbpedia.org/ontology/Place",
+                                "http://schema.org/Place",
+                                "http://dbpedia.org/ontology/Wikidata:Q532",
+                                "http://dbpedia.org/ontology/Settlement",
+                                "http://dbpedia.org/ontology/Region",
+                                "http://schema.org/AdministrativeArea",
+                                "http://dbpedia.org/ontology/PopulatedPlace",
+                                "http://dbpedia.org/ontology/AdministrativeRegion",
+                                "http://www.ontologydesignpatterns.org/ont/d0.owl#Location",
                                 "http://www.w3.org/2002/07/owl#Thing",
-                                "http://schema.org/Person",
-                                "http://dbpedia.org/ontology/Artist",
-                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"
+                                "http://www.wikidata.org/entity/Q3455524"
                             ],
-                            "uri": "http://ko.dbpedia.org/resource/마사_겔혼",
-                            "relation": 0,
-                            "score": 0.3010299956639812,
-                            "en_entity": "Martha_Gellhorn",
-                            "text": "마사겔혼",
-                            "start_offset": 20,
-                            "id": 2043
+                            "uri": "http://kbox.kaist.ac.kr/resource/일리노이_주"
                         }
                     ],
                     "d_entities": [
                         {
-                            "score": 0,
                             "indirect": 0,
-                            "confidence": 0,
+                            "confidence": 0.841237,
                             "link": 0,
-                            "end_offset": 12,
-                            "text": "파이퍼",
-                            "start_offset": 9,
+                            "end_offset": 18,
                             "source": "DE",
-                            "type": "PS_NAME",
+                            "type": "DT_OTHERS",
                             "uri": "",
-                            "relation": 0
+                            "relation": 0,
+                            "score": 0,
+                            "text": "1899년 7월 21일",
+                            "start_offset": 6,
+                            "ne_id": 1,
+                            "sen_id": 0
                         }
                     ],
                     "merge": [
                         {
-                            "indirect": 0,
-                            "confidence": 0.9908202478286774,
-                            "link": 31,
-                            "end_offset": 4,
-                            "source": "ELU",
-                            "type": [
-                                "http://dbpedia.org/ontology/Agent",
-                                "http://dbpedia.org/ontology/Person",
-                                "http://wikidata.dbpedia.org/resource/Q215627",
-                                "http://wikidata.dbpedia.org/resource/Q5",
-                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
-                                "http://xmlns.com/foaf/0.1/Person",
-                                "http://www.wikidata.org/entity/Q36180",
-                                "http://dbpedia.org/ontology/Writer",
-                                "http://www.w3.org/2002/07/owl#Thing",
-                                "http://www.wikidata.org/entity/Q215627",
-                                "http://schema.org/Person",
-                                "http://www.wikidata.org/entity/Q5",
-                                "http://dbpedia.org/ontology/Artist",
-                                "http://www.wikidata.org/entity/Q24229398",
-                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"
-                            ],
-                            "uri": "http://ko.dbpedia.org/resource/어니스트_헤밍웨이",
-                            "relation": 27,
-                            "score": 1.8808135922807914,
-                            "en_entity": "Ernest_Hemingway",
-                            "text": "헤밍웨이",
-                            "start_offset": 0,
-                            "id": 2042
-                        },
-                        {
                             "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "en_entity": null,
-                            "link": 0,
-                            "end_offset": 12,
-                            "text": "파이퍼",
-                            "start_offset": 9,
-                            "source": "DE",
-                            "type": "PS_NAME",
-                            "uri": "",
-                            "relation": 0
+                            "confidence": 1,
+                            "en_entity": "Ernest_Hemingway",
+                            "predicted_coref_index": 1,
+                            "end_offset": 4,
+                            "ne_type": "PS_NAME",
+                            "text": "헤밍웨이",
+                            "source": "ELU",
+                            "start_offset": 0,
+                            "type": [
+                                "http://wikidata.dbpedia.org/resource/Q5",
+                                "http://dbpedia.org/ontology/Writer",
+                                "http://xmlns.com/foaf/0.1/Person",
+                                "http://schema.org/Person",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson",
+                                "http://dbpedia.org/ontology/Artist",
+                                "http://wikidata.dbpedia.org/resource/Q215627",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+                                "http://www.wikidata.org/entity/Q24229398",
+                                "http://www.wikidata.org/entity/Q5",
+                                "http://www.wikidata.org/entity/Q215627",
+                                "http://dbpedia.org/ontology/Person",
+                                "http://www.wikidata.org/entity/Q36180",
+                                "http://www.w3.org/2002/07/owl#Thing",
+                                "http://dbpedia.org/ontology/Agent"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/어니스트_헤밍웨이"
                         },
                         {
                             "indirect": 0,
-                            "confidence": 0.9446060575583326,
+                            "confidence": 0.841237,
                             "link": 0,
-                            "end_offset": 25,
-                            "source": "ELU",
-                            "type": [
-                                "http://dbpedia.org/ontology/Agent",
-                                "http://dbpedia.org/ontology/Person",
-                                "http://wikidata.dbpedia.org/resource/Q215627",
-                                "http://wikidata.dbpedia.org/resource/Q5",
-                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
-                                "http://xmlns.com/foaf/0.1/Person",
-                                "http://dbpedia.org/ontology/Writer",
-                                "http://www.w3.org/2002/07/owl#Thing",
-                                "http://schema.org/Person",
-                                "http://dbpedia.org/ontology/Artist",
-                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"
-                            ],
-                            "uri": "http://ko.dbpedia.org/resource/마사_겔혼",
+                            "end_offset": 18,
+                            "source": "DE",
+                            "type": "DT_OTHERS",
+                            "uri": "",
                             "relation": 0,
-                            "score": 0.3010299956639812,
-                            "en_entity": "Martha_Gellhorn",
-                            "text": "마사겔혼",
-                            "start_offset": 20,
-                            "id": 2043
+                            "score": 0,
+                            "en_entity": null,
+                            "text": "1899년 7월 21일",
+                            "start_offset": 6,
+                            "ne_id": 1,
+                            "sen_id": 0
+                        },
+                        {
+                            "score": 5.712714672088623,
+                            "confidence": 0.9872244179355932,
+                            "en_entity": "Illinois",
+                            "predicted_coref_index": -1,
+                            "end_offset": 24,
+                            "ne_type": "LCP_PROVINCE",
+                            "text": "일리노이주",
+                            "source": "ELU",
+                            "start_offset": 19,
+                            "type": [
+                                "http://www.wikidata.org/entity/Q486972",
+                                "http://dbpedia.org/ontology/Location",
+                                "http://dbpedia.org/ontology/Place",
+                                "http://schema.org/Place",
+                                "http://dbpedia.org/ontology/Wikidata:Q532",
+                                "http://dbpedia.org/ontology/Settlement",
+                                "http://dbpedia.org/ontology/Region",
+                                "http://schema.org/AdministrativeArea",
+                                "http://dbpedia.org/ontology/PopulatedPlace",
+                                "http://dbpedia.org/ontology/AdministrativeRegion",
+                                "http://www.ontologydesignpatterns.org/ont/d0.owl#Location",
+                                "http://www.w3.org/2002/07/owl#Thing",
+                                "http://www.wikidata.org/entity/Q3455524"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/일리노이_주"
                         }
                     ]
-                },
-                "morp": [
-                    {
-                        "lemma": "헤밍웨이",
-                        "weight": 0.9,
-                        "id": 0,
-                        "position": 194,
-                        "type": "NNP"
-                    },
-                    {
-                        "lemma": "는",
-                        "weight": 0.0332677,
-                        "id": 1,
-                        "position": 206,
-                        "type": "JX"
-                    },
-                    {
-                        "lemma": "풀리",
-                        "weight": 0.9,
-                        "id": 2,
-                        "position": 210,
-                        "type": "VV"
-                    },
-                    {
-                        "lemma": "ㄴ",
-                        "weight": 0.304215,
-                        "id": 3,
-                        "position": 213,
-                        "type": "ETM"
-                    },
-                    {
-                        "lemma": "파이퍼",
-                        "weight": 0.2,
-                        "id": 4,
-                        "position": 217,
-                        "type": "NNP"
-                    },
-                    {
-                        "lemma": "와",
-                        "weight": 0.0304966,
-                        "id": 5,
-                        "position": 226,
-                        "type": "JKB"
-                    },
-                    {
-                        "lemma": "이혼",
-                        "weight": 0.9,
-                        "id": 6,
-                        "position": 230,
-                        "type": "NNG"
-                    },
-                    {
-                        "lemma": "하",
-                        "weight": 0.0001,
-                        "id": 7,
-                        "position": 236,
-                        "type": "XSV"
-                    },
-                    {
-                        "lemma": "ㄴ",
-                        "weight": 0.392321,
-                        "id": 8,
-                        "position": 236,
-                        "type": "ETM"
-                    },
-                    {
-                        "lemma": "뒤",
-                        "weight": 0.65834,
-                        "id": 9,
-                        "position": 240,
-                        "type": "NNG"
-                    },
-                    {
-                        "lemma": "마사",
-                        "weight": 0.110904,
-                        "id": 10,
-                        "position": 244,
-                        "type": "NNG"
-                    },
-                    {
-                        "lemma": "겔혼",
-                        "weight": 0.05,
-                        "id": 11,
-                        "position": 251,
-                        "type": "NNG"
-                    },
-                    {
-                        "lemma": "과",
-                        "weight": 0.017569,
-                        "id": 12,
-                        "position": 257,
-                        "type": "JC"
-                    },
-                    {
-                        "lemma": "재혼",
-                        "weight": 0.9,
-                        "id": 13,
-                        "position": 261,
-                        "type": "NNG"
-                    },
-                    {
-                        "lemma": "하",
-                        "weight": 0.0001,
-                        "id": 14,
-                        "position": 267,
-                        "type": "XSV"
-                    },
-                    {
-                        "lemma": "었",
-                        "weight": 0.9,
-                        "id": 15,
-                        "position": 270,
-                        "type": "EP"
-                    },
-                    {
-                        "lemma": "다",
-                        "weight": 0.640954,
-                        "id": 16,
-                        "position": 273,
-                        "type": "EF"
-                    },
-                    {
-                        "lemma": ".",
-                        "weight": 1,
-                        "id": 17,
-                        "position": 276,
-                        "type": "SF"
-                    }
-                ],
-                "tagged": "[어니스트_헤밍웨이] 는 풀린 파이퍼와 이혼한 뒤 [마사_겔혼] 과 재혼하였다.",
-                "NE": [
-                    {
-                        "weight": 0.284988,
-                        "end": 0,
-                        "id": 0,
-                        "text": "헤밍웨이",
-                        "type": "PS_NAME",
-                        "begin": 0,
-                        "common_noun": 0
-                    },
-                    {
-                        "weight": 0.204269,
-                        "end": 4,
-                        "id": 1,
-                        "text": "파이퍼",
-                        "type": "PS_NAME",
-                        "begin": 4,
-                        "common_noun": 0
-                    },
-                    {
-                        "weight": 0.102782,
-                        "end": 11,
-                        "id": 2,
-                        "text": "마사 겔혼",
-                        "type": "PS_NAME",
-                        "begin": 10,
-                        "common_noun": 0
-                    }
-                ],
-                "id": 3,
+                }
+            },
+            {
                 "text": " 헤밍웨이는 풀린 파이퍼와 이혼한 뒤 마사 겔혼과 재혼하였다.",
-                "word": [
-                    {
-                        "end": 1,
-                        "id": 0,
-                        "text": "헤밍웨이는",
-                        "type": "",
-                        "begin": 0
-                    },
-                    {
-                        "end": 3,
-                        "id": 1,
-                        "text": "풀린",
-                        "type": "",
-                        "begin": 2
-                    },
-                    {
-                        "end": 5,
-                        "id": 2,
-                        "text": "파이퍼와",
-                        "type": "",
-                        "begin": 4
-                    },
-                    {
-                        "end": 8,
-                        "id": 3,
-                        "text": "이혼한",
-                        "type": "",
-                        "begin": 6
-                    },
-                    {
-                        "end": 9,
-                        "id": 4,
-                        "text": "뒤",
-                        "type": "",
-                        "begin": 9
-                    },
-                    {
-                        "end": 10,
-                        "id": 5,
-                        "text": "마사",
-                        "type": "",
-                        "begin": 10
-                    },
-                    {
-                        "end": 12,
-                        "id": 6,
-                        "text": "겔혼과",
-                        "type": "",
-                        "begin": 11
-                    },
-                    {
-                        "end": 17,
-                        "id": 7,
-                        "text": "재혼하였다.",
-                        "type": "",
-                        "begin": 13
-                    }
-                ],
-                "mod_NE": [
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 4,
-                        "text": "헤밍웨이",
-                        "start_offset": 0,
-                        "type": "PS_NAME",
-                        "relation": 0
-                    },
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 12,
-                        "text": "파이퍼",
-                        "start_offset": 9,
-                        "type": "PS_NAME",
-                        "relation": 0
-                    },
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 25,
-                        "text": "마사 겔혼",
-                        "start_offset": 20,
-                        "type": "PS_NAME",
-                        "relation": 0
-                    }
-                ]
-            },
-            {
-                "phrase_dependency": [
-                    {
-                        "weight": 0,
-                        "end": 0,
-                        "key_begin": 0,
-                        "id": 0,
-                        "label": "NP_AJT",
-                        "text": "1961년",
-                        "head_phrase": 4,
-                        "begin": 0,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 2,
-                        "key_begin": 1,
-                        "id": 1,
-                        "label": "NP_AJT",
-                        "text": "아이다호 주에서",
-                        "head_phrase": 4,
-                        "begin": 1,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 3,
-                        "key_begin": 3,
-                        "id": 2,
-                        "label": "NP_AJT",
-                        "text": "엽총으로",
-                        "head_phrase": 4,
-                        "begin": 3,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 5,
-                        "key_begin": 4,
-                        "id": 3,
-                        "label": "NP_AJT",
-                        "text": "62세의 나이에",
-                        "head_phrase": 4,
-                        "begin": 4,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 6,
-                        "key_begin": 6,
-                        "id": 4,
-                        "label": "VP",
-                        "text": "P#0@AJT년 P#1@AJT에서 P#2@AJT으로 P#3@AJT에 자살했다.",
-                        "head_phrase": -1,
-                        "begin": 0,
-                        "sub_phrase": [
-                            0,
-                            1,
-                            2,
-                            3
-                        ],
-                        "element": []
-                    }
-                ],
-                "dependency": [
-                    {
-                        "head": 6,
-                        "mod": [],
-                        "weight": 0.67311,
-                        "id": 0,
-                        "text": "1961년",
-                        "label": "NP_AJT"
-                    },
-                    {
-                        "head": 2,
-                        "mod": [],
-                        "weight": 0.688133,
-                        "id": 1,
-                        "text": "아이다호",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 6,
-                        "mod": [
-                            1
-                        ],
-                        "weight": 0.829736,
-                        "id": 2,
-                        "text": "주에서",
-                        "label": "NP_AJT"
-                    },
-                    {
-                        "head": 6,
-                        "mod": [],
-                        "weight": 0.83624,
-                        "id": 3,
-                        "text": "엽총으로",
-                        "label": "NP_AJT"
-                    },
-                    {
-                        "head": 5,
-                        "mod": [],
-                        "weight": 0.616312,
-                        "id": 4,
-                        "text": "62세의",
-                        "label": "NP_MOD"
-                    },
-                    {
-                        "head": 6,
-                        "mod": [
-                            4
-                        ],
-                        "weight": 0.833619,
-                        "id": 5,
-                        "text": "나이에",
-                        "label": "NP_AJT"
-                    },
-                    {
-                        "head": -1,
-                        "mod": [
-                            0,
-                            2,
-                            3,
-                            5
-                        ],
-                        "weight": 0.133396,
-                        "id": 6,
-                        "text": "자살했다.",
-                        "label": "VP"
-                    }
-                ],
-                "ZA": [],
-                "WSD": [
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 0,
-                        "id": 0,
-                        "text": "1961",
-                        "position": 278,
-                        "type": "SN",
-                        "begin": 0
-                    },
-                    {
-                        "scode": "02",
-                        "weight": 2.2,
-                        "end": 1,
-                        "id": 1,
-                        "text": "년",
-                        "position": 282,
-                        "type": "NNB",
-                        "begin": 1
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 2,
-                        "id": 2,
-                        "text": "아이다호",
-                        "position": 286,
-                        "type": "NNP",
-                        "begin": 2
-                    },
-                    {
-                        "scode": "05",
-                        "weight": 3.3,
-                        "end": 3,
-                        "id": 3,
-                        "text": "주",
-                        "position": 299,
-                        "type": "NNG",
-                        "begin": 3
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 4,
-                        "id": 4,
-                        "text": "에서",
-                        "position": 302,
-                        "type": "JKB",
-                        "begin": 4
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 5,
-                        "id": 5,
-                        "text": "엽총",
-                        "position": 309,
-                        "type": "NNG",
-                        "begin": 5
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 6,
-                        "id": 6,
-                        "text": "으로",
-                        "position": 315,
-                        "type": "JKB",
-                        "begin": 6
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 7,
-                        "id": 7,
-                        "text": "62",
-                        "position": 322,
-                        "type": "SN",
-                        "begin": 7
-                    },
-                    {
-                        "scode": "13",
-                        "weight": 4.18947,
-                        "end": 8,
-                        "id": 8,
-                        "text": "세",
-                        "position": 324,
-                        "type": "NNB",
-                        "begin": 8
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 9,
-                        "id": 9,
-                        "text": "의",
-                        "position": 327,
-                        "type": "JKG",
-                        "begin": 9
-                    },
-                    {
-                        "scode": "01",
-                        "weight": 1,
-                        "end": 10,
-                        "id": 10,
-                        "text": "나이",
-                        "position": 331,
-                        "type": "NNG",
-                        "begin": 10
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 11,
-                        "id": 11,
-                        "text": "에",
-                        "position": 337,
-                        "type": "JKB",
-                        "begin": 11
-                    },
-                    {
-                        "scode": "01",
-                        "weight": 1,
-                        "end": 13,
-                        "id": 12,
-                        "text": "자살하",
-                        "position": 341,
-                        "type": "VV",
-                        "begin": 12
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 14,
-                        "id": 13,
-                        "text": "었",
-                        "position": 347,
-                        "type": "EP",
-                        "begin": 14
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 15,
-                        "id": 14,
-                        "text": "다",
-                        "position": 350,
-                        "type": "EF",
-                        "begin": 15
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 16,
-                        "id": 15,
-                        "text": ".",
-                        "position": 353,
-                        "type": "SF",
-                        "begin": 16
-                    }
-                ],
-                "chunk": [],
-                "reserve_str": "",
-                "SRL": [],
-                "morp_eval": [
-                    {
-                        "result": "1961/SN+년/NNB",
-                        "word_id": 0,
-                        "m_end": 1,
-                        "id": 0,
-                        "target": "1961년",
-                        "m_begin": 0
-                    },
-                    {
-                        "result": "아이다호/NNG",
-                        "word_id": 1,
-                        "m_end": 2,
-                        "id": 1,
-                        "target": "아이다호",
-                        "m_begin": 2
-                    },
-                    {
-                        "result": "주/NNG+에서/JKB",
-                        "word_id": 2,
-                        "m_end": 4,
-                        "id": 2,
-                        "target": "주에서",
-                        "m_begin": 3
-                    },
-                    {
-                        "result": "엽총/NNG+으로/JKB",
-                        "word_id": 3,
-                        "m_end": 6,
-                        "id": 3,
-                        "target": "엽총으로",
-                        "m_begin": 5
-                    },
-                    {
-                        "result": "62/SN+세/NNB+의/JKG",
-                        "word_id": 4,
-                        "m_end": 9,
-                        "id": 4,
-                        "target": "62세의",
-                        "m_begin": 7
-                    },
-                    {
-                        "result": "나이/NNG+에/JKB",
-                        "word_id": 5,
-                        "m_end": 11,
-                        "id": 5,
-                        "target": "나이에",
-                        "m_begin": 10
-                    },
-                    {
-                        "result": "자살하/VV+었/EP+다/EF+./SF",
-                        "word_id": 6,
-                        "m_end": 16,
-                        "id": 6,
-                        "target": "자살했다.",
-                        "m_begin": 12
-                    }
-                ],
-                "SA": [],
-                "relation": [],
                 "ELU": {
                     "entities": [
                         {
-                            "indirect": 0,
-                            "confidence": 0.9819454045719849,
-                            "link": 0,
+                            "score": 0,
+                            "confidence": 1,
+                            "en_entity": "Ernest_Hemingway",
+                            "predicted_coref_index": 1,
+                            "end_offset": 4,
+                            "ne_type": "PS_NAME",
+                            "text": "헤밍웨이",
+                            "source": "ELU",
+                            "start_offset": 0,
+                            "type": [
+                                "http://wikidata.dbpedia.org/resource/Q5",
+                                "http://dbpedia.org/ontology/Writer",
+                                "http://xmlns.com/foaf/0.1/Person",
+                                "http://schema.org/Person",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson",
+                                "http://dbpedia.org/ontology/Artist",
+                                "http://wikidata.dbpedia.org/resource/Q215627",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+                                "http://www.wikidata.org/entity/Q24229398",
+                                "http://www.wikidata.org/entity/Q5",
+                                "http://www.wikidata.org/entity/Q215627",
+                                "http://dbpedia.org/ontology/Person",
+                                "http://www.wikidata.org/entity/Q36180",
+                                "http://www.w3.org/2002/07/owl#Thing",
+                                "http://dbpedia.org/ontology/Agent"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/어니스트_헤밍웨이"
+                        },
+                        {
+                            "score": -0.19179920852184296,
+                            "confidence": 0.1,
+                            "en_entity": null,
+                            "predicted_coref_index": -1,
                             "end_offset": 12,
+                            "ne_type": "PS_NAME",
+                            "text": "파이퍼",
+                            "source": "ELU",
+                            "start_offset": 9,
+                            "type": [],
+                            "uri": "http://kbox.kaist.ac.kr/resource/_파이퍼"
+                        },
+                        {
+                            "score": 0,
+                            "confidence": 1,
+                            "en_entity": "Martha_Gellhorn",
+                            "predicted_coref_index": -1,
+                            "end_offset": 25,
+                            "ne_type": "PS_NAME",
+                            "text": "마사 겔혼",
+                            "source": "ELU",
+                            "start_offset": 20,
+                            "type": [
+                                "http://dbpedia.org/ontology/Writer",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson",
+                                "http://schema.org/Person",
+                                "http://xmlns.com/foaf/0.1/Person",
+                                "http://dbpedia.org/ontology/Artist",
+                                "http://wikidata.dbpedia.org/resource/Q215627",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+                                "http://dbpedia.org/ontology/Person",
+                                "http://wikidata.dbpedia.org/resource/Q5",
+                                "http://www.w3.org/2002/07/owl#Thing",
+                                "http://dbpedia.org/ontology/Agent"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/마사_겔혼"
+                        }
+                    ],
+                    "d_entities": [],
+                    "merge": [
+                        {
+                            "score": 0,
+                            "confidence": 1,
+                            "en_entity": "Ernest_Hemingway",
+                            "predicted_coref_index": 1,
+                            "end_offset": 4,
+                            "ne_type": "PS_NAME",
+                            "text": "헤밍웨이",
+                            "source": "ELU",
+                            "start_offset": 0,
+                            "type": [
+                                "http://wikidata.dbpedia.org/resource/Q5",
+                                "http://dbpedia.org/ontology/Writer",
+                                "http://xmlns.com/foaf/0.1/Person",
+                                "http://schema.org/Person",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson",
+                                "http://dbpedia.org/ontology/Artist",
+                                "http://wikidata.dbpedia.org/resource/Q215627",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+                                "http://www.wikidata.org/entity/Q24229398",
+                                "http://www.wikidata.org/entity/Q5",
+                                "http://www.wikidata.org/entity/Q215627",
+                                "http://dbpedia.org/ontology/Person",
+                                "http://www.wikidata.org/entity/Q36180",
+                                "http://www.w3.org/2002/07/owl#Thing",
+                                "http://dbpedia.org/ontology/Agent"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/어니스트_헤밍웨이"
+                        },
+                        {
+                            "score": -0.19179920852184296,
+                            "confidence": 0.1,
+                            "en_entity": null,
+                            "predicted_coref_index": -1,
+                            "end_offset": 12,
+                            "ne_type": "PS_NAME",
+                            "text": "파이퍼",
+                            "source": "ELU",
+                            "start_offset": 9,
+                            "type": [],
+                            "uri": "http://kbox.kaist.ac.kr/resource/_파이퍼"
+                        },
+                        {
+                            "score": 0,
+                            "confidence": 1,
+                            "en_entity": "Martha_Gellhorn",
+                            "predicted_coref_index": -1,
+                            "end_offset": 25,
+                            "ne_type": "PS_NAME",
+                            "text": "마사 겔혼",
+                            "source": "ELU",
+                            "start_offset": 20,
+                            "type": [
+                                "http://dbpedia.org/ontology/Writer",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson",
+                                "http://schema.org/Person",
+                                "http://xmlns.com/foaf/0.1/Person",
+                                "http://dbpedia.org/ontology/Artist",
+                                "http://wikidata.dbpedia.org/resource/Q215627",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+                                "http://dbpedia.org/ontology/Person",
+                                "http://wikidata.dbpedia.org/resource/Q5",
+                                "http://www.w3.org/2002/07/owl#Thing",
+                                "http://dbpedia.org/ontology/Agent"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/마사_겔혼"
+                        }
+                    ]
+                }
+            },
+            {
+                "text": " 그는 1961년 아이다호 주에서 62세의 나이에 자살했다.",
+                "ELU": {
+                    "entities": [
+                        {
+                            "score": 0,
+                            "confidence": 1,
+                            "en_entity": "Ernest_Hemingway",
+                            "predicted_coref_index": 1,
+                            "end_offset": 1,
+                            "ne_type": "PS_NAME",
+                            "text": "그",
+                            "start_offset": 0,
                             "source": "ELU",
                             "type": [
-                                "http://dbpedia.org/ontology/Region",
-                                "http://schema.org/Place",
-                                "http://schema.org/AdministrativeArea",
-                                "http://www.wikidata.org/entity/Q486972",
+                                "http://wikidata.dbpedia.org/resource/Q5",
+                                "http://dbpedia.org/ontology/Writer",
+                                "http://xmlns.com/foaf/0.1/Person",
+                                "http://schema.org/Person",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson",
+                                "http://dbpedia.org/ontology/Artist",
+                                "http://wikidata.dbpedia.org/resource/Q215627",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+                                "http://www.wikidata.org/entity/Q24229398",
+                                "http://www.wikidata.org/entity/Q5",
+                                "http://www.wikidata.org/entity/Q215627",
+                                "http://dbpedia.org/ontology/Person",
+                                "http://www.wikidata.org/entity/Q36180",
                                 "http://www.w3.org/2002/07/owl#Thing",
-                                "http://dbpedia.org/ontology/Wikidata:Q532",
-                                "http://dbpedia.org/ontology/AdministrativeRegion",
-                                "http://dbpedia.org/ontology/PopulatedPlace",
-                                "http://dbpedia.org/ontology/Place",
-                                "http://www.ontologydesignpatterns.org/ont/d0.owl#Location",
-                                "http://www.wikidata.org/entity/Q3455524",
-                                "http://dbpedia.org/ontology/Settlement"
+                                "http://dbpedia.org/ontology/Agent"
                             ],
-                            "uri": "http://ko.dbpedia.org/resource/아이다호_주",
-                            "relation": 0,
-                            "score": 2.167317334748176,
+                            "uri": "http://kbox.kaist.ac.kr/resource/어니스트_헤밍웨이"
+                        },
+                        {
+                            "score": 0,
+                            "confidence": 1,
                             "en_entity": "Idaho",
-                            "text": "아이다호주",
-                            "start_offset": 6,
-                            "id": 2044
+                            "predicted_coref_index": -1,
+                            "end_offset": 15,
+                            "ne_type": "LCP_PROVINCE",
+                            "text": "아이다호 주",
+                            "source": "ELU",
+                            "start_offset": 9,
+                            "type": [
+                                "http://www.wikidata.org/entity/Q486972",
+                                "http://dbpedia.org/ontology/Location",
+                                "http://dbpedia.org/ontology/Place",
+                                "http://schema.org/Place",
+                                "http://dbpedia.org/ontology/Wikidata:Q532",
+                                "http://dbpedia.org/ontology/Settlement",
+                                "http://dbpedia.org/ontology/Region",
+                                "http://schema.org/AdministrativeArea",
+                                "http://dbpedia.org/ontology/PopulatedPlace",
+                                "http://dbpedia.org/ontology/AdministrativeRegion",
+                                "http://www.ontologydesignpatterns.org/ont/d0.owl#Location",
+                                "http://www.w3.org/2002/07/owl#Thing",
+                                "http://www.wikidata.org/entity/Q3455524"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/아이다호_주"
                         }
                     ],
                     "d_entities": [
                         {
-                            "score": 0,
                             "indirect": 0,
-                            "confidence": 0,
+                            "confidence": 0.87678,
                             "link": 0,
-                            "end_offset": 5,
-                            "text": "1961년",
-                            "start_offset": 0,
+                            "end_offset": 8,
                             "source": "DE",
                             "type": "DT_YEAR",
                             "uri": "",
-                            "relation": 0
+                            "relation": 0,
+                            "score": 0,
+                            "text": "1961년",
+                            "start_offset": 3,
+                            "ne_id": 0,
+                            "sen_id": 0
                         },
                         {
-                            "score": 0,
                             "indirect": 0,
-                            "confidence": 0,
+                            "confidence": 0.643494,
                             "link": 0,
-                            "end_offset": 17,
-                            "text": "엽총",
-                            "start_offset": 15,
-                            "source": "DE",
-                            "type": "AF_WEAPON",
-                            "uri": "",
-                            "relation": 0
-                        },
-                        {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "link": 0,
-                            "end_offset": 23,
-                            "text": "62세",
-                            "start_offset": 20,
+                            "end_offset": 21,
                             "source": "DE",
                             "type": "QT_AGE",
                             "uri": "",
-                            "relation": 0
+                            "relation": 0,
+                            "score": 0,
+                            "text": "62세",
+                            "start_offset": 18,
+                            "ne_id": 2,
+                            "sen_id": 0
                         }
                     ],
                     "merge": [
                         {
                             "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "en_entity": null,
-                            "link": 0,
-                            "end_offset": 5,
-                            "text": "1961년",
+                            "confidence": 1,
+                            "en_entity": "Ernest_Hemingway",
+                            "predicted_coref_index": 1,
+                            "end_offset": 1,
+                            "ne_type": "PS_NAME",
+                            "text": "그",
                             "start_offset": 0,
+                            "source": "ELU",
+                            "type": [
+                                "http://wikidata.dbpedia.org/resource/Q5",
+                                "http://dbpedia.org/ontology/Writer",
+                                "http://xmlns.com/foaf/0.1/Person",
+                                "http://schema.org/Person",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson",
+                                "http://dbpedia.org/ontology/Artist",
+                                "http://wikidata.dbpedia.org/resource/Q215627",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+                                "http://www.wikidata.org/entity/Q24229398",
+                                "http://www.wikidata.org/entity/Q5",
+                                "http://www.wikidata.org/entity/Q215627",
+                                "http://dbpedia.org/ontology/Person",
+                                "http://www.wikidata.org/entity/Q36180",
+                                "http://www.w3.org/2002/07/owl#Thing",
+                                "http://dbpedia.org/ontology/Agent"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/어니스트_헤밍웨이"
+                        },
+                        {
+                            "indirect": 0,
+                            "confidence": 0.87678,
+                            "link": 0,
+                            "end_offset": 8,
                             "source": "DE",
                             "type": "DT_YEAR",
                             "uri": "",
-                            "relation": 0
-                        },
-                        {
-                            "indirect": 0,
-                            "confidence": 0.9819454045719849,
-                            "link": 0,
-                            "end_offset": 12,
-                            "source": "ELU",
-                            "type": [
-                                "http://dbpedia.org/ontology/Region",
-                                "http://schema.org/Place",
-                                "http://schema.org/AdministrativeArea",
-                                "http://www.wikidata.org/entity/Q486972",
-                                "http://www.w3.org/2002/07/owl#Thing",
-                                "http://dbpedia.org/ontology/Wikidata:Q532",
-                                "http://dbpedia.org/ontology/AdministrativeRegion",
-                                "http://dbpedia.org/ontology/PopulatedPlace",
-                                "http://dbpedia.org/ontology/Place",
-                                "http://www.ontologydesignpatterns.org/ont/d0.owl#Location",
-                                "http://www.wikidata.org/entity/Q3455524",
-                                "http://dbpedia.org/ontology/Settlement"
-                            ],
-                            "uri": "http://ko.dbpedia.org/resource/아이다호_주",
                             "relation": 0,
-                            "score": 2.167317334748176,
+                            "score": 0,
+                            "en_entity": null,
+                            "text": "1961년",
+                            "start_offset": 3,
+                            "ne_id": 0,
+                            "sen_id": 0
+                        },
+                        {
+                            "score": 0,
+                            "confidence": 1,
                             "en_entity": "Idaho",
-                            "text": "아이다호주",
-                            "start_offset": 6,
-                            "id": 2044
+                            "predicted_coref_index": -1,
+                            "end_offset": 15,
+                            "ne_type": "LCP_PROVINCE",
+                            "text": "아이다호 주",
+                            "source": "ELU",
+                            "start_offset": 9,
+                            "type": [
+                                "http://www.wikidata.org/entity/Q486972",
+                                "http://dbpedia.org/ontology/Location",
+                                "http://dbpedia.org/ontology/Place",
+                                "http://schema.org/Place",
+                                "http://dbpedia.org/ontology/Wikidata:Q532",
+                                "http://dbpedia.org/ontology/Settlement",
+                                "http://dbpedia.org/ontology/Region",
+                                "http://schema.org/AdministrativeArea",
+                                "http://dbpedia.org/ontology/PopulatedPlace",
+                                "http://dbpedia.org/ontology/AdministrativeRegion",
+                                "http://www.ontologydesignpatterns.org/ont/d0.owl#Location",
+                                "http://www.w3.org/2002/07/owl#Thing",
+                                "http://www.wikidata.org/entity/Q3455524"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/아이다호_주"
                         },
                         {
-                            "score": 0,
                             "indirect": 0,
-                            "confidence": 0,
-                            "en_entity": null,
+                            "confidence": 0.643494,
                             "link": 0,
-                            "end_offset": 17,
-                            "text": "엽총",
-                            "start_offset": 15,
-                            "source": "DE",
-                            "type": "AF_WEAPON",
-                            "uri": "",
-                            "relation": 0
-                        },
-                        {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "en_entity": null,
-                            "link": 0,
-                            "end_offset": 23,
-                            "text": "62세",
-                            "start_offset": 20,
+                            "end_offset": 21,
                             "source": "DE",
                             "type": "QT_AGE",
                             "uri": "",
-                            "relation": 0
+                            "relation": 0,
+                            "score": 0,
+                            "en_entity": null,
+                            "text": "62세",
+                            "start_offset": 18,
+                            "ne_id": 2,
+                            "sen_id": 0
                         }
                     ]
-                },
-                "morp": [
-                    {
-                        "lemma": "1961",
-                        "weight": 1,
-                        "id": 0,
-                        "position": 278,
-                        "type": "SN"
-                    },
-                    {
-                        "lemma": "년",
-                        "weight": 0.414343,
-                        "id": 1,
-                        "position": 282,
-                        "type": "NNB"
-                    },
-                    {
-                        "lemma": "아이다호",
-                        "weight": 0.2,
-                        "id": 2,
-                        "position": 286,
-                        "type": "NNP"
-                    },
-                    {
-                        "lemma": "주",
-                        "weight": 0.0177845,
-                        "id": 3,
-                        "position": 299,
-                        "type": "NNG"
-                    },
-                    {
-                        "lemma": "에서",
-                        "weight": 0.153407,
-                        "id": 4,
-                        "position": 302,
-                        "type": "JKB"
-                    },
-                    {
-                        "lemma": "엽총",
-                        "weight": 0.9,
-                        "id": 5,
-                        "position": 309,
-                        "type": "NNG"
-                    },
-                    {
-                        "lemma": "으로",
-                        "weight": 0.153406,
-                        "id": 6,
-                        "position": 315,
-                        "type": "JKB"
-                    },
-                    {
-                        "lemma": "62",
-                        "weight": 1,
-                        "id": 7,
-                        "position": 322,
-                        "type": "SN"
-                    },
-                    {
-                        "lemma": "세",
-                        "weight": 0.0850602,
-                        "id": 8,
-                        "position": 324,
-                        "type": "NNB"
-                    },
-                    {
-                        "lemma": "의",
-                        "weight": 0.0520933,
-                        "id": 9,
-                        "position": 327,
-                        "type": "JKG"
-                    },
-                    {
-                        "lemma": "나이",
-                        "weight": 0.9,
-                        "id": 10,
-                        "position": 331,
-                        "type": "NNG"
-                    },
-                    {
-                        "lemma": "에",
-                        "weight": 0.153364,
-                        "id": 11,
-                        "position": 337,
-                        "type": "JKB"
-                    },
-                    {
-                        "lemma": "자살",
-                        "weight": 0.9,
-                        "id": 12,
-                        "position": 341,
-                        "type": "NNG"
-                    },
-                    {
-                        "lemma": "하",
-                        "weight": 0.0001,
-                        "id": 13,
-                        "position": 347,
-                        "type": "XSV"
-                    },
-                    {
-                        "lemma": "었",
-                        "weight": 0.9,
-                        "id": 14,
-                        "position": 347,
-                        "type": "EP"
-                    },
-                    {
-                        "lemma": "다",
-                        "weight": 0.640954,
-                        "id": 15,
-                        "position": 350,
-                        "type": "EF"
-                    },
-                    {
-                        "lemma": ".",
-                        "weight": 1,
-                        "id": 16,
-                        "position": 353,
-                        "type": "SF"
-                    }
-                ],
-                "tagged": "1961년 [아이다호_주] 에서 엽총으로 62세의 나이에 자살했다.",
-                "NE": [
-                    {
-                        "weight": 0.840442,
-                        "end": 1,
-                        "id": 0,
-                        "text": "1961년",
-                        "type": "DT_YEAR",
-                        "begin": 0,
-                        "common_noun": 0
-                    },
-                    {
-                        "weight": 0.436933,
-                        "end": 3,
-                        "id": 1,
-                        "text": "아이다호 주",
-                        "type": "LCP_PROVINCE",
-                        "begin": 2,
-                        "common_noun": 0
-                    },
-                    {
-                        "weight": 0.188854,
-                        "end": 5,
-                        "id": 2,
-                        "text": "엽총",
-                        "type": "AF_WEAPON",
-                        "begin": 5,
-                        "common_noun": 0
-                    },
-                    {
-                        "weight": 0.65715,
-                        "end": 8,
-                        "id": 3,
-                        "text": "62세",
-                        "type": "QT_AGE",
-                        "begin": 7,
-                        "common_noun": 0
-                    }
-                ],
-                "id": 4,
-                "text": " 1961년 아이다호 주에서 엽총으로 62세의 나이에 자살했다.",
-                "word": [
-                    {
-                        "end": 1,
-                        "id": 0,
-                        "text": "1961년",
-                        "type": "",
-                        "begin": 0
-                    },
-                    {
-                        "end": 2,
-                        "id": 1,
-                        "text": "아이다호",
-                        "type": "",
-                        "begin": 2
-                    },
-                    {
-                        "end": 4,
-                        "id": 2,
-                        "text": "주에서",
-                        "type": "",
-                        "begin": 3
-                    },
-                    {
-                        "end": 6,
-                        "id": 3,
-                        "text": "엽총으로",
-                        "type": "",
-                        "begin": 5
-                    },
-                    {
-                        "end": 9,
-                        "id": 4,
-                        "text": "62세의",
-                        "type": "",
-                        "begin": 7
-                    },
-                    {
-                        "end": 11,
-                        "id": 5,
-                        "text": "나이에",
-                        "type": "",
-                        "begin": 10
-                    },
-                    {
-                        "end": 16,
-                        "id": 6,
-                        "text": "자살했다.",
-                        "type": "",
-                        "begin": 12
-                    }
-                ],
-                "mod_NE": [
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 5,
-                        "text": "1961년",
-                        "start_offset": 0,
-                        "type": "DT_YEAR",
-                        "relation": 0
-                    },
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 12,
-                        "text": "아이다호 주",
-                        "start_offset": 6,
-                        "type": "LCP_PROVINCE",
-                        "relation": 0
-                    },
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 17,
-                        "text": "엽총",
-                        "start_offset": 15,
-                        "type": "AF_WEAPON",
-                        "relation": 0
-                    },
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 23,
-                        "text": "62세",
-                        "start_offset": 20,
-                        "type": "QT_AGE",
-                        "relation": 0
-                    }
-                ]
+                }
             },
             {
-                "phrase_dependency": [
-                    {
-                        "weight": 0,
-                        "end": 0,
-                        "key_begin": 0,
-                        "id": 0,
-                        "label": "X",
-                        "text": "-",
-                        "head_phrase": 2,
-                        "begin": 0,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 1,
-                        "key_begin": 1,
-                        "id": 1,
-                        "label": "NP_AJT",
-                        "text": "1926년",
-                        "head_phrase": 2,
-                        "begin": 1,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 8,
-                        "key_begin": 2,
-                        "id": 2,
-                        "label": "NP",
-                        "text": "P#0@X- P#1@AJT년 《해는 또다시 떠오른다》 The Sun Also Rises.",
-                        "head_phrase": -1,
-                        "begin": 0,
-                        "sub_phrase": [
-                            0,
-                            1
-                        ],
-                        "element": []
-                    }
-                ],
-                "dependency": [
-                    {
-                        "head": 8,
-                        "mod": [],
-                        "weight": 0.625414,
-                        "id": 0,
-                        "text": "-",
-                        "label": "X"
-                    },
-                    {
-                        "head": 4,
-                        "mod": [],
-                        "weight": 0.382789,
-                        "id": 1,
-                        "text": "1926년",
-                        "label": "NP_AJT"
-                    },
-                    {
-                        "head": 4,
-                        "mod": [],
-                        "weight": 0.623137,
-                        "id": 2,
-                        "text": "《해는",
-                        "label": "NP_SBJ"
-                    },
-                    {
-                        "head": 4,
-                        "mod": [],
-                        "weight": 0.851397,
-                        "id": 3,
-                        "text": "또다시",
-                        "label": "AP"
-                    },
-                    {
-                        "head": 8,
-                        "mod": [
-                            1,
-                            2,
-                            3
-                        ],
-                        "weight": 0.590195,
-                        "id": 4,
-                        "text": "떠오른다》",
-                        "label": "VP"
-                    },
-                    {
-                        "head": 6,
-                        "mod": [],
-                        "weight": 0.775376,
-                        "id": 5,
-                        "text": "The",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 7,
-                        "mod": [
-                            5
-                        ],
-                        "weight": 0.295614,
-                        "id": 6,
-                        "text": "Sun",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 8,
-                        "mod": [
-                            6
-                        ],
-                        "weight": 0.778055,
-                        "id": 7,
-                        "text": "Also",
-                        "label": "NP"
-                    },
-                    {
-                        "head": -1,
-                        "mod": [
-                            0,
-                            4,
-                            7
-                        ],
-                        "weight": 0.0109335,
-                        "id": 8,
-                        "text": "Rises.",
-                        "label": "NP"
-                    }
-                ],
-                "ZA": [],
-                "WSD": [
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 0,
-                        "id": 0,
-                        "text": "-",
-                        "position": 354,
-                        "type": "SO",
-                        "begin": 0
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 1,
-                        "id": 1,
-                        "text": "1926",
-                        "position": 356,
-                        "type": "SN",
-                        "begin": 1
-                    },
-                    {
-                        "scode": "02",
-                        "weight": 2.5,
-                        "end": 2,
-                        "id": 2,
-                        "text": "년",
-                        "position": 360,
-                        "type": "NNB",
-                        "begin": 2
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 3,
-                        "id": 3,
-                        "text": "《",
-                        "position": 364,
-                        "type": "SS",
-                        "begin": 3
-                    },
-                    {
-                        "scode": "12",
-                        "weight": 1,
-                        "end": 4,
-                        "id": 4,
-                        "text": "해",
-                        "position": 367,
-                        "type": "NNP",
-                        "begin": 4
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 5,
-                        "id": 5,
-                        "text": "는",
-                        "position": 370,
-                        "type": "JX",
-                        "begin": 5
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 6,
-                        "id": 6,
-                        "text": "또다시",
-                        "position": 374,
-                        "type": "MAG",
-                        "begin": 6
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 7,
-                        "id": 7,
-                        "text": "떠오르",
-                        "position": 384,
-                        "type": "VV",
-                        "begin": 7
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 8,
-                        "id": 8,
-                        "text": "ㄴ다",
-                        "position": 390,
-                        "type": "EF",
-                        "begin": 8
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 9,
-                        "id": 9,
-                        "text": "》",
-                        "position": 396,
-                        "type": "SS",
-                        "begin": 9
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 10,
-                        "id": 10,
-                        "text": "The",
-                        "position": 400,
-                        "type": "SL",
-                        "begin": 10
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 11,
-                        "id": 11,
-                        "text": "Sun",
-                        "position": 404,
-                        "type": "SL",
-                        "begin": 11
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 12,
-                        "id": 12,
-                        "text": "Also",
-                        "position": 408,
-                        "type": "SL",
-                        "begin": 12
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 13,
-                        "id": 13,
-                        "text": "Rises",
-                        "position": 413,
-                        "type": "SL",
-                        "begin": 13
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 14,
-                        "id": 14,
-                        "text": ".",
-                        "position": 418,
-                        "type": "SF",
-                        "begin": 14
-                    }
-                ],
-                "chunk": [],
-                "reserve_str": "",
-                "SRL": [],
-                "morp_eval": [
-                    {
-                        "result": "-/SO",
-                        "word_id": 0,
-                        "m_end": 0,
-                        "id": 0,
-                        "target": "-",
-                        "m_begin": 0
-                    },
-                    {
-                        "result": "1926/SN+년/NNB",
-                        "word_id": 1,
-                        "m_end": 2,
-                        "id": 1,
-                        "target": "1926년",
-                        "m_begin": 1
-                    },
-                    {
-                        "result": "《/SS+해/NNG+는/JX",
-                        "word_id": 2,
-                        "m_end": 5,
-                        "id": 2,
-                        "target": "《해는",
-                        "m_begin": 3
-                    },
-                    {
-                        "result": "또다시/MAG",
-                        "word_id": 3,
-                        "m_end": 6,
-                        "id": 3,
-                        "target": "또다시",
-                        "m_begin": 6
-                    },
-                    {
-                        "result": "떠오르/VV+ㄴ다/EF+》/SS",
-                        "word_id": 4,
-                        "m_end": 9,
-                        "id": 4,
-                        "target": "떠오른다》",
-                        "m_begin": 7
-                    },
-                    {
-                        "result": "The/SL",
-                        "word_id": 5,
-                        "m_end": 10,
-                        "id": 5,
-                        "target": "The",
-                        "m_begin": 10
-                    },
-                    {
-                        "result": "Sun/SL",
-                        "word_id": 6,
-                        "m_end": 11,
-                        "id": 6,
-                        "target": "Sun",
-                        "m_begin": 11
-                    },
-                    {
-                        "result": "Also/SL",
-                        "word_id": 7,
-                        "m_end": 12,
-                        "id": 7,
-                        "target": "Also",
-                        "m_begin": 12
-                    },
-                    {
-                        "result": "Rises/SL+./SF",
-                        "word_id": 8,
-                        "m_end": 14,
-                        "id": 8,
-                        "target": "Rises.",
-                        "m_begin": 13
-                    }
-                ],
-                "SA": [],
-                "relation": [],
+                "text": "- 1926년 《해는 또다시 떠오른다》 The Sun Also Rises.- 1929년 《무기여 잘 있거라》 A Farewell to Arms.- 1940년 《누구를 위하여 종은 울리나》 For whom the bell tolls.- 1950년 《강 건너 숲속으로》 Across the River and Into the Trees.- 1952년 《노인과 바다》 The Old Man and the Sea.",
                 "ELU": {
-                    "entities": [],
-                    "d_entities": [
+                    "entities": [
+                        {
+                            "score": -0.19179920852184296,
+                            "confidence": 0.1,
+                            "en_entity": null,
+                            "predicted_coref_index": -1,
+                            "end_offset": 20,
+                            "ne_type": "AFW_DOCUMENT",
+                            "text": "해는 또다시 떠오른다",
+                            "source": "ELU",
+                            "start_offset": 9,
+                            "type": [],
+                            "uri": "http://kbox.kaist.ac.kr/resource/_해는_또다시_떠오른다"
+                        },
                         {
                             "score": 0,
+                            "confidence": 1,
+                            "en_entity": "A_Farewell_to_Arms",
+                            "predicted_coref_index": -1,
+                            "end_offset": 59,
+                            "ne_type": "AFW_DOCUMENT",
+                            "text": "무기여 잘 있거라",
+                            "source": "ELU",
+                            "start_offset": 50,
+                            "type": [
+                                "http://schema.org/CreativeWork",
+                                "http://dbpedia.org/ontology/Book",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+                                "http://schema.org/Book",
+                                "http://dbpedia.org/ontology/Work",
+                                "http://purl.org/ontology/bibo/Book",
+                                "http://dbpedia.org/ontology/WrittenWork"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/무기여_잘_있거라"
+                        },
+                        {
+                            "score": 4.571633338928223,
+                            "confidence": 0.6511972667091805,
+                            "en_entity": "For_Whom_the_Bell_Tolls",
+                            "predicted_coref_index": -1,
+                            "end_offset": 103,
+                            "ne_type": "AFW_DOCUMENT",
+                            "text": "누구를 위하여 종은 울리나",
+                            "source": "ELU",
+                            "start_offset": 89,
+                            "type": [
+                                "http://schema.org/CreativeWork",
+                                "http://dbpedia.org/ontology/Book",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+                                "http://schema.org/Book",
+                                "http://dbpedia.org/ontology/Work",
+                                "http://purl.org/ontology/bibo/Book",
+                                "http://dbpedia.org/ontology/WrittenWork"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/누구를_위하여_종은_울리나"
+                        },
+                        {
+                            "score": -0.19179920852184296,
+                            "confidence": 0.1,
+                            "en_entity": null,
+                            "predicted_coref_index": -1,
+                            "end_offset": 147,
+                            "ne_type": "AFW_DOCUMENT",
+                            "text": "강 건너 숲속으로",
+                            "source": "ELU",
+                            "start_offset": 138,
+                            "type": [],
+                            "uri": "http://kbox.kaist.ac.kr/resource/_강_건너_숲속으로"
+                        },
+                        {
+                            "score": 0,
+                            "confidence": 1,
+                            "en_entity": "The_Old_Man_and_the_Sea",
+                            "predicted_coref_index": -1,
+                            "end_offset": 200,
+                            "ne_type": "AFW_DOCUMENT",
+                            "text": "노인과 바다",
+                            "source": "ELU",
+                            "start_offset": 194,
+                            "type": [
+                                "http://www.w3.org/2002/07/owl#Thing",
+                                "http://schema.org/CreativeWork",
+                                "http://dbpedia.org/ontology/Book",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+                                "http://schema.org/Book",
+                                "http://dbpedia.org/ontology/Work",
+                                "http://www.wikidata.org/entity/Q386724",
+                                "http://purl.org/ontology/bibo/Book",
+                                "http://www.wikidata.org/entity/Q571",
+                                "http://dbpedia.org/ontology/WrittenWork"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/노인과_바다"
+                        }
+                    ],
+                    "d_entities": [
+                        {
                             "indirect": 0,
-                            "confidence": 0,
+                            "confidence": 0.682946,
                             "link": 0,
                             "end_offset": 7,
+                            "source": "DE",
+                            "type": "DT_YEAR",
+                            "uri": "",
+                            "relation": 0,
+                            "score": 0,
                             "text": "1926년",
                             "start_offset": 2,
-                            "source": "DE",
-                            "type": "DT_YEAR",
-                            "uri": "",
-                            "relation": 0
+                            "ne_id": 0,
+                            "sen_id": 0
                         },
                         {
-                            "score": 0,
                             "indirect": 0,
-                            "confidence": 0,
+                            "confidence": 0.067496,
                             "link": 0,
-                            "end_offset": 20,
-                            "text": "해는 또다시 떠오른다",
-                            "start_offset": 9,
+                            "end_offset": 40,
                             "source": "DE",
                             "type": "AFW_DOCUMENT",
                             "uri": "",
-                            "relation": 0
+                            "relation": 0,
+                            "score": 0,
+                            "text": "The Sun Also Rises",
+                            "start_offset": 22,
+                            "ne_id": 2,
+                            "sen_id": 0
                         },
                         {
-                            "score": 0,
                             "indirect": 0,
-                            "confidence": 0,
+                            "confidence": 0.59971,
                             "link": 0,
-                            "end_offset": 29,
-                            "text": "The Sun",
-                            "start_offset": 22,
+                            "end_offset": 48,
                             "source": "DE",
-                            "type": "OGG_MEDIA",
+                            "type": "DT_YEAR",
                             "uri": "",
-                            "relation": 0
+                            "relation": 0,
+                            "score": 0,
+                            "text": "1929년",
+                            "start_offset": 43,
+                            "ne_id": 3,
+                            "sen_id": 0
+                        },
+                        {
+                            "indirect": 0,
+                            "confidence": 0.625953,
+                            "link": 0,
+                            "end_offset": 87,
+                            "source": "DE",
+                            "type": "DT_YEAR",
+                            "uri": "",
+                            "relation": 0,
+                            "score": 0,
+                            "text": "1940년",
+                            "start_offset": 82,
+                            "ne_id": 5,
+                            "sen_id": 0
+                        },
+                        {
+                            "indirect": 0,
+                            "confidence": 0.636736,
+                            "link": 0,
+                            "end_offset": 136,
+                            "source": "DE",
+                            "type": "DT_YEAR",
+                            "uri": "",
+                            "relation": 0,
+                            "score": 0,
+                            "text": "1950년",
+                            "start_offset": 131,
+                            "ne_id": 7,
+                            "sen_id": 0
+                        },
+                        {
+                            "indirect": 0,
+                            "confidence": 0.575532,
+                            "link": 0,
+                            "end_offset": 192,
+                            "source": "DE",
+                            "type": "DT_YEAR",
+                            "uri": "",
+                            "relation": 0,
+                            "score": 0,
+                            "text": "1952년",
+                            "start_offset": 187,
+                            "ne_id": 9,
+                            "sen_id": 0
                         }
                     ],
                     "merge": [
                         {
-                            "score": 0,
                             "indirect": 0,
-                            "confidence": 0,
-                            "en_entity": null,
+                            "confidence": 0.682946,
                             "link": 0,
                             "end_offset": 7,
+                            "source": "DE",
+                            "type": "DT_YEAR",
+                            "uri": "",
+                            "relation": 0,
+                            "score": 0,
+                            "en_entity": null,
                             "text": "1926년",
                             "start_offset": 2,
-                            "source": "DE",
-                            "type": "DT_YEAR",
-                            "uri": "",
-                            "relation": 0
+                            "ne_id": 0,
+                            "sen_id": 0
                         },
                         {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
+                            "score": -0.19179920852184296,
+                            "confidence": 0.1,
                             "en_entity": null,
-                            "link": 0,
+                            "predicted_coref_index": -1,
                             "end_offset": 20,
+                            "ne_type": "AFW_DOCUMENT",
                             "text": "해는 또다시 떠오른다",
+                            "source": "ELU",
                             "start_offset": 9,
+                            "type": [],
+                            "uri": "http://kbox.kaist.ac.kr/resource/_해는_또다시_떠오른다"
+                        },
+                        {
+                            "indirect": 0,
+                            "confidence": 0.067496,
+                            "link": 0,
+                            "end_offset": 40,
                             "source": "DE",
                             "type": "AFW_DOCUMENT",
                             "uri": "",
-                            "relation": 0
-                        },
-                        {
+                            "relation": 0,
                             "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
                             "en_entity": null,
-                            "link": 0,
-                            "end_offset": 29,
-                            "text": "The Sun",
+                            "text": "The Sun Also Rises",
                             "start_offset": 22,
+                            "ne_id": 2,
+                            "sen_id": 0
+                        },
+                        {
+                            "indirect": 0,
+                            "confidence": 0.59971,
+                            "link": 0,
+                            "end_offset": 48,
                             "source": "DE",
-                            "type": "OGG_MEDIA",
+                            "type": "DT_YEAR",
                             "uri": "",
-                            "relation": 0
-                        }
-                    ]
-                },
-                "morp": [
-                    {
-                        "lemma": "-",
-                        "weight": 1,
-                        "id": 0,
-                        "position": 354,
-                        "type": "SO"
-                    },
-                    {
-                        "lemma": "1926",
-                        "weight": 1,
-                        "id": 1,
-                        "position": 356,
-                        "type": "SN"
-                    },
-                    {
-                        "lemma": "년",
-                        "weight": 0.414343,
-                        "id": 2,
-                        "position": 360,
-                        "type": "NNB"
-                    },
-                    {
-                        "lemma": "《",
-                        "weight": 1,
-                        "id": 3,
-                        "position": 364,
-                        "type": "SS"
-                    },
-                    {
-                        "lemma": "해",
-                        "weight": 0.000103867,
-                        "id": 4,
-                        "position": 367,
-                        "type": "NNP"
-                    },
-                    {
-                        "lemma": "는",
-                        "weight": 0.0332677,
-                        "id": 5,
-                        "position": 370,
-                        "type": "JX"
-                    },
-                    {
-                        "lemma": "또다시",
-                        "weight": 0.9,
-                        "id": 6,
-                        "position": 374,
-                        "type": "MAG"
-                    },
-                    {
-                        "lemma": "떠오르",
-                        "weight": 0.9,
-                        "id": 7,
-                        "position": 384,
-                        "type": "VV"
-                    },
-                    {
-                        "lemma": "ㄴ다",
-                        "weight": 0.0793196,
-                        "id": 8,
-                        "position": 390,
-                        "type": "EF"
-                    },
-                    {
-                        "lemma": "》",
-                        "weight": 1,
-                        "id": 9,
-                        "position": 396,
-                        "type": "SS"
-                    },
-                    {
-                        "lemma": "The",
-                        "weight": 1,
-                        "id": 10,
-                        "position": 400,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "Sun",
-                        "weight": 1,
-                        "id": 11,
-                        "position": 404,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "Also",
-                        "weight": 1,
-                        "id": 12,
-                        "position": 408,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "Rises",
-                        "weight": 1,
-                        "id": 13,
-                        "position": 413,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": ".",
-                        "weight": 1,
-                        "id": 14,
-                        "position": 418,
-                        "type": "SF"
-                    }
-                ],
-                "tagged": "- 1926년 《해는 또다시 떠오른다》 The Sun Also Rises.",
-                "NE": [
-                    {
-                        "weight": 0.682946,
-                        "end": 2,
-                        "id": 0,
-                        "text": "1926년",
-                        "type": "DT_YEAR",
-                        "begin": 1,
-                        "common_noun": 0
-                    },
-                    {
-                        "weight": 0.944267,
-                        "end": 8,
-                        "id": 1,
-                        "text": "해는 또다시 떠오른다",
-                        "type": "AFW_DOCUMENT",
-                        "begin": 4,
-                        "common_noun": 0
-                    },
-                    {
-                        "weight": 0.112072,
-                        "end": 11,
-                        "id": 2,
-                        "text": "The Sun",
-                        "type": "OGG_MEDIA",
-                        "begin": 10,
-                        "common_noun": 0
-                    }
-                ],
-                "id": 5,
-                "text": "- 1926년 《해는 또다시 떠오른다》 The Sun Also Rises.",
-                "word": [
-                    {
-                        "end": 0,
-                        "id": 0,
-                        "text": "-",
-                        "type": "",
-                        "begin": 0
-                    },
-                    {
-                        "end": 2,
-                        "id": 1,
-                        "text": "1926년",
-                        "type": "",
-                        "begin": 1
-                    },
-                    {
-                        "end": 5,
-                        "id": 2,
-                        "text": "《해는",
-                        "type": "",
-                        "begin": 3
-                    },
-                    {
-                        "end": 6,
-                        "id": 3,
-                        "text": "또다시",
-                        "type": "",
-                        "begin": 6
-                    },
-                    {
-                        "end": 9,
-                        "id": 4,
-                        "text": "떠오른다》",
-                        "type": "",
-                        "begin": 7
-                    },
-                    {
-                        "end": 10,
-                        "id": 5,
-                        "text": "The",
-                        "type": "",
-                        "begin": 10
-                    },
-                    {
-                        "end": 11,
-                        "id": 6,
-                        "text": "Sun",
-                        "type": "",
-                        "begin": 11
-                    },
-                    {
-                        "end": 12,
-                        "id": 7,
-                        "text": "Also",
-                        "type": "",
-                        "begin": 12
-                    },
-                    {
-                        "end": 14,
-                        "id": 8,
-                        "text": "Rises.",
-                        "type": "",
-                        "begin": 13
-                    }
-                ],
-                "mod_NE": [
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 7,
-                        "text": "1926년",
-                        "start_offset": 2,
-                        "type": "DT_YEAR",
-                        "relation": 0
-                    },
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 20,
-                        "text": "해는 또다시 떠오른다",
-                        "start_offset": 9,
-                        "type": "AFW_DOCUMENT",
-                        "relation": 0
-                    },
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 29,
-                        "text": "The Sun",
-                        "start_offset": 22,
-                        "type": "OGG_MEDIA",
-                        "relation": 0
-                    }
-                ]
-            },
-            {
-                "phrase_dependency": [
-                    {
-                        "weight": 0,
-                        "end": 0,
-                        "key_begin": 0,
-                        "id": 0,
-                        "label": "X",
-                        "text": "-",
-                        "head_phrase": 2,
-                        "begin": 0,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 1,
-                        "key_begin": 1,
-                        "id": 1,
-                        "label": "NP_AJT",
-                        "text": "1929년",
-                        "head_phrase": 2,
-                        "begin": 1,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 8,
-                        "key_begin": 2,
-                        "id": 2,
-                        "label": "NP",
-                        "text": "P#0@X- P#1@AJT년 《무기여 잘 있거라》 A Farewell to Arms.",
-                        "head_phrase": -1,
-                        "begin": 0,
-                        "sub_phrase": [
-                            0,
-                            1
-                        ],
-                        "element": []
-                    }
-                ],
-                "dependency": [
-                    {
-                        "head": 8,
-                        "mod": [],
-                        "weight": 0.652819,
-                        "id": 0,
-                        "text": "-",
-                        "label": "X"
-                    },
-                    {
-                        "head": 4,
-                        "mod": [],
-                        "weight": 0.0516055,
-                        "id": 1,
-                        "text": "1929년",
-                        "label": "NP_AJT"
-                    },
-                    {
-                        "head": 4,
-                        "mod": [],
-                        "weight": 0.0213844,
-                        "id": 2,
-                        "text": "《무기여",
-                        "label": "NP_SBJ"
-                    },
-                    {
-                        "head": 4,
-                        "mod": [],
-                        "weight": 0.752902,
-                        "id": 3,
-                        "text": "잘",
-                        "label": "AP"
-                    },
-                    {
-                        "head": 8,
-                        "mod": [
-                            1,
-                            2,
-                            3
-                        ],
-                        "weight": 0.645219,
-                        "id": 4,
-                        "text": "있거라》",
-                        "label": "VP"
-                    },
-                    {
-                        "head": 6,
-                        "mod": [],
-                        "weight": 0.297697,
-                        "id": 5,
-                        "text": "A",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 7,
-                        "mod": [
-                            5
-                        ],
-                        "weight": 0.417261,
-                        "id": 6,
-                        "text": "Farewell",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 8,
-                        "mod": [
-                            6
-                        ],
-                        "weight": 0.746958,
-                        "id": 7,
-                        "text": "to",
-                        "label": "NP"
-                    },
-                    {
-                        "head": -1,
-                        "mod": [
-                            0,
-                            4,
-                            7
-                        ],
-                        "weight": 0.0000264244,
-                        "id": 8,
-                        "text": "Arms.",
-                        "label": "NP"
-                    }
-                ],
-                "ZA": [],
-                "WSD": [
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 0,
-                        "id": 0,
-                        "text": "-",
-                        "position": 419,
-                        "type": "SO",
-                        "begin": 0
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 1,
-                        "id": 1,
-                        "text": "1929",
-                        "position": 421,
-                        "type": "SN",
-                        "begin": 1
-                    },
-                    {
-                        "scode": "02",
-                        "weight": 4.30476,
-                        "end": 2,
-                        "id": 2,
-                        "text": "년",
-                        "position": 425,
-                        "type": "NNB",
-                        "begin": 2
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 3,
-                        "id": 3,
-                        "text": "《",
-                        "position": 429,
-                        "type": "SS",
-                        "begin": 3
-                    },
-                    {
-                        "scode": "05",
-                        "weight": 3.55,
-                        "end": 4,
-                        "id": 4,
-                        "text": "무기",
-                        "position": 432,
-                        "type": "NNG",
-                        "begin": 4
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 5,
-                        "id": 5,
-                        "text": "여",
-                        "position": 438,
-                        "type": "JKV",
-                        "begin": 5
-                    },
-                    {
-                        "scode": "02",
-                        "weight": 4.4,
-                        "end": 6,
-                        "id": 6,
-                        "text": "잘",
-                        "position": 442,
-                        "type": "MAG",
-                        "begin": 6
-                    },
-                    {
-                        "scode": "01",
-                        "weight": 4.4,
-                        "end": 7,
-                        "id": 7,
-                        "text": "있",
-                        "position": 446,
-                        "type": "VA",
-                        "begin": 7
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 8,
-                        "id": 8,
-                        "text": "거라",
-                        "position": 449,
-                        "type": "EF",
-                        "begin": 8
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 9,
-                        "id": 9,
-                        "text": "》",
-                        "position": 455,
-                        "type": "SS",
-                        "begin": 9
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 10,
-                        "id": 10,
-                        "text": "A",
-                        "position": 459,
-                        "type": "SL",
-                        "begin": 10
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 11,
-                        "id": 11,
-                        "text": "Farewell",
-                        "position": 461,
-                        "type": "SL",
-                        "begin": 11
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 12,
-                        "id": 12,
-                        "text": "to",
-                        "position": 470,
-                        "type": "SL",
-                        "begin": 12
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 13,
-                        "id": 13,
-                        "text": "Arms",
-                        "position": 473,
-                        "type": "SL",
-                        "begin": 13
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 14,
-                        "id": 14,
-                        "text": ".",
-                        "position": 477,
-                        "type": "SF",
-                        "begin": 14
-                    }
-                ],
-                "chunk": [],
-                "reserve_str": "",
-                "SRL": [],
-                "morp_eval": [
-                    {
-                        "result": "-/SO",
-                        "word_id": 0,
-                        "m_end": 0,
-                        "id": 0,
-                        "target": "-",
-                        "m_begin": 0
-                    },
-                    {
-                        "result": "1929/SN+년/NNB",
-                        "word_id": 1,
-                        "m_end": 2,
-                        "id": 1,
-                        "target": "1929년",
-                        "m_begin": 1
-                    },
-                    {
-                        "result": "《/SS+무기/NNG+여/JKV",
-                        "word_id": 2,
-                        "m_end": 5,
-                        "id": 2,
-                        "target": "《무기여",
-                        "m_begin": 3
-                    },
-                    {
-                        "result": "잘/MAG",
-                        "word_id": 3,
-                        "m_end": 6,
-                        "id": 3,
-                        "target": "잘",
-                        "m_begin": 6
-                    },
-                    {
-                        "result": "있/VA+거라/EF+》/SS",
-                        "word_id": 4,
-                        "m_end": 9,
-                        "id": 4,
-                        "target": "있거라》",
-                        "m_begin": 7
-                    },
-                    {
-                        "result": "A/SL",
-                        "word_id": 5,
-                        "m_end": 10,
-                        "id": 5,
-                        "target": "A",
-                        "m_begin": 10
-                    },
-                    {
-                        "result": "Farewell/SL",
-                        "word_id": 6,
-                        "m_end": 11,
-                        "id": 6,
-                        "target": "Farewell",
-                        "m_begin": 11
-                    },
-                    {
-                        "result": "to/SL",
-                        "word_id": 7,
-                        "m_end": 12,
-                        "id": 7,
-                        "target": "to",
-                        "m_begin": 12
-                    },
-                    {
-                        "result": "Arms/SL+./SF",
-                        "word_id": 8,
-                        "m_end": 14,
-                        "id": 8,
-                        "target": "Arms.",
-                        "m_begin": 13
-                    }
-                ],
-                "SA": [],
-                "relation": [],
-                "ELU": {
-                    "entities": [
-                        {
+                            "relation": 0,
                             "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "en_entity": "A_Farewell_to_Arms",
-                            "link": 0,
-                            "end_offset": 18,
-                            "text": "무기여 잘 있거라",
-                            "start_offset": 9,
-                            "source": "NER",
-                            "type": "AFW_DOCUMENT",
-                            "uri": "http://ko.dbpedia.org/resource/무기여_잘_있거라",
-                            "relation": 0
-                        }
-                    ],
-                    "d_entities": [
-                        {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "link": 0,
-                            "end_offset": 7,
+                            "en_entity": null,
                             "text": "1929년",
-                            "start_offset": 2,
-                            "source": "DE",
-                            "type": "DT_YEAR",
-                            "uri": "",
-                            "relation": 0
-                        }
-                    ],
-                    "merge": [
-                        {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "en_entity": null,
-                            "link": 0,
-                            "end_offset": 7,
-                            "text": "1929년",
-                            "start_offset": 2,
-                            "source": "DE",
-                            "type": "DT_YEAR",
-                            "uri": "",
-                            "relation": 0
+                            "start_offset": 43,
+                            "ne_id": 3,
+                            "sen_id": 0
                         },
                         {
                             "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
+                            "confidence": 1,
                             "en_entity": "A_Farewell_to_Arms",
-                            "link": 0,
-                            "end_offset": 18,
+                            "predicted_coref_index": -1,
+                            "end_offset": 59,
+                            "ne_type": "AFW_DOCUMENT",
                             "text": "무기여 잘 있거라",
-                            "start_offset": 9,
-                            "source": "NER",
-                            "type": "AFW_DOCUMENT",
-                            "uri": "http://ko.dbpedia.org/resource/무기여_잘_있거라",
-                            "relation": 0
-                        }
-                    ]
-                },
-                "morp": [
-                    {
-                        "lemma": "-",
-                        "weight": 1,
-                        "id": 0,
-                        "position": 419,
-                        "type": "SO"
-                    },
-                    {
-                        "lemma": "1929",
-                        "weight": 1,
-                        "id": 1,
-                        "position": 421,
-                        "type": "SN"
-                    },
-                    {
-                        "lemma": "년",
-                        "weight": 0.414343,
-                        "id": 2,
-                        "position": 425,
-                        "type": "NNB"
-                    },
-                    {
-                        "lemma": "《",
-                        "weight": 1,
-                        "id": 3,
-                        "position": 429,
-                        "type": "SS"
-                    },
-                    {
-                        "lemma": "무기",
-                        "weight": 0.199771,
-                        "id": 4,
-                        "position": 432,
-                        "type": "NNG"
-                    },
-                    {
-                        "lemma": "여",
-                        "weight": 0.0001,
-                        "id": 5,
-                        "position": 438,
-                        "type": "JKV"
-                    },
-                    {
-                        "lemma": "잘",
-                        "weight": 0.011005,
-                        "id": 6,
-                        "position": 442,
-                        "type": "MAG"
-                    },
-                    {
-                        "lemma": "있",
-                        "weight": 0.0682304,
-                        "id": 7,
-                        "position": 446,
-                        "type": "VA"
-                    },
-                    {
-                        "lemma": "거라",
-                        "weight": 0.120894,
-                        "id": 8,
-                        "position": 449,
-                        "type": "EF"
-                    },
-                    {
-                        "lemma": "》",
-                        "weight": 1,
-                        "id": 9,
-                        "position": 455,
-                        "type": "SS"
-                    },
-                    {
-                        "lemma": "A",
-                        "weight": 1,
-                        "id": 10,
-                        "position": 459,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "Farewell",
-                        "weight": 1,
-                        "id": 11,
-                        "position": 461,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "to",
-                        "weight": 1,
-                        "id": 12,
-                        "position": 470,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "Arms",
-                        "weight": 1,
-                        "id": 13,
-                        "position": 473,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": ".",
-                        "weight": 1,
-                        "id": 14,
-                        "position": 477,
-                        "type": "SF"
-                    }
-                ],
-                "tagged": "- 1929년 《[무기여_잘_있거라] 》 A Farewell to Arms.",
-                "NE": [
-                    {
-                        "weight": 0.655542,
-                        "end": 2,
-                        "id": 0,
-                        "text": "1929년",
-                        "type": "DT_YEAR",
-                        "begin": 1,
-                        "common_noun": 0
-                    },
-                    {
-                        "weight": 0.992118,
-                        "end": 8,
-                        "id": 1,
-                        "text": "무기여 잘 있거라",
-                        "type": "AFW_DOCUMENT",
-                        "begin": 4,
-                        "common_noun": 0
-                    }
-                ],
-                "id": 6,
-                "text": "- 1929년 《무기여 잘 있거라》 A Farewell to Arms.",
-                "word": [
-                    {
-                        "end": 0,
-                        "id": 0,
-                        "text": "-",
-                        "type": "",
-                        "begin": 0
-                    },
-                    {
-                        "end": 2,
-                        "id": 1,
-                        "text": "1929년",
-                        "type": "",
-                        "begin": 1
-                    },
-                    {
-                        "end": 5,
-                        "id": 2,
-                        "text": "《무기여",
-                        "type": "",
-                        "begin": 3
-                    },
-                    {
-                        "end": 6,
-                        "id": 3,
-                        "text": "잘",
-                        "type": "",
-                        "begin": 6
-                    },
-                    {
-                        "end": 9,
-                        "id": 4,
-                        "text": "있거라》",
-                        "type": "",
-                        "begin": 7
-                    },
-                    {
-                        "end": 10,
-                        "id": 5,
-                        "text": "A",
-                        "type": "",
-                        "begin": 10
-                    },
-                    {
-                        "end": 11,
-                        "id": 6,
-                        "text": "Farewell",
-                        "type": "",
-                        "begin": 11
-                    },
-                    {
-                        "end": 12,
-                        "id": 7,
-                        "text": "to",
-                        "type": "",
-                        "begin": 12
-                    },
-                    {
-                        "end": 14,
-                        "id": 8,
-                        "text": "Arms.",
-                        "type": "",
-                        "begin": 13
-                    }
-                ],
-                "mod_NE": [
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 7,
-                        "text": "1929년",
-                        "start_offset": 2,
-                        "type": "DT_YEAR",
-                        "relation": 0
-                    },
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 18,
-                        "text": "무기여 잘 있거라",
-                        "start_offset": 9,
-                        "type": "AFW_DOCUMENT",
-                        "relation": 0
-                    }
-                ]
-            },
-            {
-                "phrase_dependency": [
-                    {
-                        "weight": 0,
-                        "end": 9,
-                        "key_begin": 0,
-                        "id": 0,
-                        "label": "NP",
-                        "text": "- 1940년 《누구를 위하여 종은 울리나》For Whom the Bell Tolls.",
-                        "head_phrase": -1,
-                        "begin": 0,
-                        "sub_phrase": [],
-                        "element": []
-                    }
-                ],
-                "dependency": [
-                    {
-                        "head": 1,
-                        "mod": [],
-                        "weight": 0.0340594,
-                        "id": 0,
-                        "text": "-",
-                        "label": "X"
-                    },
-                    {
-                        "head": 9,
-                        "mod": [
-                            0
-                        ],
-                        "weight": 0.283356,
-                        "id": 1,
-                        "text": "1940년",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 3,
-                        "mod": [],
-                        "weight": 0.675865,
-                        "id": 2,
-                        "text": "《누구를",
-                        "label": "NP_OBJ"
-                    },
-                    {
-                        "head": 5,
-                        "mod": [
-                            2
-                        ],
-                        "weight": 0.744506,
-                        "id": 3,
-                        "text": "위하여",
-                        "label": "VP"
-                    },
-                    {
-                        "head": 5,
-                        "mod": [],
-                        "weight": 0.617308,
-                        "id": 4,
-                        "text": "종은",
-                        "label": "NP_SBJ"
-                    },
-                    {
-                        "head": 7,
-                        "mod": [
-                            3,
-                            4
-                        ],
-                        "weight": 0.577894,
-                        "id": 5,
-                        "text": "울리나》For",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 7,
-                        "mod": [],
-                        "weight": 0.707969,
-                        "id": 6,
-                        "text": "Whom",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 8,
-                        "mod": [
-                            5,
-                            6
-                        ],
-                        "weight": 0.702517,
-                        "id": 7,
-                        "text": "the",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 9,
-                        "mod": [
-                            7
-                        ],
-                        "weight": 0.762587,
-                        "id": 8,
-                        "text": "Bell",
-                        "label": "NP"
-                    },
-                    {
-                        "head": -1,
-                        "mod": [
-                            1,
-                            8
-                        ],
-                        "weight": 0.00053499,
-                        "id": 9,
-                        "text": "Tolls.",
-                        "label": "NP"
-                    }
-                ],
-                "ZA": [],
-                "WSD": [
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 0,
-                        "id": 0,
-                        "text": "-",
-                        "position": 478,
-                        "type": "SO",
-                        "begin": 0
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 1,
-                        "id": 1,
-                        "text": "1940",
-                        "position": 480,
-                        "type": "SN",
-                        "begin": 1
-                    },
-                    {
-                        "scode": "02",
-                        "weight": 2.16296,
-                        "end": 2,
-                        "id": 2,
-                        "text": "년",
-                        "position": 484,
-                        "type": "NNB",
-                        "begin": 2
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 3,
-                        "id": 3,
-                        "text": "《",
-                        "position": 488,
-                        "type": "SS",
-                        "begin": 3
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 4,
-                        "id": 4,
-                        "text": "누구",
-                        "position": 491,
-                        "type": "NP",
-                        "begin": 4
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 5,
-                        "id": 5,
-                        "text": "를",
-                        "position": 497,
-                        "type": "JKO",
-                        "begin": 5
-                    },
-                    {
-                        "scode": "01",
-                        "weight": 4.4,
-                        "end": 6,
-                        "id": 6,
-                        "text": "위하",
-                        "position": 501,
-                        "type": "VV",
-                        "begin": 6
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 7,
-                        "id": 7,
-                        "text": "어",
-                        "position": 507,
-                        "type": "EC",
-                        "begin": 7
-                    },
-                    {
-                        "scode": "13",
-                        "weight": 6.12988,
-                        "end": 8,
-                        "id": 8,
-                        "text": "종",
-                        "position": 511,
-                        "type": "NNG",
-                        "begin": 8
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 9,
-                        "id": 9,
-                        "text": "은",
-                        "position": 514,
-                        "type": "JX",
-                        "begin": 9
-                    },
-                    {
-                        "scode": "01",
-                        "weight": 4.09676,
-                        "end": 10,
-                        "id": 10,
-                        "text": "울리",
-                        "position": 518,
-                        "type": "VV",
-                        "begin": 10
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 11,
-                        "id": 11,
-                        "text": "나",
-                        "position": 524,
-                        "type": "EF",
-                        "begin": 11
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 12,
-                        "id": 12,
-                        "text": "》",
-                        "position": 527,
-                        "type": "SS",
-                        "begin": 12
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 13,
-                        "id": 13,
-                        "text": "For",
-                        "position": 530,
-                        "type": "SL",
-                        "begin": 13
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 14,
-                        "id": 14,
-                        "text": "Whom",
-                        "position": 534,
-                        "type": "SL",
-                        "begin": 14
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 15,
-                        "id": 15,
-                        "text": "the",
-                        "position": 539,
-                        "type": "SL",
-                        "begin": 15
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 16,
-                        "id": 16,
-                        "text": "Bell",
-                        "position": 543,
-                        "type": "SL",
-                        "begin": 16
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 17,
-                        "id": 17,
-                        "text": "Tolls",
-                        "position": 548,
-                        "type": "SL",
-                        "begin": 17
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 18,
-                        "id": 18,
-                        "text": ".",
-                        "position": 553,
-                        "type": "SF",
-                        "begin": 18
-                    }
-                ],
-                "chunk": [],
-                "reserve_str": "",
-                "SRL": [],
-                "morp_eval": [
-                    {
-                        "result": "-/SO",
-                        "word_id": 0,
-                        "m_end": 0,
-                        "id": 0,
-                        "target": "-",
-                        "m_begin": 0
-                    },
-                    {
-                        "result": "1940/SN+년/NNB",
-                        "word_id": 1,
-                        "m_end": 2,
-                        "id": 1,
-                        "target": "1940년",
-                        "m_begin": 1
-                    },
-                    {
-                        "result": "《/SS+누구/NP+를/JKO",
-                        "word_id": 2,
-                        "m_end": 5,
-                        "id": 2,
-                        "target": "《누구를",
-                        "m_begin": 3
-                    },
-                    {
-                        "result": "위하/VV+어/EC",
-                        "word_id": 3,
-                        "m_end": 7,
-                        "id": 3,
-                        "target": "위하여",
-                        "m_begin": 6
-                    },
-                    {
-                        "result": "종/NNG+은/JX",
-                        "word_id": 4,
-                        "m_end": 9,
-                        "id": 4,
-                        "target": "종은",
-                        "m_begin": 8
-                    },
-                    {
-                        "result": "울리/VV+나/EF+》/SS+For/SL",
-                        "word_id": 5,
-                        "m_end": 13,
-                        "id": 5,
-                        "target": "울리나》For",
-                        "m_begin": 10
-                    },
-                    {
-                        "result": "Whom/SL",
-                        "word_id": 6,
-                        "m_end": 14,
-                        "id": 6,
-                        "target": "Whom",
-                        "m_begin": 14
-                    },
-                    {
-                        "result": "the/SL",
-                        "word_id": 7,
-                        "m_end": 15,
-                        "id": 7,
-                        "target": "the",
-                        "m_begin": 15
-                    },
-                    {
-                        "result": "Bell/SL",
-                        "word_id": 8,
-                        "m_end": 16,
-                        "id": 8,
-                        "target": "Bell",
-                        "m_begin": 16
-                    },
-                    {
-                        "result": "Tolls/SL+./SF",
-                        "word_id": 9,
-                        "m_end": 18,
-                        "id": 9,
-                        "target": "Tolls.",
-                        "m_begin": 17
-                    }
-                ],
-                "SA": [],
-                "relation": [],
-                "ELU": {
-                    "entities": [
+                            "source": "ELU",
+                            "start_offset": 50,
+                            "type": [
+                                "http://schema.org/CreativeWork",
+                                "http://dbpedia.org/ontology/Book",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+                                "http://schema.org/Book",
+                                "http://dbpedia.org/ontology/Work",
+                                "http://purl.org/ontology/bibo/Book",
+                                "http://dbpedia.org/ontology/WrittenWork"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/무기여_잘_있거라"
+                        },
                         {
-                            "score": 0,
                             "indirect": 0,
-                            "confidence": 0,
-                            "en_entity": "For_Whom_the_Bell_Tolls",
+                            "confidence": 0.625953,
                             "link": 0,
-                            "end_offset": 23,
-                            "text": "누구를 위하여 종은 울리나",
-                            "start_offset": 9,
-                            "source": "NER",
-                            "type": "AFW_DOCUMENT",
-                            "uri": "http://ko.dbpedia.org/resource/누구를_위하여_종은_울리나",
-                            "relation": 0
-                        }
-                    ],
-                    "d_entities": [
-                        {
+                            "end_offset": 87,
+                            "source": "DE",
+                            "type": "DT_YEAR",
+                            "uri": "",
+                            "relation": 0,
                             "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "link": 0,
-                            "end_offset": 7,
+                            "en_entity": null,
                             "text": "1940년",
-                            "start_offset": 2,
-                            "source": "DE",
-                            "type": "DT_YEAR",
-                            "uri": "",
-                            "relation": 0
+                            "start_offset": 82,
+                            "ne_id": 5,
+                            "sen_id": 0
                         },
                         {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "link": 0,
-                            "end_offset": 36,
-                            "text": "For Whom the",
-                            "start_offset": 24,
-                            "source": "DE",
-                            "type": "AFW_DOCUMENT",
-                            "uri": "",
-                            "relation": 0
-                        }
-                    ],
-                    "merge": [
-                        {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "en_entity": null,
-                            "link": 0,
-                            "end_offset": 7,
-                            "text": "1940년",
-                            "start_offset": 2,
-                            "source": "DE",
-                            "type": "DT_YEAR",
-                            "uri": "",
-                            "relation": 0
-                        },
-                        {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
+                            "score": 4.571633338928223,
+                            "confidence": 0.6511972667091805,
                             "en_entity": "For_Whom_the_Bell_Tolls",
-                            "link": 0,
-                            "end_offset": 23,
+                            "predicted_coref_index": -1,
+                            "end_offset": 103,
+                            "ne_type": "AFW_DOCUMENT",
                             "text": "누구를 위하여 종은 울리나",
-                            "start_offset": 9,
-                            "source": "NER",
-                            "type": "AFW_DOCUMENT",
-                            "uri": "http://ko.dbpedia.org/resource/누구를_위하여_종은_울리나",
-                            "relation": 0
+                            "source": "ELU",
+                            "start_offset": 89,
+                            "type": [
+                                "http://schema.org/CreativeWork",
+                                "http://dbpedia.org/ontology/Book",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+                                "http://schema.org/Book",
+                                "http://dbpedia.org/ontology/Work",
+                                "http://purl.org/ontology/bibo/Book",
+                                "http://dbpedia.org/ontology/WrittenWork"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/누구를_위하여_종은_울리나"
                         },
                         {
-                            "score": 0,
                             "indirect": 0,
-                            "confidence": 0,
-                            "en_entity": null,
+                            "confidence": 0.636736,
                             "link": 0,
-                            "end_offset": 36,
-                            "text": "For Whom the",
-                            "start_offset": 24,
+                            "end_offset": 136,
                             "source": "DE",
-                            "type": "AFW_DOCUMENT",
+                            "type": "DT_YEAR",
                             "uri": "",
-                            "relation": 0
-                        }
-                    ]
-                },
-                "morp": [
-                    {
-                        "lemma": "-",
-                        "weight": 1,
-                        "id": 0,
-                        "position": 478,
-                        "type": "SO"
-                    },
-                    {
-                        "lemma": "1940",
-                        "weight": 1,
-                        "id": 1,
-                        "position": 480,
-                        "type": "SN"
-                    },
-                    {
-                        "lemma": "년",
-                        "weight": 0.414343,
-                        "id": 2,
-                        "position": 484,
-                        "type": "NNB"
-                    },
-                    {
-                        "lemma": "《",
-                        "weight": 1,
-                        "id": 3,
-                        "position": 488,
-                        "type": "SS"
-                    },
-                    {
-                        "lemma": "누구",
-                        "weight": 0.9,
-                        "id": 4,
-                        "position": 491,
-                        "type": "NP"
-                    },
-                    {
-                        "lemma": "를",
-                        "weight": 0.0808985,
-                        "id": 5,
-                        "position": 497,
-                        "type": "JKO"
-                    },
-                    {
-                        "lemma": "위하",
-                        "weight": 0.778555,
-                        "id": 6,
-                        "position": 501,
-                        "type": "VV"
-                    },
-                    {
-                        "lemma": "어",
-                        "weight": 0.41831,
-                        "id": 7,
-                        "position": 507,
-                        "type": "EC"
-                    },
-                    {
-                        "lemma": "종",
-                        "weight": 0.213242,
-                        "id": 8,
-                        "position": 511,
-                        "type": "NNG"
-                    },
-                    {
-                        "lemma": "은",
-                        "weight": 0.0449928,
-                        "id": 9,
-                        "position": 514,
-                        "type": "JX"
-                    },
-                    {
-                        "lemma": "울리",
-                        "weight": 0.147105,
-                        "id": 10,
-                        "position": 518,
-                        "type": "VV"
-                    },
-                    {
-                        "lemma": "나",
-                        "weight": 0.00177268,
-                        "id": 11,
-                        "position": 524,
-                        "type": "EF"
-                    },
-                    {
-                        "lemma": "》",
-                        "weight": 1,
-                        "id": 12,
-                        "position": 527,
-                        "type": "SS"
-                    },
-                    {
-                        "lemma": "For",
-                        "weight": 1,
-                        "id": 13,
-                        "position": 530,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "Whom",
-                        "weight": 1,
-                        "id": 14,
-                        "position": 534,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "the",
-                        "weight": 1,
-                        "id": 15,
-                        "position": 539,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "Bell",
-                        "weight": 1,
-                        "id": 16,
-                        "position": 543,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "Tolls",
-                        "weight": 1,
-                        "id": 17,
-                        "position": 548,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": ".",
-                        "weight": 1,
-                        "id": 18,
-                        "position": 553,
-                        "type": "SF"
-                    }
-                ],
-                "tagged": "- 1940년 《[누구를_위하여_종은_울리나] 》For Whom the Bell Tolls.",
-                "NE": [
-                    {
-                        "weight": 0.680672,
-                        "end": 2,
-                        "id": 0,
-                        "text": "1940년",
-                        "type": "DT_YEAR",
-                        "begin": 1,
-                        "common_noun": 0
-                    },
-                    {
-                        "weight": 0.990549,
-                        "end": 11,
-                        "id": 1,
-                        "text": "누구를 위하여 종은 울리나",
-                        "type": "AFW_DOCUMENT",
-                        "begin": 4,
-                        "common_noun": 0
-                    },
-                    {
-                        "weight": 0.251799,
-                        "end": 15,
-                        "id": 2,
-                        "text": "For Whom the",
-                        "type": "AFW_DOCUMENT",
-                        "begin": 13,
-                        "common_noun": 0
-                    }
-                ],
-                "id": 7,
-                "text": "- 1940년 《누구를 위하여 종은 울리나》For Whom the Bell Tolls.",
-                "word": [
-                    {
-                        "end": 0,
-                        "id": 0,
-                        "text": "-",
-                        "type": "",
-                        "begin": 0
-                    },
-                    {
-                        "end": 2,
-                        "id": 1,
-                        "text": "1940년",
-                        "type": "",
-                        "begin": 1
-                    },
-                    {
-                        "end": 5,
-                        "id": 2,
-                        "text": "《누구를",
-                        "type": "",
-                        "begin": 3
-                    },
-                    {
-                        "end": 7,
-                        "id": 3,
-                        "text": "위하여",
-                        "type": "",
-                        "begin": 6
-                    },
-                    {
-                        "end": 9,
-                        "id": 4,
-                        "text": "종은",
-                        "type": "",
-                        "begin": 8
-                    },
-                    {
-                        "end": 13,
-                        "id": 5,
-                        "text": "울리나》For",
-                        "type": "",
-                        "begin": 10
-                    },
-                    {
-                        "end": 14,
-                        "id": 6,
-                        "text": "Whom",
-                        "type": "",
-                        "begin": 14
-                    },
-                    {
-                        "end": 15,
-                        "id": 7,
-                        "text": "the",
-                        "type": "",
-                        "begin": 15
-                    },
-                    {
-                        "end": 16,
-                        "id": 8,
-                        "text": "Bell",
-                        "type": "",
-                        "begin": 16
-                    },
-                    {
-                        "end": 18,
-                        "id": 9,
-                        "text": "Tolls.",
-                        "type": "",
-                        "begin": 17
-                    }
-                ],
-                "mod_NE": [
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 7,
-                        "text": "1940년",
-                        "start_offset": 2,
-                        "type": "DT_YEAR",
-                        "relation": 0
-                    },
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 23,
-                        "text": "누구를 위하여 종은 울리나",
-                        "start_offset": 9,
-                        "type": "AFW_DOCUMENT",
-                        "relation": 0
-                    },
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 36,
-                        "text": "For Whom the",
-                        "start_offset": 24,
-                        "type": "AFW_DOCUMENT",
-                        "relation": 0
-                    }
-                ]
-            },
-            {
-                "phrase_dependency": [
-                    {
-                        "weight": 0,
-                        "end": 0,
-                        "key_begin": 0,
-                        "id": 0,
-                        "label": "X",
-                        "text": "-",
-                        "head_phrase": 3,
-                        "begin": 0,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 1,
-                        "key_begin": 1,
-                        "id": 1,
-                        "label": "NP",
-                        "text": "1950년",
-                        "head_phrase": 3,
-                        "begin": 1,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 4,
-                        "key_begin": 2,
-                        "id": 2,
-                        "label": "NP_AJT",
-                        "text": "《강 건너 숲속으로》",
-                        "head_phrase": 3,
-                        "begin": 2,
-                        "sub_phrase": [],
-                        "element": []
-                    },
-                    {
-                        "weight": 0,
-                        "end": 11,
-                        "key_begin": 5,
-                        "id": 3,
-                        "label": "NP",
-                        "text": "P#0@X- P#1@NP년 P#2@AJT으로》 Across the River and Into the Trees.",
-                        "head_phrase": -1,
-                        "begin": 0,
-                        "sub_phrase": [
-                            0,
-                            1,
-                            2
-                        ],
-                        "element": []
-                    }
-                ],
-                "dependency": [
-                    {
-                        "head": 11,
-                        "mod": [],
-                        "weight": 0.66501,
-                        "id": 0,
-                        "text": "-",
-                        "label": "X"
-                    },
-                    {
-                        "head": 11,
-                        "mod": [],
-                        "weight": 0.280293,
-                        "id": 1,
-                        "text": "1950년",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 3,
-                        "mod": [],
-                        "weight": 0.627813,
-                        "id": 2,
-                        "text": "《강",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 4,
-                        "mod": [
-                            2
-                        ],
-                        "weight": 0.458358,
-                        "id": 3,
-                        "text": "건너",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 11,
-                        "mod": [
-                            3
-                        ],
-                        "weight": 0.20469,
-                        "id": 4,
-                        "text": "숲속으로》",
-                        "label": "NP_AJT"
-                    },
-                    {
-                        "head": 6,
-                        "mod": [],
-                        "weight": 0.159777,
-                        "id": 5,
-                        "text": "Across",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 7,
-                        "mod": [
-                            5
-                        ],
-                        "weight": 0.0563774,
-                        "id": 6,
-                        "text": "the",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 8,
-                        "mod": [
-                            6
-                        ],
-                        "weight": 0.422287,
-                        "id": 7,
-                        "text": "River",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 11,
-                        "mod": [
-                            7
-                        ],
-                        "weight": 0.80587,
-                        "id": 8,
-                        "text": "and",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 10,
-                        "mod": [],
-                        "weight": 0.0947232,
-                        "id": 9,
-                        "text": "Into",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 11,
-                        "mod": [
-                            9
-                        ],
-                        "weight": 0.77664,
-                        "id": 10,
-                        "text": "the",
-                        "label": "NP"
-                    },
-                    {
-                        "head": -1,
-                        "mod": [
-                            0,
-                            1,
-                            4,
-                            8,
-                            10
-                        ],
-                        "weight": 0.00000201952,
-                        "id": 11,
-                        "text": "Trees.",
-                        "label": "NP"
-                    }
-                ],
-                "ZA": [],
-                "WSD": [
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 0,
-                        "id": 0,
-                        "text": "-",
-                        "position": 554,
-                        "type": "SO",
-                        "begin": 0
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 1,
-                        "id": 1,
-                        "text": "1950",
-                        "position": 556,
-                        "type": "SN",
-                        "begin": 1
-                    },
-                    {
-                        "scode": "02",
-                        "weight": 5.5,
-                        "end": 2,
-                        "id": 2,
-                        "text": "년",
-                        "position": 560,
-                        "type": "NNB",
-                        "begin": 2
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 3,
-                        "id": 3,
-                        "text": "《",
-                        "position": 564,
-                        "type": "SS",
-                        "begin": 3
-                    },
-                    {
-                        "scode": "04",
-                        "weight": 1,
-                        "end": 4,
-                        "id": 4,
-                        "text": "강",
-                        "position": 567,
-                        "type": "NNP",
-                        "begin": 4
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 5,
-                        "id": 5,
-                        "text": "건너",
-                        "position": 571,
-                        "type": "VV",
-                        "begin": 5
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 6,
-                        "id": 6,
-                        "text": "어",
-                        "position": 574,
-                        "type": "EC",
-                        "begin": 6
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 7,
-                        "id": 7,
-                        "text": "숲속",
-                        "position": 578,
-                        "type": "NNP",
-                        "begin": 7
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 8,
-                        "id": 8,
-                        "text": "으로",
-                        "position": 584,
-                        "type": "JKB",
-                        "begin": 8
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 9,
-                        "id": 9,
-                        "text": "》",
-                        "position": 590,
-                        "type": "SS",
-                        "begin": 9
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 10,
-                        "id": 10,
-                        "text": "Across",
-                        "position": 594,
-                        "type": "SL",
-                        "begin": 10
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 11,
-                        "id": 11,
-                        "text": "the",
-                        "position": 601,
-                        "type": "SL",
-                        "begin": 11
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 12,
-                        "id": 12,
-                        "text": "River",
-                        "position": 605,
-                        "type": "SL",
-                        "begin": 12
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 13,
-                        "id": 13,
-                        "text": "and",
-                        "position": 611,
-                        "type": "SL",
-                        "begin": 13
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 14,
-                        "id": 14,
-                        "text": "Into",
-                        "position": 615,
-                        "type": "SL",
-                        "begin": 14
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 15,
-                        "id": 15,
-                        "text": "the",
-                        "position": 620,
-                        "type": "SL",
-                        "begin": 15
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 16,
-                        "id": 16,
-                        "text": "Trees",
-                        "position": 624,
-                        "type": "SL",
-                        "begin": 16
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 17,
-                        "id": 17,
-                        "text": ".",
-                        "position": 629,
-                        "type": "SF",
-                        "begin": 17
-                    }
-                ],
-                "chunk": [],
-                "reserve_str": "",
-                "SRL": [],
-                "morp_eval": [
-                    {
-                        "result": "-/SO",
-                        "word_id": 0,
-                        "m_end": 0,
-                        "id": 0,
-                        "target": "-",
-                        "m_begin": 0
-                    },
-                    {
-                        "result": "1950/SN+년/NNB",
-                        "word_id": 1,
-                        "m_end": 2,
-                        "id": 1,
-                        "target": "1950년",
-                        "m_begin": 1
-                    },
-                    {
-                        "result": "《/SS+강/NNG",
-                        "word_id": 2,
-                        "m_end": 4,
-                        "id": 2,
-                        "target": "《강",
-                        "m_begin": 3
-                    },
-                    {
-                        "result": "건너/VV+어/EC",
-                        "word_id": 3,
-                        "m_end": 6,
-                        "id": 3,
-                        "target": "건너",
-                        "m_begin": 5
-                    },
-                    {
-                        "result": "숲속/NNG+으로/JKB+》/SS",
-                        "word_id": 4,
-                        "m_end": 9,
-                        "id": 4,
-                        "target": "숲속으로》",
-                        "m_begin": 7
-                    },
-                    {
-                        "result": "Across/SL",
-                        "word_id": 5,
-                        "m_end": 10,
-                        "id": 5,
-                        "target": "Across",
-                        "m_begin": 10
-                    },
-                    {
-                        "result": "the/SL",
-                        "word_id": 6,
-                        "m_end": 11,
-                        "id": 6,
-                        "target": "the",
-                        "m_begin": 11
-                    },
-                    {
-                        "result": "River/SL",
-                        "word_id": 7,
-                        "m_end": 12,
-                        "id": 7,
-                        "target": "River",
-                        "m_begin": 12
-                    },
-                    {
-                        "result": "and/SL",
-                        "word_id": 8,
-                        "m_end": 13,
-                        "id": 8,
-                        "target": "and",
-                        "m_begin": 13
-                    },
-                    {
-                        "result": "Into/SL",
-                        "word_id": 9,
-                        "m_end": 14,
-                        "id": 9,
-                        "target": "Into",
-                        "m_begin": 14
-                    },
-                    {
-                        "result": "the/SL",
-                        "word_id": 10,
-                        "m_end": 15,
-                        "id": 10,
-                        "target": "the",
-                        "m_begin": 15
-                    },
-                    {
-                        "result": "Trees/SL+./SF",
-                        "word_id": 11,
-                        "m_end": 17,
-                        "id": 11,
-                        "target": "Trees.",
-                        "m_begin": 16
-                    }
-                ],
-                "SA": [],
-                "relation": [],
-                "ELU": {
-                    "entities": [],
-                    "d_entities": [
-                        {
+                            "relation": 0,
                             "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "link": 0,
-                            "end_offset": 7,
+                            "en_entity": null,
                             "text": "1950년",
-                            "start_offset": 2,
+                            "start_offset": 131,
+                            "ne_id": 7,
+                            "sen_id": 0
+                        },
+                        {
+                            "score": -0.19179920852184296,
+                            "confidence": 0.1,
+                            "en_entity": null,
+                            "predicted_coref_index": -1,
+                            "end_offset": 147,
+                            "ne_type": "AFW_DOCUMENT",
+                            "text": "강 건너 숲속으로",
+                            "source": "ELU",
+                            "start_offset": 138,
+                            "type": [],
+                            "uri": "http://kbox.kaist.ac.kr/resource/_강_건너_숲속으로"
+                        },
+                        {
+                            "indirect": 0,
+                            "confidence": 0.575532,
+                            "link": 0,
+                            "end_offset": 192,
                             "source": "DE",
                             "type": "DT_YEAR",
                             "uri": "",
-                            "relation": 0
+                            "relation": 0,
+                            "score": 0,
+                            "en_entity": null,
+                            "text": "1952년",
+                            "start_offset": 187,
+                            "ne_id": 9,
+                            "sen_id": 0
                         },
                         {
                             "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "link": 0,
-                            "end_offset": 18,
-                            "text": "강 건너 숲속으로",
-                            "start_offset": 9,
-                            "source": "DE",
-                            "type": "AFW_DOCUMENT",
-                            "uri": "",
-                            "relation": 0
-                        }
-                    ],
-                    "merge": [
-                        {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "en_entity": null,
-                            "link": 0,
-                            "end_offset": 7,
-                            "text": "1950년",
-                            "start_offset": 2,
-                            "source": "DE",
-                            "type": "DT_YEAR",
-                            "uri": "",
-                            "relation": 0
-                        },
-                        {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "en_entity": null,
-                            "link": 0,
-                            "end_offset": 18,
-                            "text": "강 건너 숲속으로",
-                            "start_offset": 9,
-                            "source": "DE",
-                            "type": "AFW_DOCUMENT",
-                            "uri": "",
-                            "relation": 0
+                            "confidence": 1,
+                            "en_entity": "The_Old_Man_and_the_Sea",
+                            "predicted_coref_index": -1,
+                            "end_offset": 200,
+                            "ne_type": "AFW_DOCUMENT",
+                            "text": "노인과 바다",
+                            "source": "ELU",
+                            "start_offset": 194,
+                            "type": [
+                                "http://www.w3.org/2002/07/owl#Thing",
+                                "http://schema.org/CreativeWork",
+                                "http://dbpedia.org/ontology/Book",
+                                "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity",
+                                "http://schema.org/Book",
+                                "http://dbpedia.org/ontology/Work",
+                                "http://www.wikidata.org/entity/Q386724",
+                                "http://purl.org/ontology/bibo/Book",
+                                "http://www.wikidata.org/entity/Q571",
+                                "http://dbpedia.org/ontology/WrittenWork"
+                            ],
+                            "uri": "http://kbox.kaist.ac.kr/resource/노인과_바다"
                         }
                     ]
-                },
-                "morp": [
-                    {
-                        "lemma": "-",
-                        "weight": 1,
-                        "id": 0,
-                        "position": 554,
-                        "type": "SO"
-                    },
-                    {
-                        "lemma": "1950",
-                        "weight": 1,
-                        "id": 1,
-                        "position": 556,
-                        "type": "SN"
-                    },
-                    {
-                        "lemma": "년",
-                        "weight": 0.414343,
-                        "id": 2,
-                        "position": 560,
-                        "type": "NNB"
-                    },
-                    {
-                        "lemma": "《",
-                        "weight": 1,
-                        "id": 3,
-                        "position": 564,
-                        "type": "SS"
-                    },
-                    {
-                        "lemma": "강",
-                        "weight": 0.0100594,
-                        "id": 4,
-                        "position": 567,
-                        "type": "NNP"
-                    },
-                    {
-                        "lemma": "건너",
-                        "weight": 0.00214735,
-                        "id": 5,
-                        "position": 571,
-                        "type": "VV"
-                    },
-                    {
-                        "lemma": "어",
-                        "weight": 0.41831,
-                        "id": 6,
-                        "position": 574,
-                        "type": "EC"
-                    },
-                    {
-                        "lemma": "숲속",
-                        "weight": 0.05,
-                        "id": 7,
-                        "position": 578,
-                        "type": "NNP"
-                    },
-                    {
-                        "lemma": "으로",
-                        "weight": 0.0823853,
-                        "id": 8,
-                        "position": 584,
-                        "type": "JKB"
-                    },
-                    {
-                        "lemma": "》",
-                        "weight": 1,
-                        "id": 9,
-                        "position": 590,
-                        "type": "SS"
-                    },
-                    {
-                        "lemma": "Across",
-                        "weight": 1,
-                        "id": 10,
-                        "position": 594,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "the",
-                        "weight": 1,
-                        "id": 11,
-                        "position": 601,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "River",
-                        "weight": 1,
-                        "id": 12,
-                        "position": 605,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "and",
-                        "weight": 1,
-                        "id": 13,
-                        "position": 611,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "Into",
-                        "weight": 1,
-                        "id": 14,
-                        "position": 615,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "the",
-                        "weight": 1,
-                        "id": 15,
-                        "position": 620,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "Trees",
-                        "weight": 1,
-                        "id": 16,
-                        "position": 624,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": ".",
-                        "weight": 1,
-                        "id": 17,
-                        "position": 629,
-                        "type": "SF"
-                    }
-                ],
-                "tagged": "- 1950년 《강 건너 숲속으로》 Across the River and Into the Trees.",
-                "NE": [
-                    {
-                        "weight": 0.707948,
-                        "end": 2,
-                        "id": 0,
-                        "text": "1950년",
-                        "type": "DT_YEAR",
-                        "begin": 1,
-                        "common_noun": 0
-                    },
-                    {
-                        "weight": 0.381219,
-                        "end": 8,
-                        "id": 1,
-                        "text": "강 건너 숲속으로",
-                        "type": "AFW_DOCUMENT",
-                        "begin": 4,
-                        "common_noun": 0
-                    }
-                ],
-                "id": 8,
-                "text": "- 1950년 《강 건너 숲속으로》 Across the River and Into the Trees.",
-                "word": [
-                    {
-                        "end": 0,
-                        "id": 0,
-                        "text": "-",
-                        "type": "",
-                        "begin": 0
-                    },
-                    {
-                        "end": 2,
-                        "id": 1,
-                        "text": "1950년",
-                        "type": "",
-                        "begin": 1
-                    },
-                    {
-                        "end": 4,
-                        "id": 2,
-                        "text": "《강",
-                        "type": "",
-                        "begin": 3
-                    },
-                    {
-                        "end": 6,
-                        "id": 3,
-                        "text": "건너",
-                        "type": "",
-                        "begin": 5
-                    },
-                    {
-                        "end": 9,
-                        "id": 4,
-                        "text": "숲속으로》",
-                        "type": "",
-                        "begin": 7
-                    },
-                    {
-                        "end": 10,
-                        "id": 5,
-                        "text": "Across",
-                        "type": "",
-                        "begin": 10
-                    },
-                    {
-                        "end": 11,
-                        "id": 6,
-                        "text": "the",
-                        "type": "",
-                        "begin": 11
-                    },
-                    {
-                        "end": 12,
-                        "id": 7,
-                        "text": "River",
-                        "type": "",
-                        "begin": 12
-                    },
-                    {
-                        "end": 13,
-                        "id": 8,
-                        "text": "and",
-                        "type": "",
-                        "begin": 13
-                    },
-                    {
-                        "end": 14,
-                        "id": 9,
-                        "text": "Into",
-                        "type": "",
-                        "begin": 14
-                    },
-                    {
-                        "end": 15,
-                        "id": 10,
-                        "text": "the",
-                        "type": "",
-                        "begin": 15
-                    },
-                    {
-                        "end": 17,
-                        "id": 11,
-                        "text": "Trees.",
-                        "type": "",
-                        "begin": 16
-                    }
-                ],
-                "mod_NE": [
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 7,
-                        "text": "1950년",
-                        "start_offset": 2,
-                        "type": "DT_YEAR",
-                        "relation": 0
-                    },
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 18,
-                        "text": "강 건너 숲속으로",
-                        "start_offset": 9,
-                        "type": "AFW_DOCUMENT",
-                        "relation": 0
-                    }
-                ]
-            },
-            {
-                "phrase_dependency": [
-                    {
-                        "weight": 0,
-                        "end": 9,
-                        "key_begin": 0,
-                        "id": 0,
-                        "label": "NP",
-                        "text": "- 1952년 《노인과 바다》 The Old Man and the Sea.",
-                        "head_phrase": -1,
-                        "begin": 0,
-                        "sub_phrase": [],
-                        "element": []
-                    }
-                ],
-                "dependency": [
-                    {
-                        "head": 9,
-                        "mod": [],
-                        "weight": 0.66501,
-                        "id": 0,
-                        "text": "-",
-                        "label": "X"
-                    },
-                    {
-                        "head": 9,
-                        "mod": [],
-                        "weight": 0.254698,
-                        "id": 1,
-                        "text": "1952년",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 3,
-                        "mod": [],
-                        "weight": 0.702344,
-                        "id": 2,
-                        "text": "《노인과",
-                        "label": "NP_CNJ"
-                    },
-                    {
-                        "head": 9,
-                        "mod": [
-                            2
-                        ],
-                        "weight": 0.70341,
-                        "id": 3,
-                        "text": "바다》",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 5,
-                        "mod": [],
-                        "weight": 0.168505,
-                        "id": 4,
-                        "text": "The",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 6,
-                        "mod": [
-                            4
-                        ],
-                        "weight": 0.018956,
-                        "id": 5,
-                        "text": "Old",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 7,
-                        "mod": [
-                            5
-                        ],
-                        "weight": 0.517177,
-                        "id": 6,
-                        "text": "Man",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 9,
-                        "mod": [
-                            6
-                        ],
-                        "weight": 0.81094,
-                        "id": 7,
-                        "text": "and",
-                        "label": "NP"
-                    },
-                    {
-                        "head": 9,
-                        "mod": [],
-                        "weight": 0.791522,
-                        "id": 8,
-                        "text": "the",
-                        "label": "NP"
-                    },
-                    {
-                        "head": -1,
-                        "mod": [
-                            0,
-                            1,
-                            3,
-                            7,
-                            8
-                        ],
-                        "weight": 0.0000725042,
-                        "id": 9,
-                        "text": "Sea.",
-                        "label": "NP"
-                    }
-                ],
-                "ZA": [],
-                "WSD": [
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 0,
-                        "id": 0,
-                        "text": "-",
-                        "position": 630,
-                        "type": "SO",
-                        "begin": 0
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 1,
-                        "id": 1,
-                        "text": "1952",
-                        "position": 632,
-                        "type": "SN",
-                        "begin": 1
-                    },
-                    {
-                        "scode": "02",
-                        "weight": 3.2,
-                        "end": 2,
-                        "id": 2,
-                        "text": "년",
-                        "position": 636,
-                        "type": "NNB",
-                        "begin": 2
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 3,
-                        "id": 3,
-                        "text": "《",
-                        "position": 640,
-                        "type": "SS",
-                        "begin": 3
-                    },
-                    {
-                        "scode": "01",
-                        "weight": 2.2,
-                        "end": 4,
-                        "id": 4,
-                        "text": "노인",
-                        "position": 643,
-                        "type": "NNG",
-                        "begin": 4
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 5,
-                        "id": 5,
-                        "text": "과",
-                        "position": 649,
-                        "type": "JC",
-                        "begin": 5
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 0,
-                        "end": 6,
-                        "id": 6,
-                        "text": "바다",
-                        "position": 653,
-                        "type": "NNG",
-                        "begin": 6
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 7,
-                        "id": 7,
-                        "text": "》",
-                        "position": 659,
-                        "type": "SS",
-                        "begin": 7
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 8,
-                        "id": 8,
-                        "text": "The",
-                        "position": 663,
-                        "type": "SL",
-                        "begin": 8
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 9,
-                        "id": 9,
-                        "text": "Old",
-                        "position": 667,
-                        "type": "SL",
-                        "begin": 9
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 10,
-                        "id": 10,
-                        "text": "Man",
-                        "position": 671,
-                        "type": "SL",
-                        "begin": 10
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 11,
-                        "id": 11,
-                        "text": "and",
-                        "position": 675,
-                        "type": "SL",
-                        "begin": 11
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 12,
-                        "id": 12,
-                        "text": "the",
-                        "position": 679,
-                        "type": "SL",
-                        "begin": 12
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 13,
-                        "id": 13,
-                        "text": "Sea",
-                        "position": 683,
-                        "type": "SL",
-                        "begin": 13
-                    },
-                    {
-                        "scode": "00",
-                        "weight": 1,
-                        "end": 14,
-                        "id": 14,
-                        "text": ".",
-                        "position": 686,
-                        "type": "SF",
-                        "begin": 14
-                    }
-                ],
-                "chunk": [],
-                "reserve_str": "",
-                "SRL": [],
-                "morp_eval": [
-                    {
-                        "result": "-/SO",
-                        "word_id": 0,
-                        "m_end": 0,
-                        "id": 0,
-                        "target": "-",
-                        "m_begin": 0
-                    },
-                    {
-                        "result": "1952/SN+년/NNB",
-                        "word_id": 1,
-                        "m_end": 2,
-                        "id": 1,
-                        "target": "1952년",
-                        "m_begin": 1
-                    },
-                    {
-                        "result": "《/SS+노인/NNG+과/JC",
-                        "word_id": 2,
-                        "m_end": 5,
-                        "id": 2,
-                        "target": "《노인과",
-                        "m_begin": 3
-                    },
-                    {
-                        "result": "바다/NNG+》/SS",
-                        "word_id": 3,
-                        "m_end": 7,
-                        "id": 3,
-                        "target": "바다》",
-                        "m_begin": 6
-                    },
-                    {
-                        "result": "The/SL",
-                        "word_id": 4,
-                        "m_end": 8,
-                        "id": 4,
-                        "target": "The",
-                        "m_begin": 8
-                    },
-                    {
-                        "result": "Old/SL",
-                        "word_id": 5,
-                        "m_end": 9,
-                        "id": 5,
-                        "target": "Old",
-                        "m_begin": 9
-                    },
-                    {
-                        "result": "Man/SL",
-                        "word_id": 6,
-                        "m_end": 10,
-                        "id": 6,
-                        "target": "Man",
-                        "m_begin": 10
-                    },
-                    {
-                        "result": "and/SL",
-                        "word_id": 7,
-                        "m_end": 11,
-                        "id": 7,
-                        "target": "and",
-                        "m_begin": 11
-                    },
-                    {
-                        "result": "the/SL",
-                        "word_id": 8,
-                        "m_end": 12,
-                        "id": 8,
-                        "target": "the",
-                        "m_begin": 12
-                    },
-                    {
-                        "result": "Sea/SL+./SF",
-                        "word_id": 9,
-                        "m_end": 14,
-                        "id": 9,
-                        "target": "Sea.",
-                        "m_begin": 13
-                    }
-                ],
-                "SA": [],
-                "relation": [],
-                "ELU": {
-                    "entities": [
-                        {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "en_entity": "The_Old_Man_and_the_Sea",
-                            "link": 0,
-                            "end_offset": 15,
-                            "text": "노인과 바다",
-                            "start_offset": 9,
-                            "source": "NER",
-                            "type": "AFW_DOCUMENT",
-                            "uri": "http://ko.dbpedia.org/resource/노인과_바다",
-                            "relation": 0
-                        }
-                    ],
-                    "d_entities": [
-                        {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "link": 0,
-                            "end_offset": 7,
-                            "text": "1952년",
-                            "start_offset": 2,
-                            "source": "DE",
-                            "type": "DT_YEAR",
-                            "uri": "",
-                            "relation": 0
-                        }
-                    ],
-                    "merge": [
-                        {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "en_entity": null,
-                            "link": 0,
-                            "end_offset": 7,
-                            "text": "1952년",
-                            "start_offset": 2,
-                            "source": "DE",
-                            "type": "DT_YEAR",
-                            "uri": "",
-                            "relation": 0
-                        },
-                        {
-                            "score": 0,
-                            "indirect": 0,
-                            "confidence": 0,
-                            "en_entity": "The_Old_Man_and_the_Sea",
-                            "link": 0,
-                            "end_offset": 15,
-                            "text": "노인과 바다",
-                            "start_offset": 9,
-                            "source": "NER",
-                            "type": "AFW_DOCUMENT",
-                            "uri": "http://ko.dbpedia.org/resource/노인과_바다",
-                            "relation": 0
-                        }
-                    ]
-                },
-                "morp": [
-                    {
-                        "lemma": "-",
-                        "weight": 1,
-                        "id": 0,
-                        "position": 630,
-                        "type": "SO"
-                    },
-                    {
-                        "lemma": "1952",
-                        "weight": 1,
-                        "id": 1,
-                        "position": 632,
-                        "type": "SN"
-                    },
-                    {
-                        "lemma": "년",
-                        "weight": 0.414343,
-                        "id": 2,
-                        "position": 636,
-                        "type": "NNB"
-                    },
-                    {
-                        "lemma": "《",
-                        "weight": 1,
-                        "id": 3,
-                        "position": 640,
-                        "type": "SS"
-                    },
-                    {
-                        "lemma": "노인",
-                        "weight": 0.9,
-                        "id": 4,
-                        "position": 643,
-                        "type": "NNG"
-                    },
-                    {
-                        "lemma": "과",
-                        "weight": 0.017569,
-                        "id": 5,
-                        "position": 649,
-                        "type": "JC"
-                    },
-                    {
-                        "lemma": "바다",
-                        "weight": 0.774346,
-                        "id": 6,
-                        "position": 653,
-                        "type": "NNG"
-                    },
-                    {
-                        "lemma": "》",
-                        "weight": 1,
-                        "id": 7,
-                        "position": 659,
-                        "type": "SS"
-                    },
-                    {
-                        "lemma": "The",
-                        "weight": 1,
-                        "id": 8,
-                        "position": 663,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "Old",
-                        "weight": 1,
-                        "id": 9,
-                        "position": 667,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "Man",
-                        "weight": 1,
-                        "id": 10,
-                        "position": 671,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "and",
-                        "weight": 1,
-                        "id": 11,
-                        "position": 675,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "the",
-                        "weight": 1,
-                        "id": 12,
-                        "position": 679,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": "Sea",
-                        "weight": 1,
-                        "id": 13,
-                        "position": 683,
-                        "type": "SL"
-                    },
-                    {
-                        "lemma": ".",
-                        "weight": 1,
-                        "id": 14,
-                        "position": 686,
-                        "type": "SF"
-                    }
-                ],
-                "tagged": "- 1952년 《[노인과_바다] 》 The Old Man and the Sea.",
-                "NE": [
-                    {
-                        "weight": 0.643216,
-                        "end": 2,
-                        "id": 0,
-                        "text": "1952년",
-                        "type": "DT_YEAR",
-                        "begin": 1,
-                        "common_noun": 0
-                    },
-                    {
-                        "weight": 0.995433,
-                        "end": 6,
-                        "id": 1,
-                        "text": "노인과 바다",
-                        "type": "AFW_DOCUMENT",
-                        "begin": 4,
-                        "common_noun": 0
-                    }
-                ],
-                "id": 9,
-                "text": "- 1952년 《노인과 바다》 The Old Man and the Sea.",
-                "word": [
-                    {
-                        "end": 0,
-                        "id": 0,
-                        "text": "-",
-                        "type": "",
-                        "begin": 0
-                    },
-                    {
-                        "end": 2,
-                        "id": 1,
-                        "text": "1952년",
-                        "type": "",
-                        "begin": 1
-                    },
-                    {
-                        "end": 5,
-                        "id": 2,
-                        "text": "《노인과",
-                        "type": "",
-                        "begin": 3
-                    },
-                    {
-                        "end": 7,
-                        "id": 3,
-                        "text": "바다》",
-                        "type": "",
-                        "begin": 6
-                    },
-                    {
-                        "end": 8,
-                        "id": 4,
-                        "text": "The",
-                        "type": "",
-                        "begin": 8
-                    },
-                    {
-                        "end": 9,
-                        "id": 5,
-                        "text": "Old",
-                        "type": "",
-                        "begin": 9
-                    },
-                    {
-                        "end": 10,
-                        "id": 6,
-                        "text": "Man",
-                        "type": "",
-                        "begin": 10
-                    },
-                    {
-                        "end": 11,
-                        "id": 7,
-                        "text": "and",
-                        "type": "",
-                        "begin": 11
-                    },
-                    {
-                        "end": 12,
-                        "id": 8,
-                        "text": "the",
-                        "type": "",
-                        "begin": 12
-                    },
-                    {
-                        "end": 14,
-                        "id": 9,
-                        "text": "Sea.",
-                        "type": "",
-                        "begin": 13
-                    }
-                ],
-                "mod_NE": [
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 7,
-                        "text": "1952년",
-                        "start_offset": 2,
-                        "type": "DT_YEAR",
-                        "relation": 0
-                    },
-                    {
-                        "score": 0,
-                        "indirect": 0,
-                        "confidence": 0,
-                        "link": 0,
-                        "end_offset": 15,
-                        "text": "노인과 바다",
-                        "start_offset": 9,
-                        "type": "AFW_DOCUMENT",
-                        "relation": 0
-                    }
-                ]
+                }
             }
-        ]
+        ],
+        "text": "어니스트 헤밍웨이는 미국의 소설가이자 저널리스트이다. 그는 1854년 노벨 문학상을 수상하였다. 헤밍웨이는 1899년 7월 21일 일리노이주에서 태어났다. 헤밍웨이는 풀린 파이퍼와 이혼한 뒤 마사 겔혼과 재혼하였다. 그는 1961년 아이다호 주에서 62세의 나이에 자살했다.- 1926년 《해는 또다시 떠오른다》 The Sun Also Rises.- 1929년 《무기여 잘 있거라》 A Farewell to Arms.- 1940년 《누구를 위하여 종은 울리나》 For whom the bell tolls.- 1950년 《강 건너 숲속으로》 Across the River and Into the Trees.- 1952년 《노인과 바다》 The Old Man and the Sea."
     },
     "PL": {
         "triples": [
             {
                 "p": "deathPlace",
-                "s": "어니스트_헤밍웨이/Ernest_Hemingway",
                 "stc": "어니스트_헤밍웨이 는 미국 의 소설가 이자 저널리스트 이다.",
+                "s": "어니스트_헤밍웨이/Ernest_Hemingway",
                 "src": "B2K+",
                 "sco": 1,
                 "o": "미국/United_States"
             },
             {
                 "p": "award",
+                "stc": "어니스트_헤밍웨이 는 1854년 노벨_문학상 을 수상하였다.",
                 "s": "어니스트_헤밍웨이/Ernest_Hemingway",
-                "stc": "어니스트_헤밍웨이 1854년 노벨_문학상 을 수상하였다.",
                 "src": "B2K+",
                 "sco": 1,
                 "o": "노벨_문학상/Nobel_Prize_in_Literature"
             },
             {
                 "p": "notableWork",
+                "stc": "어니스트_헤밍웨이 - 1926년 《_해는_또다시_떠오른다 》 The Sun Also Rises.- 1929년 《무기여_잘_있거라 》 A Farewell to Arms.- 1940년 《누구를_위하여_종은_울리나 》 For whom the bell tolls.- 1950년 《_강_건너_숲속으로 》 Across the River and Into the Trees.- 1952년 《노인과_바다 》 The Old Man and the Sea.",
                 "s": "어니스트_헤밍웨이/Ernest_Hemingway",
-                "stc": "어니스트_헤밍웨이 - 1929년 《무기여_잘_있거라 》 A Farewell to Arms.",
+                "src": "B2K+",
+                "sco": 1,
+                "o": "누구를_위하여_종은_울리나/For_Whom_the_Bell_Tolls"
+            },
+            {
+                "p": "notableWork",
+                "stc": "어니스트_헤밍웨이 - 1926년 《_해는_또다시_떠오른다 》 The Sun Also Rises.- 1929년 《무기여_잘_있거라 》 A Farewell to Arms.- 1940년 《누구를_위하여_종은_울리나 》 For whom the bell tolls.- 1950년 《_강_건너_숲속으로 》 Across the River and Into the Trees.- 1952년 《노인과_바다 》 The Old Man and the Sea.",
+                "s": "어니스트_헤밍웨이/Ernest_Hemingway",
                 "src": "B2K+",
                 "sco": 1,
                 "o": "무기여_잘_있거라/A_Farewell_to_Arms"
             },
             {
                 "p": "notableWork",
+                "stc": "어니스트_헤밍웨이 - 1926년 《_해는_또다시_떠오른다 》 The Sun Also Rises.- 1929년 《무기여_잘_있거라 》 A Farewell to Arms.- 1940년 《누구를_위하여_종은_울리나 》 For whom the bell tolls.- 1950년 《_강_건너_숲속으로 》 Across the River and Into the Trees.- 1952년 《노인과_바다 》 The Old Man and the Sea.",
                 "s": "어니스트_헤밍웨이/Ernest_Hemingway",
-                "stc": "어니스트_헤밍웨이 - 1952년 《노인과_바다 》 The Old Man and the Sea.",
                 "src": "B2K+",
                 "sco": 1,
                 "o": "노인과_바다/The_Old_Man_and_the_Sea"
             },
             {
-                "p": "notableWork",
-                "s": "어니스트_헤밍웨이/Ernest_Hemingway",
-                "stc": "어니스트_헤밍웨이 - 1940년 《누구를_위하여_종은_울리나 》For Whom the Bell Tolls.",
-                "src": "B2K+",
-                "sco": 1,
-                "o": "누구를_위하여_종은_울리나/For_Whom_the_Bell_Tolls"
-            },
-            {
                 "p": "occupation",
+                "stc": " << 어니스트_헤밍웨이 >> 는  << 미국 >> 의  << 소설가 >> 이자  << 저널리스트 >> 이다.",
                 "s": "어니스트_헤밍웨이/Ernest_Hemingway",
-                "stc": " << 어니스트_헤밍웨이 >> 는 1899년 7월 21일  << 일리노이_주 >> 에서 태어났다.",
-                "src": "CNN",
+                "src": "JCNN",
                 "sco": 0.9996414184570312,
                 "o": "저널리스트/Journalist"
             },
             {
-                "p": "occupation",
+                "p": "award",
+                "stc": " << 어니스트_헤밍웨이 >> 는 1854년  << 노벨_문학상 >> 을 수상하였다.",
                 "s": "어니스트_헤밍웨이/Ernest_Hemingway",
+                "src": "JCNN",
+                "sco": 0.9993817806243896,
+                "o": "노벨_문학상/Nobel_Prize_in_Literature"
+            },
+            {
+                "p": "occupation",
                 "stc": " << 어니스트_헤밍웨이 >> 는  << 미국 >> 의  << 소설가 >> 이자  << 저널리스트 >> 이다.",
-                "src": "CNN",
+                "s": "어니스트_헤밍웨이/Ernest_Hemingway",
+                "src": "JCNN",
                 "sco": 0.9977624416351318,
                 "o": "소설가/Novelist"
             },
             {
                 "p": "spouse",
+                "stc": " [어니스트_헤밍웨이] 는 풀린  [_파이퍼] 와 이혼한 뒤  [마사_겔혼] 과 재혼하였다.",
                 "s": "마사_겔혼/Martha_Gellhorn",
-                "stc": " << 어니스트_헤밍웨이 >> 는  << 미국 >> 의  << 소설가 >> 이자  << 저널리스트 >> 이다.",
-                "src": "CNN",
-                "sco": 0.8975004553794861,
+                "src": "RL",
+                "sco": 0.9786336421966553,
+                "o": "어니스트_헤밍웨이/Ernest_Hemingway"
+            },
+            {
+                "p": "spouse",
+                "stc": " [어니스트_헤밍웨이] 는 풀린  [_파이퍼] 와 이혼한 뒤  [마사_겔혼] 과 재혼하였다.",
+                "s": "어니스트_헤밍웨이/Ernest_Hemingway",
+                "src": "pyCNN",
+                "sco": 0.9744052290916443,
+                "o": "마사_겔혼/Martha_Gellhorn"
+            },
+            {
+                "p": "spouse",
+                "stc": " [어니스트_헤밍웨이] 는 풀린  [_파이퍼] 와 이혼한 뒤  [마사_겔혼] 과 재혼하였다.",
+                "s": "어니스트_헤밍웨이/Ernest_Hemingway",
+                "src": "RL",
+                "sco": 0.9737901091575623,
+                "o": "마사_겔혼/Martha_Gellhorn"
+            },
+            {
+                "p": "spouse",
+                "stc": " [어니스트_헤밍웨이] 는 풀린  [_파이퍼] 와 이혼한 뒤  [마사_겔혼] 과 재혼하였다.",
+                "s": "마사_겔혼/Martha_Gellhorn",
+                "src": "pyCNN",
+                "sco": 0.9211117625236511,
                 "o": "어니스트_헤밍웨이/Ernest_Hemingway"
             },
             {
                 "p": "birthPlace",
+                "stc": " << 어니스트_헤밍웨이 >> 는 1899년 7월 21일  << 일리노이_주 >> 에서 태어났다.",
                 "s": "어니스트_헤밍웨이/Ernest_Hemingway",
-                "stc": " << 어니스트_헤밍웨이 >> 는  << 미국 >> 의  << 소설가 >> 이자  << 저널리스트 >> 이다.",
-                "src": "CNN",
+                "src": "JCNN",
                 "sco": 0.8922690749168396,
                 "o": "일리노이_주/Illinois"
             },
             {
                 "p": "spouse",
+                "stc": " << 어니스트_헤밍웨이 >> 는 풀린  << _파이퍼 >> 와 이혼한 뒤  << 마사_겔혼 >> 과 재혼하였다.",
+                "s": "마사_겔혼/Martha_Gellhorn",
+                "src": "JCNN",
+                "sco": 0.8638767004013062,
+                "o": "어니스트_헤밍웨이/Ernest_Hemingway"
+            },
+            {
+                "p": "spouse",
+                "stc": " << 어니스트_헤밍웨이 >> 는 풀린  << _파이퍼 >> 와 이혼한 뒤  << 마사_겔혼 >> 과 재혼하였다.",
                 "s": "어니스트_헤밍웨이/Ernest_Hemingway",
-                "stc": " << 어니스트_헤밍웨이 >> 는  << 미국 >> 의  << 소설가 >> 이자  << 저널리스트 >> 이다.",
-                "src": "CNN",
-                "sco": 0.7955827116966248,
+                "src": "JCNN",
+                "sco": 0.8076410293579102,
                 "o": "마사_겔혼/Martha_Gellhorn"
             },
             {
-                "p": "deathPlace",
-                "s": "어니스트_헤밍웨이/Ernest_Hemingway",
-                "stc": "어니스트_헤밍웨이 1961년 아이다호_주 에서 엽총으로 62세의 나이에 자살했다.",
-                "src": "B2K+",
-                "sco": 0.385826488495,
-                "o": "아이다호_주/Idaho"
+                "p": "subsequentWork",
+                "stc": "- 1926년 《 [_해는_또다시_떠오른다] 》 The Sun Also Rises.- 1929년 《 [무기여_잘_있거라] 》 A Farewell to Arms.- 1940년 《 [누구를_위하여_종은_울리나] 》 For whom the bell tolls.- 1950년 《 [_강_건너_숲속으로] 》 Across the River and Into the Trees.- 1952년 《 [노인과_바다] 》 The Old Man and the Sea.",
+                "s": "무기여_잘_있거라/A_Farewell_to_Arms",
+                "src": "RL",
+                "sco": 0.8035932779312134,
+                "o": "누구를_위하여_종은_울리나/For_Whom_the_Bell_Tolls"
             },
             {
-                "p": "birthPlace",
+                "p": "spouse",
+                "stc": " [어니스트_헤밍웨이] 는 풀린  [_파이퍼] 와 이혼한 뒤  [마사_겔혼] 과 재혼하였다.",
                 "s": "어니스트_헤밍웨이/Ernest_Hemingway",
-                "stc": " << 어니스트_헤밍웨이 >> 는 1899년 7월 21일  << 일리노이_주 >> 에서 태어났다.",
-                "src": "CNN",
-                "sco": 0.3750193417072296,
-                "o": "미국/United_States"
+                "src": "pyCNN",
+                "sco": 0.719748067855835,
+                "o": "_파이퍼"
             },
             {
-                "p": "birthPlace",
+                "p": "subsequentWork",
+                "stc": "- 1926년 《 [_해는_또다시_떠오른다] 》 The Sun Also Rises.- 1929년 《 [무기여_잘_있거라] 》 A Farewell to Arms.- 1940년 《 [누구를_위하여_종은_울리나] 》 For whom the bell tolls.- 1950년 《 [_강_건너_숲속으로] 》 Across the River and Into the Trees.- 1952년 《 [노인과_바다] 》 The Old Man and the Sea.",
+                "s": "누구를_위하여_종은_울리나/For_Whom_the_Bell_Tolls",
+                "src": "RL",
+                "sco": 0.7196293473243713,
+                "o": "노인과_바다/The_Old_Man_and_the_Sea"
+            },
+            {
+                "p": "previousWork",
+                "stc": "- 1926년 《 [_해는_또다시_떠오른다] 》 The Sun Also Rises.- 1929년 《 [무기여_잘_있거라] 》 A Farewell to Arms.- 1940년 《 [누구를_위하여_종은_울리나] 》 For whom the bell tolls.- 1950년 《 [_강_건너_숲속으로] 》 Across the River and Into the Trees.- 1952년 《 [노인과_바다] 》 The Old Man and the Sea.",
+                "s": "노인과_바다/The_Old_Man_and_the_Sea",
+                "src": "pyCNN",
+                "sco": 0.7061724066734314,
+                "o": "누구를_위하여_종은_울리나/For_Whom_the_Bell_Tolls"
+            },
+            {
+                "p": "subsequentWork",
+                "stc": "- 1926년 《 [_해는_또다시_떠오른다] 》 The Sun Also Rises.- 1929년 《 [무기여_잘_있거라] 》 A Farewell to Arms.- 1940년 《 [누구를_위하여_종은_울리나] 》 For whom the bell tolls.- 1950년 《 [_강_건너_숲속으로] 》 Across the River and Into the Trees.- 1952년 《 [노인과_바다] 》 The Old Man and the Sea.",
+                "s": "_해는_또다시_떠오른다",
+                "src": "RL",
+                "sco": 0.7028157234191895,
+                "o": "노인과_바다/The_Old_Man_and_the_Sea"
+            },
+            {
+                "p": "subsequentWork",
+                "stc": "- 1926년 《 [_해는_또다시_떠오른다] 》 The Sun Also Rises.- 1929년 《 [무기여_잘_있거라] 》 A Farewell to Arms.- 1940년 《 [누구를_위하여_종은_울리나] 》 For whom the bell tolls.- 1950년 《 [_강_건너_숲속으로] 》 Across the River and Into the Trees.- 1952년 《 [노인과_바다] 》 The Old Man and the Sea.",
+                "s": "무기여_잘_있거라/A_Farewell_to_Arms",
+                "src": "pyCNN",
+                "sco": 0.7009422183036804,
+                "o": "누구를_위하여_종은_울리나/For_Whom_the_Bell_Tolls"
+            },
+            {
+                "p": "spouse",
+                "stc": " [어니스트_헤밍웨이] 는 풀린  [_파이퍼] 와 이혼한 뒤  [마사_겔혼] 과 재혼하였다.",
                 "s": "어니스트_헤밍웨이/Ernest_Hemingway",
-                "stc": "어니스트_헤밍웨이 는 1899년 7월 21일 일리노이_주 에서 태어났다.",
-                "src": "B2K+",
-                "sco": 0.029859383237,
-                "o": "일리노이_주/Illinois"
+                "src": "RL",
+                "sco": 0.6954695224761963,
+                "o": "_파이퍼"
+            },
+            {
+                "p": "spouse",
+                "stc": " [어니스트_헤밍웨이] 는 풀린  [_파이퍼] 와 이혼한 뒤  [마사_겔혼] 과 재혼하였다.",
+                "s": "_파이퍼",
+                "src": "pyCNN",
+                "sco": 0.6939980506896973,
+                "o": "어니스트_헤밍웨이/Ernest_Hemingway"
+            },
+            {
+                "p": "spouse",
+                "stc": " [어니스트_헤밍웨이] 는 풀린  [_파이퍼] 와 이혼한 뒤  [마사_겔혼] 과 재혼하였다.",
+                "s": "_파이퍼",
+                "src": "pyCNN",
+                "sco": 0.6891771793365479,
+                "o": "마사_겔혼/Martha_Gellhorn"
+            },
+            {
+                "p": "spouse",
+                "stc": " [어니스트_헤밍웨이] 는 풀린  [_파이퍼] 와 이혼한 뒤  [마사_겔혼] 과 재혼하였다.",
+                "s": "_파이퍼",
+                "src": "RL",
+                "sco": 0.672065544128418,
+                "o": "어니스트_헤밍웨이/Ernest_Hemingway"
+            },
+            {
+                "p": "previousWork",
+                "stc": "- 1926년 《 [_해는_또다시_떠오른다] 》 The Sun Also Rises.- 1929년 《 [무기여_잘_있거라] 》 A Farewell to Arms.- 1940년 《 [누구를_위하여_종은_울리나] 》 For whom the bell tolls.- 1950년 《 [_강_건너_숲속으로] 》 Across the River and Into the Trees.- 1952년 《 [노인과_바다] 》 The Old Man and the Sea.",
+                "s": "누구를_위하여_종은_울리나/For_Whom_the_Bell_Tolls",
+                "src": "pyCNN",
+                "sco": 0.6711547374725342,
+                "o": "_해는_또다시_떠오른다"
+            },
+            {
+                "p": "previousWork",
+                "stc": "- 1926년 《 << _해는_또다시_떠오른다 >> 》 The Sun Also Rises.- 1929년 《 << 무기여_잘_있거라 >> 》 A Farewell to Arms.- 1940년 《 << 누구를_위하여_종은_울리나 >> 》 For whom the bell tolls.- 1950년 《 << _강_건너_숲속으로 >> 》 Across the River and Into the Trees.- 1952년 《 << 노인과_바다 >> 》 The Old Man and the Sea.",
+                "s": "누구를_위하여_종은_울리나/For_Whom_the_Bell_Tolls",
+                "src": "JCNN",
+                "sco": 0.6606664657592773,
+                "o": "무기여_잘_있거라/A_Farewell_to_Arms"
+            },
+            {
+                "p": "subsequentWork",
+                "stc": "- 1926년 《 [_해는_또다시_떠오른다] 》 The Sun Also Rises.- 1929년 《 [무기여_잘_있거라] 》 A Farewell to Arms.- 1940년 《 [누구를_위하여_종은_울리나] 》 For whom the bell tolls.- 1950년 《 [_강_건너_숲속으로] 》 Across the River and Into the Trees.- 1952년 《 [노인과_바다] 》 The Old Man and the Sea.",
+                "s": "_해는_또다시_떠오른다",
+                "src": "RL",
+                "sco": 0.6520644187927247,
+                "o": "누구를_위하여_종은_울리나/For_Whom_the_Bell_Tolls"
+            },
+            {
+                "p": "previousWork",
+                "stc": "- 1926년 《 << _해는_또다시_떠오른다 >> 》 The Sun Also Rises.- 1929년 《 << 무기여_잘_있거라 >> 》 A Farewell to Arms.- 1940년 《 << 누구를_위하여_종은_울리나 >> 》 For whom the bell tolls.- 1950년 《 << _강_건너_숲속으로 >> 》 Across the River and Into the Trees.- 1952년 《 << 노인과_바다 >> 》 The Old Man and the Sea.",
+                "s": "노인과_바다/The_Old_Man_and_the_Sea",
+                "src": "JCNN",
+                "sco": 0.6458155512809753,
+                "o": "누구를_위하여_종은_울리나/For_Whom_the_Bell_Tolls"
+            },
+            {
+                "p": "subsequentWork",
+                "stc": "- 1926년 《 [_해는_또다시_떠오른다] 》 The Sun Also Rises.- 1929년 《 [무기여_잘_있거라] 》 A Farewell to Arms.- 1940년 《 [누구를_위하여_종은_울리나] 》 For whom the bell tolls.- 1950년 《 [_강_건너_숲속으로] 》 Across the River and Into the Trees.- 1952년 《 [노인과_바다] 》 The Old Man and the Sea.",
+                "s": "_강_건너_숲속으로",
+                "src": "RL",
+                "sco": 0.642888641357422,
+                "o": "노인과_바다/The_Old_Man_and_the_Sea"
+            },
+            {
+                "p": "subsequentWork",
+                "stc": "- 1926년 《 [_해는_또다시_떠오른다] 》 The Sun Also Rises.- 1929년 《 [무기여_잘_있거라] 》 A Farewell to Arms.- 1940년 《 [누구를_위하여_종은_울리나] 》 For whom the bell tolls.- 1950년 《 [_강_건너_숲속으로] 》 Across the River and Into the Trees.- 1952년 《 [노인과_바다] 》 The Old Man and the Sea.",
+                "s": "무기여_잘_있거라/A_Farewell_to_Arms",
+                "src": "RL",
+                "sco": 0.640407419204712,
+                "o": "_강_건너_숲속으로"
+            },
+            {
+                "p": "previousWork",
+                "stc": "- 1926년 《 [_해는_또다시_떠오른다] 》 The Sun Also Rises.- 1929년 《 [무기여_잘_있거라] 》 A Farewell to Arms.- 1940년 《 [누구를_위하여_종은_울리나] 》 For whom the bell tolls.- 1950년 《 [_강_건너_숲속으로] 》 Across the River and Into the Trees.- 1952년 《 [노인과_바다] 》 The Old Man and the Sea.",
+                "s": "노인과_바다/The_Old_Man_and_the_Sea",
+                "src": "RL",
+                "sco": 0.6392138600349426,
+                "o": "누구를_위하여_종은_울리나/For_Whom_the_Bell_Tolls"
+            },
+            {
+                "p": "spouse",
+                "stc": " [어니스트_헤밍웨이] 는 풀린  [_파이퍼] 와 이혼한 뒤  [마사_겔혼] 과 재혼하였다.",
+                "s": "마사_겔혼/Martha_Gellhorn",
+                "src": "RL",
+                "sco": 0.6365869522094727,
+                "o": "_파이퍼"
+            },
+            {
+                "p": "spouse",
+                "stc": " [어니스트_헤밍웨이] 는 풀린  [_파이퍼] 와 이혼한 뒤  [마사_겔혼] 과 재혼하였다.",
+                "s": "_파이퍼",
+                "src": "RL",
+                "sco": 0.6299789428710938,
+                "o": "마사_겔혼/Martha_Gellhorn"
+            },
+            {
+                "p": "previousWork",
+                "stc": "- 1926년 《 << _해는_또다시_떠오른다 >> 》 The Sun Also Rises.- 1929년 《 << 무기여_잘_있거라 >> 》 A Farewell to Arms.- 1940년 《 << 누구를_위하여_종은_울리나 >> 》 For whom the bell tolls.- 1950년 《 << _강_건너_숲속으로 >> 》 Across the River and Into the Trees.- 1952년 《 << 노인과_바다 >> 》 The Old Man and the Sea.",
+                "s": "무기여_잘_있거라/A_Farewell_to_Arms",
+                "src": "JCNN",
+                "sco": 0.6296948790550232,
+                "o": "노인과_바다/The_Old_Man_and_the_Sea"
+            },
+            {
+                "p": "subsequentWork",
+                "stc": "- 1926년 《 [_해는_또다시_떠오른다] 》 The Sun Also Rises.- 1929년 《 [무기여_잘_있거라] 》 A Farewell to Arms.- 1940년 《 [누구를_위하여_종은_울리나] 》 For whom the bell tolls.- 1950년 《 [_강_건너_숲속으로] 》 Across the River and Into the Trees.- 1952년 《 [노인과_바다] 》 The Old Man and the Sea.",
+                "s": "_해는_또다시_떠오른다",
+                "src": "pyCNN",
+                "sco": 0.6072603702545166,
+                "o": "누구를_위하여_종은_울리나/For_Whom_the_Bell_Tolls"
+            },
+            {
+                "p": "subsequentWork",
+                "stc": "- 1926년 《 [_해는_또다시_떠오른다] 》 The Sun Also Rises.- 1929년 《 [무기여_잘_있거라] 》 A Farewell to Arms.- 1940년 《 [누구를_위하여_종은_울리나] 》 For whom the bell tolls.- 1950년 《 [_강_건너_숲속으로] 》 Across the River and Into the Trees.- 1952년 《 [노인과_바다] 》 The Old Man and the Sea.",
+                "s": "_해는_또다시_떠오른다",
+                "src": "pyCNN",
+                "sco": 0.6056647300720215,
+                "o": "노인과_바다/The_Old_Man_and_the_Sea"
             }
-        ]
+        ],
+        "graph": {
+            "nodes": [
+                {
+                    "name": "어니스트_헤밍웨이",
+                    "label": "Ernest_Hemingway",
+                    "id": 1
+                },
+                {
+                    "name": "미국",
+                    "label": "United_States",
+                    "id": 2
+                },
+                {
+                    "name": "아이다호_주",
+                    "label": "Idaho",
+                    "id": 3
+                },
+                {
+                    "name": "무기여_잘_있거라",
+                    "label": "A_Farewell_to_Arms",
+                    "id": 4
+                },
+                {
+                    "name": "노인과_바다",
+                    "label": "The_Old_Man_and_the_Sea",
+                    "id": 5
+                },
+                {
+                    "name": "노벨문학상",
+                    "label": "",
+                    "id": 6
+                },
+                {
+                    "name": "퓰리처상_픽션_부문",
+                    "label": "Pulitzer_Prize_for_Fiction",
+                    "id": 7
+                },
+                {
+                    "name": "퓰리처상",
+                    "label": "Pulitzer_Prize",
+                    "id": 8
+                },
+                {
+                    "name": "오크파크_(일리노이_주)",
+                    "label": "Oak_Park,_Illinois",
+                    "id": 9
+                },
+                {
+                    "name": "누구를_위하여_종은_울리나",
+                    "label": "For_Whom_the_Bell_Tolls",
+                    "id": 10
+                },
+                {
+                    "name": "일리노이주",
+                    "label": "",
+                    "id": 11
+                },
+                {
+                    "name": "노벨_문학상",
+                    "label": "Nobel_Prize_in_Literature",
+                    "id": 12
+                },
+                {
+                    "name": "조_바이든",
+                    "label": "Joe_Biden",
+                    "id": 13
+                },
+                {
+                    "name": "미국의_국가",
+                    "label": "The_Star-Spangled_Banner",
+                    "id": 14
+                },
+                {
+                    "name": "버락_오바마",
+                    "label": "Barack_Obama",
+                    "id": 15
+                },
+                {
+                    "name": "워싱턴_D.C.",
+                    "label": "Washington,_D.C.",
+                    "id": 16
+                },
+                {
+                    "name": "폴_라이언",
+                    "label": "Paul_Ryan",
+                    "id": 17
+                },
+                {
+                    "name": "영어",
+                    "label": "English_language",
+                    "id": 18
+                },
+                {
+                    "name": "뉴욕",
+                    "label": "New_York_City",
+                    "id": 19
+                },
+                {
+                    "name": "존_로버츠",
+                    "label": "John_Roberts",
+                    "id": 20
+                },
+                {
+                    "name": "미국_연방_정부",
+                    "label": "Federal_government_of_the_United_States",
+                    "id": 21
+                },
+                {
+                    "name": "연방주의",
+                    "label": "Federalism",
+                    "id": 22
+                },
+                {
+                    "name": "저널리스트",
+                    "label": "Journalist",
+                    "id": 23
+                },
+                {
+                    "name": "소설가",
+                    "label": "Novelist",
+                    "id": 24
+                },
+                {
+                    "name": "마사_겔혼",
+                    "label": "Martha_Gellhorn",
+                    "id": 25
+                },
+                {
+                    "name": "종군_기자",
+                    "label": "War_correspondent",
+                    "id": 26
+                },
+                {
+                    "name": "세인트루이스",
+                    "label": "St._Louis",
+                    "id": 27
+                },
+                {
+                    "name": "잉글랜드",
+                    "label": "England",
+                    "id": 28
+                },
+                {
+                    "name": "일리노이_주",
+                    "label": "Illinois",
+                    "id": 29
+                },
+                {
+                    "name": "스프링필드_(일리노이_주)",
+                    "label": "Springfield,_Illinois",
+                    "id": 30
+                },
+                {
+                    "name": "시카고",
+                    "label": "Chicago",
+                    "id": 31
+                },
+                {
+                    "name": "_파이퍼",
+                    "label": "",
+                    "id": 32
+                },
+                {
+                    "name": "_해는_또다시_떠오른다",
+                    "label": "",
+                    "id": 33
+                },
+                {
+                    "name": "_강_건너_숲속으로",
+                    "label": "",
+                    "id": 34
+                }
+            ],
+            "links": [
+                {
+                    "rel": "1_leader",
+                    "sumz": false,
+                    "source": 2,
+                    "type": "leader:kbox",
+                    "target": 13
+                },
+                {
+                    "rel": "2_anthem",
+                    "sumz": false,
+                    "source": 2,
+                    "type": "anthem:kbox",
+                    "target": 14
+                },
+                {
+                    "rel": "3_leader",
+                    "sumz": false,
+                    "source": 2,
+                    "type": "leader:kbox",
+                    "target": 15
+                },
+                {
+                    "rel": "4_capital",
+                    "sumz": false,
+                    "source": 2,
+                    "type": "capital:kbox",
+                    "target": 16
+                },
+                {
+                    "rel": "5_leader",
+                    "sumz": false,
+                    "source": 2,
+                    "type": "leader:kbox",
+                    "target": 17
+                },
+                {
+                    "rel": "6_language",
+                    "sumz": false,
+                    "source": 2,
+                    "type": "language:kbox",
+                    "target": 18
+                },
+                {
+                    "rel": "7_largestCity",
+                    "sumz": false,
+                    "source": 2,
+                    "type": "largestCity:kbox",
+                    "target": 19
+                },
+                {
+                    "rel": "8_leader",
+                    "sumz": false,
+                    "source": 2,
+                    "type": "leader:kbox",
+                    "target": 20
+                },
+                {
+                    "rel": "9_officialLanguage",
+                    "sumz": false,
+                    "source": 2,
+                    "type": "officialLanguage:kbox",
+                    "target": 21
+                },
+                {
+                    "rel": "10_language",
+                    "sumz": false,
+                    "source": 2,
+                    "type": "language:kbox",
+                    "target": 21
+                },
+                {
+                    "rel": "11_governmentType",
+                    "sumz": false,
+                    "source": 2,
+                    "type": "governmentType:kbox",
+                    "target": 22
+                },
+                {
+                    "rel": "12_deathPlace",
+                    "sumz": true,
+                    "source": 1,
+                    "type": "deathPlace:1.0",
+                    "target": 2
+                },
+                {
+                    "rel": "13_award",
+                    "sumz": false,
+                    "source": 1,
+                    "type": "award:1.0",
+                    "target": 12
+                },
+                {
+                    "rel": "14_notableWork",
+                    "sumz": false,
+                    "source": 1,
+                    "type": "notableWork:1.0",
+                    "target": 10
+                },
+                {
+                    "rel": "15_notableWork",
+                    "sumz": true,
+                    "source": 1,
+                    "type": "notableWork:1.0",
+                    "target": 4
+                },
+                {
+                    "rel": "16_notableWork",
+                    "sumz": false,
+                    "source": 1,
+                    "type": "notableWork:1.0",
+                    "target": 5
+                },
+                {
+                    "rel": "17_occupation",
+                    "sumz": false,
+                    "source": 1,
+                    "type": "occupation:1.0",
+                    "target": 23
+                },
+                {
+                    "rel": "19_occupation",
+                    "sumz": true,
+                    "source": 1,
+                    "type": "occupation:1.0",
+                    "target": 24
+                },
+                {
+                    "rel": "20_spouse",
+                    "sumz": false,
+                    "source": 25,
+                    "type": "spouse:0.98",
+                    "target": 1
+                },
+                {
+                    "rel": "21_spouse",
+                    "sumz": false,
+                    "source": 1,
+                    "type": "spouse:0.97",
+                    "target": 25
+                },
+                {
+                    "rel": "24_capital",
+                    "sumz": false,
+                    "source": 29,
+                    "type": "capital:kbox",
+                    "target": 30
+                },
+                {
+                    "rel": "25_language",
+                    "sumz": false,
+                    "source": 29,
+                    "type": "language:kbox",
+                    "target": 18
+                },
+                {
+                    "rel": "26_country",
+                    "sumz": false,
+                    "source": 29,
+                    "type": "country:kbox",
+                    "target": 2
+                },
+                {
+                    "rel": "27_officialLanguage",
+                    "sumz": false,
+                    "source": 29,
+                    "type": "officialLanguage:kbox",
+                    "target": 18
+                },
+                {
+                    "rel": "28_largestCity",
+                    "sumz": false,
+                    "source": 29,
+                    "type": "largestCity:kbox",
+                    "target": 31
+                },
+                {
+                    "rel": "29_birthPlace",
+                    "sumz": true,
+                    "source": 1,
+                    "type": "birthPlace:0.89",
+                    "target": 29
+                },
+                {
+                    "rel": "32_subsequentWork",
+                    "sumz": false,
+                    "source": 4,
+                    "type": "subsequentWork:0.8",
+                    "target": 10
+                },
+                {
+                    "rel": "33_spouse",
+                    "sumz": false,
+                    "source": 1,
+                    "type": "spouse:0.72",
+                    "target": 32
+                },
+                {
+                    "rel": "34_subsequentWork",
+                    "sumz": false,
+                    "source": 10,
+                    "type": "subsequentWork:0.72",
+                    "target": 5
+                },
+                {
+                    "rel": "35_previousWork",
+                    "sumz": false,
+                    "source": 5,
+                    "type": "previousWork:0.71",
+                    "target": 10
+                },
+                {
+                    "rel": "36_subsequentWork",
+                    "sumz": false,
+                    "source": 33,
+                    "type": "subsequentWork:0.7",
+                    "target": 5
+                },
+                {
+                    "rel": "39_spouse",
+                    "sumz": false,
+                    "source": 32,
+                    "type": "spouse:0.69",
+                    "target": 1
+                },
+                {
+                    "rel": "40_spouse",
+                    "sumz": false,
+                    "source": 32,
+                    "type": "spouse:0.69",
+                    "target": 25
+                },
+                {
+                    "rel": "42_previousWork",
+                    "sumz": false,
+                    "source": 10,
+                    "type": "previousWork:0.67",
+                    "target": 33
+                },
+                {
+                    "rel": "43_previousWork",
+                    "sumz": false,
+                    "source": 10,
+                    "type": "previousWork:0.66",
+                    "target": 4
+                },
+                {
+                    "rel": "44_subsequentWork",
+                    "sumz": false,
+                    "source": 33,
+                    "type": "subsequentWork:0.65",
+                    "target": 10
+                },
+                {
+                    "rel": "46_subsequentWork",
+                    "sumz": false,
+                    "source": 34,
+                    "type": "subsequentWork:0.64",
+                    "target": 5
+                },
+                {
+                    "rel": "47_subsequentWork",
+                    "sumz": false,
+                    "source": 4,
+                    "type": "subsequentWork:0.64",
+                    "target": 34
+                },
+                {
+                    "rel": "49_spouse",
+                    "sumz": false,
+                    "source": 25,
+                    "type": "spouse:0.64",
+                    "target": 32
+                },
+                {
+                    "rel": "51_previousWork",
+                    "sumz": false,
+                    "source": 4,
+                    "type": "previousWork:0.63",
+                    "target": 5
+                }
+            ]
+        },
+        "ABS_NLG": "_강_건너_숲속으로 는 미국 미국 소설가 에서 가장 잘 알려져 있다 . 어니스트_헤밍웨이 는 미국 소설가 에서 미국 가까운 소설가 의 소설가 , 소설가 에서 노벨_문학상 소설가 에 위치하고 있다 .",
+        "EXT_NLG": "어니스트_헤밍웨이 는 미국 의 소설가 이자 저널리스트 이다.\n어니스트_헤밍웨이는 1899년 7월 21일 일리노이_주에서 태어났다.\n어니스트_헤밍웨이 - 1926년 《_해는_또다시_떠오른다 》 The Sun Also Rises.- 1929년 《무기여_잘_있거라 》 A Farewell to Arms.- 1940년 《누구를_위하여_종은_울리나 》 For whom the bell tolls.- 1950년 《_강_건너_숲속으로 》 Across the River and Into the Trees.- 1952년 《노인과_바다 》 The Old Man and the Sea.\n"
     }
 };
 var output_list = [output_1];

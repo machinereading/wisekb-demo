@@ -1,0 +1,17 @@
+#autocomplete {
+    /*width:180px;*/
+    background-color:white;
+    border: 1px solid gray;
+    z-index:3;
+    position:relative;
+    display:none;
+    color:gray;
+    height: 200px
+}
+.auto_wordlist{
+    cursor: pointer;
+
+}
+.auto_wordlist:hover{
+    background-color: palegoldenrod;
+}

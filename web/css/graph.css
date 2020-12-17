@@ -1,0 +1,22 @@
+#cy {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    display: block;
+    /*top: 0px;*/
+    left: 0px;
+    z-index: 999;
+}
+#info_graph{
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 0;*/
+    width: 100%;
+    height: 10%;
+}
+.graph_png{
+    /*display: block;*/
+    float: left;
+    /*width: 100%;*/
+    /*height: 70%;*/
+}
