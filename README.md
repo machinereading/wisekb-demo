@@ -62,12 +62,12 @@ Korean Knowledge Extraction System Demo
                 * uri: (str) 개체 URI 정보
                 * score: (num) 개체 추출 점수
                 * confidence: (num) 개체 추출 신뢰도
-                * indirect: (num) -
+                * indirect: (num) (deprecated)
                 * link: (num) 개체 연결
-                * relation: (num) -
+                * relation: (num) (deprecated)
                 * sen_id: (num) 문장 ID
                 * ne_id: (num) 개체 ID
-            * merge		arr(obj)	데모를 위한 entities + d_entities 병합 정보
+            * merge: arr(obj) 데모를 위한 entities + d_entities 병합 정보
     * text: (str) 입력 원본 문장
  * PL: (obj) 관계 수준 추출 정보
     * triples: (arr(obj)) 트리플들
