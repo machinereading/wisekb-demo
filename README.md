@@ -51,8 +51,8 @@ Korean Knowledge Extraction System Demo
                 * type:	(arr(str)) 개체 타입 정보
                 * uri: (str) 개체 URI 정보
                 * predicted_coref_index: (num) 상호 참조 ID
-                * score: (num) -
-                * confidence: (num)	-
+                * score: (num) 개체 추출 점수
+                * confidence: (num)	개체 추출 신뢰도
             * d_entities: (arr(obj)) dark entity 결과
                 * text: (str) 개체 표면형
                 * type: (str) ETRI 개체 타입
@@ -60,36 +60,36 @@ Korean Knowledge Extraction System Demo
                 * start_offset: (num) 개체 문장 내 시작 위치
                 * end_offset: (num) 개체 문장 내 끝 위치
                 * uri: (str) 개체 URI 정보
-                * score: (num) -
-                * confidence: (num) -
+                * score: (num) 개체 추출 점수
+                * confidence: (num) 개체 추출 신뢰도
                 * indirect: (num) -
-                * link: (num) -
+                * link: (num) 개체 연결
                 * relation: (num) -
-                * sen_id: (num) -
-                * ne_id: (num) -
+                * sen_id: (num) 문장 ID
+                * ne_id: (num) 개체 ID
             * merge		arr(obj)	데모를 위한 entities + d_entities 병합 정보
     * text: (str) 입력 원본 문장
  * PL: (obj) 관계 수준 추출 정보
     * triples: (arr(obj)) 트리플들
-        * s: (str) Sbj
-        * p: (str) Pred
-        * o: (str) Obj
+        * s: (str) 트리플 Sbject 개체
+        * p: (str) 트리플 관계명
+        * o: (str) 트리플 Object 개체
         * src: (str) 추출 모듈명
-        * sco: (num) -
+        * sco: (num) 추출 모듈 점수
         * stc: (str) 추출 대상 문장
     * graph: (obj) 데모 그래프용 정보
         * nodes: (arr(obj)) 데모 그래프 노드 정보
-        * name: (str) -
-        * label: (str)	-
-        * id: (num) -
+        * name: (str) 데모 그래프 노드 이름
+        * label: (str)	데모 그래프 노드 레이블
+        * id: (num) 데모 그래프 노드 ID
     * links: (arr(obj)) 데모 그래프 링크 정보
-        * rel: (str) -
-        * sumz: (bool) -
-        * source: (num) -
-        * type: (str) -
-        * target: (num)	-
-    * ABS_NLG: (str) -
-    * EXT_NLG: (str)	-
+        * rel: (str) 관계명
+        * sumz: (bool) 요약 대상 유/무
+        * source: (num) 그래프 헤드 노드
+        * type: (str) 관계명:추출점수
+        * target: (num)	그래프 테일 노드
+    * ABS_NLG: (str) (deprecated)
+    * EXT_NLG: (str) (deprecated)
 
 #### Example
 ```
